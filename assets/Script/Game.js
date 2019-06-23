@@ -6,11 +6,14 @@ cc.Class({
             default: null,
             type: cc.Prefab
         },
+        cantVeces:4,
+        aux:1,
     },
 
     onLoad: function () {
-        // generate a new star
+        this.timer = 0;
         this.spawnNewCircle();
+       
     },
 
     spawnNewCircle: function() {
@@ -18,9 +21,10 @@ cc.Class({
         var newCircle = cc.instantiate(this.circlePrefab);
         // put the newly added node under the Canvas node
         this.node.addChild(newCircle);
-        // set up a random position for the star
+        // set up a random position for the circle
         newCircle.setPosition(this.getNewCirclePosition());
         newCircle.getComponent('Circle').game = this;
+        
     },
 
     getNewCirclePosition: function () {
@@ -36,5 +40,7 @@ cc.Class({
         return cc.v2(randX, randY);
     },
 
-    // update (dt) {},
+    update: function(dt) {
+        this.timer +=dt;
+    },
 });
