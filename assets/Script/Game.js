@@ -6,13 +6,18 @@ cc.Class({
             default: null,
             type: cc.Prefab
         },
+        touchPointPrefab:{
+            default: null,
+            type: cc.Prefab
+        },
+        positionCircle:cc.v2(0,0),
         cantVeces:4,
         aux:1,
     },
 
     onLoad: function () {
-        this.timer = 0;
         this.spawnNewCircle();
+        this.spawnTouchPoint();
        
     },
 
@@ -22,7 +27,8 @@ cc.Class({
         // put the newly added node under the Canvas node
         this.node.addChild(newCircle);
         // set up a random position for the circle
-        newCircle.setPosition(this.getNewCirclePosition());
+        this.positionCircle = this.getNewCirclePosition();
+        newCircle.setPosition(this.positionCircle);
         newCircle.getComponent('Circle').game = this;
         
     },
@@ -39,8 +45,14 @@ cc.Class({
         // return to the anchor point of the star
         return cc.v2(randX, randY);
     },
-
+    spawnTouchPoint:function(){
+        var newTouchPoint = cc.instantiate(this.touchPointPrefab);
+        // put the newly added node under the Canvas node
+        this.node.addChild(newTouchPoint);
+        // set up a random position for the circle
+        newTouchPoint.setPosition(this.positionCircle);
+        newTouchPoint.getComponent('TouchPoint').game = this;
+    },
     update: function(dt) {
-        this.timer +=dt;
     },
 });

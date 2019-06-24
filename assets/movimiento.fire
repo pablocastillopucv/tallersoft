@@ -245,6 +245,16 @@
     "circlePrefab": {
       "__uuid__": "4569943b-ab81-46bf-8ff5-d66b8089ef6c"
     },
+    "touchPointPrefab": {
+      "__uuid__": "66f3879c-e84a-41b8-b2e2-ed84421e9c8f"
+    },
+    "positionCircle": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "cantVeces": 4,
+    "aux": 1,
     "_id": "a2/91M+F1LGL4zj53B3yyH"
   }
 ]

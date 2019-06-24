@@ -4,11 +4,6 @@ cc.Class({
 
     properties: {
         minTime:0,
-
-        picked:{
-            default: 0,
-        }
-        
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -21,10 +16,9 @@ cc.Class({
         this.game.spawnNewCircle();
         // then destroy the current star's node
         this.node.destroy();
+        this.game.spawnTouchPoint();
     },
     update: function(dt){
-        console.log(this.game.aux);
-        console.log(this.game.cantVeces);
         if(this.game.aux< this.game.cantVeces){
             this.minTime++;
             if(this.minTime == 300){
@@ -33,10 +27,9 @@ cc.Class({
                 return;
              }
         }
-        
-        
-      
-        
+        else{
+            this.node.destroy();
+        }
     },
 
     
