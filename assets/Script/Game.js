@@ -10,14 +10,22 @@ cc.Class({
             default: null,
             type: cc.Prefab
         },
+        scoreDisplay:{
+            default:null,
+            type:cc.Label
+        },
         positionCircle:cc.v2(0,0),
         cantVeces:4,
         aux:1,
+        arregloSecuencia:[],
+
     },
 
     onLoad: function () {
+        this.score = 0;
         this.spawnNewCircle();
         this.spawnTouchPoint();
+
        
     },
 
@@ -52,6 +60,17 @@ cc.Class({
         // set up a random position for the circle
         newTouchPoint.setPosition(this.positionCircle);
         newTouchPoint.getComponent('TouchPoint').game = this;
+    },
+    gainScore: function () {
+        this.score += 1;
+        // update the words of the scoreDisplay Label
+        this.scoreDisplay.string = 'Score: ' + this.score;
+    },
+    secuenciaCorrecta:function(parametro1){
+        this.arregloSecuencia.push(parametro1);
+    },
+    gameOver: function(){
+        cc.director.loadScene('game');
     },
     update: function(dt) {
     },

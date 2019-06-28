@@ -21,7 +21,7 @@ cc.Class({
     update: function(dt){
         if(this.game.aux< this.game.cantVeces){
             this.minTime++;
-            if(this.minTime == 300){
+            if(this.minTime == 100){
                 this.game.aux++;
                 this.onPicked();
                 return;
@@ -29,6 +29,7 @@ cc.Class({
         }
         else{
             this.node.destroy();
+            
         }
     },
 
