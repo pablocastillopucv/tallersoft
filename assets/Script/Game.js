@@ -66,12 +66,15 @@ cc.Class({
         this.score += 1;
         // update the words of the scoreDisplay Label
         this.scoreDisplay.string = 'Score: ' + this.score;
+        if(this.score == 4){
+            this.gameOver();
+        }
     },
     secuenciaCorrecta:function(parametro1){
         this.arregloSecuencia.push(parametro1);
     },
     gameOver: function(){
-        cc.director.loadScene('game');
+        cc.director.loadScene('movimiento');
     },
     update: function(dt) {
     },
