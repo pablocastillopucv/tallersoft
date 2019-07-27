@@ -17,6 +17,7 @@ cc.Class({
         positionCircle:cc.v2(0,0),
         cantVeces:4,
         aux:1,
+        cantVecesPresiona:0,
         arregloSecuencia:[],
 
     },
