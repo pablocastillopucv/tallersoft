@@ -50,22 +50,17 @@
     "relativePath": "resources\\materials"
   },
   "29f52784-2fca-467b-92e7-8fd9ef8c57b7": {
-    "asset": 1561059145126,
+    "asset": 1564345070809,
     "meta": 1561059145124,
     "relativePath": "Scene"
   },
   "4734c20c-0db8-4eb2-92ea-e692f4d70934": {
-    "asset": 1561348813912,
+    "asset": 1564344815509,
     "meta": 1561059145143,
     "relativePath": "Script"
   },
-  "2d2f792f-a40c-49bb-a189-ed176a246e49": {
-    "asset": 1561059157865,
-    "meta": 1561059157885,
-    "relativePath": "Scene\\helloworld.fire"
-  },
   "7b81d4e8-ec84-4716-968d-500ac1d78a54": {
-    "asset": 1561063593631,
+    "asset": 1564344734072,
     "meta": 1561059145143,
     "relativePath": "Texture"
   },
@@ -77,22 +72,17 @@
   "4569943b-ab81-46bf-8ff5-d66b8089ef6c": {
     "asset": 1561244096733,
     "meta": 1561244096767,
-    "relativePath": "circle.prefab"
+    "relativePath": "Prefab\\circle.prefab"
   },
   "66f3879c-e84a-41b8-b2e2-ed84421e9c8f": {
     "asset": 1561670846463,
     "meta": 1561670846476,
-    "relativePath": "touchPoint.prefab"
+    "relativePath": "Prefab\\touchPoint.prefab"
   },
   "307f72ed-0328-41e3-ab4f-88b1e6626d76": {
     "asset": 1561670810918,
     "meta": 1561670810940,
-    "relativePath": "tambores_8.mp3"
-  },
-  "bd961443-3fc4-42b5-a0c1-b9fef098f79a": {
-    "asset": 1561674851207,
-    "meta": 1561674860843,
-    "relativePath": "Script\\Circle.js"
+    "relativePath": "Sound\\tambores_8.mp3"
   },
   "39a96da2-8013-495c-9252-7464f32a615e": {
     "asset": 1561674854102,
@@ -100,14 +90,9 @@
     "relativePath": "Script\\TouchPoint.js"
   },
   "3ae8816e-4603-4733-b316-15d6c0d897b9": {
-    "asset": 1564210022901,
-    "meta": 1564210022914,
-    "relativePath": "movimiento.fire"
-  },
-  "dd482034-ee60-49b4-99cc-1ae71b45ba5c": {
-    "asset": 1564210554976,
-    "meta": 1564249708631,
-    "relativePath": "Script\\Game.js"
+    "asset": 1564720735593,
+    "meta": 1564720735613,
+    "relativePath": "Scene\\movimiento.fire"
   },
   "71561142-4c83-4933-afca-cb7a17f67053": {
     "asset": 1556593022000,
@@ -463,5 +448,75 @@
     "asset": 1556593022000,
     "meta": 1564249885173,
     "relativePath": "model\\primitives.fbx"
+  },
+  "c1c1f8a6-9031-466a-a820-14dc99760250": {
+    "asset": 1564344615087,
+    "meta": 1564344615167,
+    "relativePath": "Texture\\fail-background.png"
+  },
+  "c3f56190-5746-4922-81f5-f7932925bc6b": {
+    "asset": 1564344672589,
+    "meta": 1564344672682,
+    "relativePath": "Texture\\go.png"
+  },
+  "30dca8fd-2b1a-48cd-b735-5c0ef7349a20": {
+    "asset": 1564344759023,
+    "meta": 1564344749213,
+    "relativePath": "Sound"
+  },
+  "a0e338b1-3688-4df6-9bd2-3783f7a61118": {
+    "asset": 1564344789749,
+    "meta": 1564344780528,
+    "relativePath": "Prefab"
+  },
+  "2acb10be-f69b-4b5e-961f-bdb309fa7102": {
+    "asset": 1564345096664,
+    "meta": 1564345096686,
+    "relativePath": "Scene\\menu.fire"
+  },
+  "5bd32eb6-a33d-45ef-9609-f5f77bbaeab1": {
+    "asset": 1564347775319,
+    "meta": 1564347874526,
+    "relativePath": "Script\\MenuBoton.js"
+  },
+  "40cf73c7-748f-4a65-93f7-ca2a33ff4e65": {
+    "asset": 1564253554163,
+    "meta": 1564351350211,
+    "relativePath": "hd-wallpapers-of-abstract-ghosts-ii-e29da4-4k-hd-desktop-wallpaper-for-4k-ultra-hd-tv-e280a2-wide - copia.jpg"
+  },
+  "2dd594cd-3e3f-4fcc-8ee2-8bbcd847e277": {
+    "asset": 1564717152693,
+    "meta": 1564717152748,
+    "relativePath": "Texture\\cursor-smoke.png"
+  },
+  "335567d2-d727-41bd-863f-851e86dc9b3d": {
+    "asset": 1564717152694,
+    "meta": 1564717152767,
+    "relativePath": "Texture\\cursor-smoke1.png"
+  },
+  "0cb62595-459a-4ccc-b254-1f67b8788b51": {
+    "asset": 1564717152692,
+    "meta": 1564717152819,
+    "relativePath": "Texture\\cursor.png"
+  },
+  "6735d371-2582-45b1-9dca-70b847a4e8dc": {
+    "asset": 1564717555281,
+    "meta": 1564717555306,
+    "relativePath": "animationCirculo.anim"
+  },
+  "e212f115-7333-4cdc-8956-4003d98ec40d": {
+    "asset": 1564717876316,
+    "meta": 1564717876342,
+    "relativePath": "cursor.prefab"
+  },
+  "bd961443-3fc4-42b5-a0c1-b9fef098f79a": {
+    "asset": 1564719448734,
+    "meta": 1564719450392,
+    "relativePath": "Script\\Circle.js"
+  },
+  "dd482034-ee60-49b4-99cc-1ae71b45ba5c": {
+    "asset": 1564720728926,
+    "meta": 1564720731585,
+    "relativePath": "Script\\Game.js"
   }
 }

@@ -30,8 +30,8 @@ cc.Class({
 
     onLoad: function onLoad() {
         this.score = 0;
+        this.timer = 0.0;
         this.spawnNewCircle();
-        this.spawnTouchPoint();
     },
 
     spawnNewCircle: function spawnNewCircle() {
@@ -79,7 +79,13 @@ cc.Class({
     gameOver: function gameOver() {
         cc.director.loadScene('movimiento');
     },
-    update: function update(dt) {}
+    update: function update(dt) {
+        this.timer += dt;
+        console.log(this.timer);
+        if (this.timer == 5.020) {
+            console.log('I am done!');
+        }
+    }
 });
 
 cc._RF.pop();

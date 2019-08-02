@@ -56,12 +56,12 @@
     "_is3DNode": true,
     "groupIndex": 0,
     "autoReleaseAssets": false,
-    "_id": "994286d1-3c66-4dff-8ad5-6fc14392bb4a"
+    "_id": "3ae8816e-4603-4733-b316-15d6c0d897b9"
   },
   {
     "__type__": "cc.Node",
     "_name": "Canvas",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 1
     },
@@ -334,7 +334,7 @@
     },
     "_enabled": true,
     "circlePrefab": {
-      "__uuid__": "4569943b-ab81-46bf-8ff5-d66b8089ef6c"
+      "__uuid__": "e212f115-7333-4cdc-8956-4003d98ec40d"
     },
     "touchPointPrefab": {
       "__uuid__": "66f3879c-e84a-41b8-b2e2-ed84421e9c8f"
