@@ -3,7 +3,6 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        minTime:0,
     },
     onLoad: function() {
         
@@ -17,7 +16,11 @@ cc.Class({
     },
     update: function(dt){
         if(this.game.aux< this.game.cantVeces){
-            this.minTime++;
+            console.log(this.timer);
+        if ( Math.round(this.timer) == 5.0 ) {
+            console.log('I am done!');
+            this.timer += 1.0
+        }
             if(this.minTime == 100){
                 this.game.spawnTouchPoint();
                 this.game.aux++;

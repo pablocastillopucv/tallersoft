@@ -2,14 +2,12 @@
 cc._RF.push(module, 'bd961RDP8RCtaDBuf7wmPea', 'Circle');
 // Script/Circle.js
 
-"use strict";
+'use strict';
 
 cc.Class({
     extends: cc.Component,
 
-    properties: {
-        minTime: 0
-    },
+    properties: {},
     onLoad: function onLoad() {},
     onPicked: function onPicked() {
         this.game.spawnNewCircle();
@@ -19,7 +17,11 @@ cc.Class({
     },
     update: function update(dt) {
         if (this.game.aux < this.game.cantVeces) {
-            this.minTime++;
+            console.log(this.timer);
+            if (Math.round(this.timer) == 5.0) {
+                console.log('I am done!');
+                this.timer += 1.0;
+            }
             if (this.minTime == 100) {
                 this.game.spawnTouchPoint();
                 this.game.aux++;

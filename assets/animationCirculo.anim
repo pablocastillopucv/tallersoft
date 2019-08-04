@@ -3,7 +3,7 @@
   "_name": "animationCirculo",
   "_objFlags": 0,
   "_native": "",
-  "_duration": 0.26666666666666666,
+  "_duration": 0.7833333333333333,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -18,13 +18,13 @@
             }
           },
           {
-            "frame": 0.13333333333333333,
+            "frame": 0.4,
             "value": {
               "__uuid__": "244ec3b8-7e64-4491-a5f0-ba000e4649fe"
             }
           },
           {
-            "frame": 0.25,
+            "frame": 0.7666666666666667,
             "value": {
               "__uuid__": "90d9117a-49d0-4ea9-be90-04826c7977ed"
             }

@@ -79,9 +79,5 @@ cc.Class({
     },
     update: function(dt) {
         this.timer +=dt;
-        console.log(this.timer);
-        if ( this.timer == 5.020 ) {
-            console.log('I am done!');
-        }
     },
 });
