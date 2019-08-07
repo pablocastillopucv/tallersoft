@@ -32,7 +32,7 @@ cc.Class({
         },
         positionCircle:cc.v2(0,0),
         positionNotification:cc.v2(0,0),
-        positionTouchpoint:cc.v2(0,100),
+        positionTouchpoint:cc.v2(0,0),
         cantVeces:4,
         aux:1,
         horaNotificacion:0,
@@ -54,24 +54,24 @@ cc.Class({
         this.hora = this.horaInicial;
         this.minuto = this.minutoInicial;
 
+        this.scheduleOnce(function() {
+            
+            this.mostrarNotificacionTiempo();
+            this.spawnTouchPointNotificacion();
+            
+        },this.tiempoMax+1);
+
+        
+
         this.schedule(function() {
+
             this.mostrarHora();
             this.aumentarHora();
-            if (this.hora>=13 && this.minuto>=1){
+            if (this.hora==this.horaNotificacion && this.minuto==this.minutoNotificacion+1 && this.contador==0){
 
                 this.mostrarNotificacionComida();
                 this.spawnTouchPointNotificacion();
-    
-            }
-            if(this.contador<1){
-
-                this.schedule(function() {
-                
-                    this.mostrarNotificacionTiempo();
-                    this.spawnTouchPointNotificacion();
-                    this.contador++;
-                },this.tiempoMax);
-
+                this.contador++;
             }
             
         }, this.velocidadReloj);
@@ -121,11 +121,11 @@ cc.Class({
     mostrarNotificacionComida: function() {
 
           
-          var notificacionComida = cc.instantiate(this.notificacionComida);
-          
-          this.node.addChild(notificacionComida);
-          
-          notificacionComida.setPosition(this.positionNotification);
+        var notificacionComida = cc.instantiate(this.notificacionComida);
+        
+        this.node.addChild(notificacionComida);
+        
+        notificacionComida.setPosition(this.positionNotification);
     },
     mostrarNotificacionTiempo: function() {
 
@@ -177,6 +177,41 @@ cc.Class({
         // set up a random position for the circle
         newTouchPointNotificacion.setPosition(this.positionTouchpoint);
         newTouchPointNotificacion.getComponent('TouchPointNotificacion').game = this;
+        
+    },
+
+
+    eliminarNotificacionComida:function(){
+        
+        var notificacion = this.node.getChildByName('Notificacion');
+        if (notificacion){
+            notificacion.destroy();
+        }
+        
+    },
+    eliminarNotificacionTiempo:function(){
+
+        var notificacion = this.node.getChildByName('notificacionTiempo');
+        if (notificacion){
+            notificacion.destroy();
+        }
+    },
+    notificacionActiva:function(){
+
+        
+        var notificacionT = this.node.getChildByName('notificacionTiempo');
+        
+        var notificacionC = this.node.getChildByName('notificacionComida');
+        if (notificacionT) {
+
+            return 'tiempo';
+
+        }else if (notificacionC){
+
+            return 'comida';
+        }
+
+
     },
     gainScore: function () {
         this.score += 1;

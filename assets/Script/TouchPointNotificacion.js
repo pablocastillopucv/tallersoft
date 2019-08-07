@@ -12,7 +12,11 @@ cc.Class({
         
         this.node.on('touchstart', function (event) {
             cc.audioEngine.playEffect(this.touchSound, false);
+            
+            this.game.eliminarNotificacionTiempo();
+            this.game.eliminarNotificacionComida();
             this.node.destroy();
+
           }, this);
     },
 

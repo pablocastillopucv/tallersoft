@@ -460,12 +460,12 @@
     "positionTouchpoint": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": -100
+      "y": -88
     },
     "cantVeces": 4,
     "aux": 1,
-    "horaNotificacion": 0,
-    "minutoNotificacion": 0,
+    "horaNotificacion": 12,
+    "minutoNotificacion": 50,
     "horaInicial": 12,
     "minutoInicial": 30,
     "velocidadReloj": 1,
