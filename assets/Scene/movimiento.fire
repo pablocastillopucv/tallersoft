@@ -45,12 +45,11 @@
       "y": 1,
       "z": 1
     },
-    "_quat": {
-      "__type__": "cc.Quat",
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 0,
-      "w": 1
+      "z": 0
     },
     "_is3DNode": true,
     "groupIndex": 0,
@@ -70,16 +69,19 @@
       },
       {
         "__id__": 5
+      },
+      {
+        "__id__": 7
       }
     ],
     "_active": true,
     "_level": 1,
     "_components": [
       {
-        "__id__": 7
+        "__id__": 9
       },
       {
-        "__id__": 8
+        "__id__": 10
       }
     ],
     "_prefab": null,
@@ -113,12 +115,11 @@
       "y": 1,
       "z": 1
     },
-    "_quat": {
-      "__type__": "cc.Quat",
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 0,
-      "w": 1
+      "z": 0
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -172,12 +173,11 @@
       "y": 1,
       "z": 1
     },
-    "_quat": {
-      "__type__": "cc.Quat",
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 0,
-      "w": 1
+      "z": 0
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -256,8 +256,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 180,
+      "x": -284.444,
+      "y": 248.267,
       "z": 0
     },
     "_scale": {
@@ -266,12 +266,11 @@
       "y": 1,
       "z": 1
     },
-    "_quat": {
-      "__type__": "cc.Quat",
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 0,
-      "w": 1
+      "z": 0
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -289,7 +288,11 @@
       "__id__": 5
     },
     "_enabled": true,
-    "_materials": [],
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
     "_useOriginalSize": false,
     "_string": "Score: 0",
     "_N$string": "Score: 0",
@@ -306,6 +309,96 @@
     "_N$overflow": 0,
     "_N$cacheMode": 0,
     "_id": "6dwyas5RlN15ed2S/ctK/C"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Reloj",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 2
+    },
+    "_children": [],
+    "_active": true,
+    "_level": 2,
+    "_components": [
+      {
+        "__id__": 8
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 208.98,
+      "height": 50.4
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_position": {
+      "__type__": "cc.Vec3",
+      "x": 325.108,
+      "y": 243.658,
+      "z": 0
+    },
+    "_scale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "groupIndex": 0,
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_id": "c7mzoshzhC86q3snHGWLre"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 7
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_useOriginalSize": false,
+    "_string": "Hora Actual",
+    "_N$string": "Hora Actual",
+    "_fontSize": 40,
+    "_lineHeight": 40,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0,
+    "_N$cacheMode": 0,
+    "_id": "65rmxY9LpLioIhpJbJkkNk"
   },
   {
     "__type__": "cc.Canvas",
@@ -338,16 +431,44 @@
     "touchPointPrefab": {
       "__uuid__": "66f3879c-e84a-41b8-b2e2-ed84421e9c8f"
     },
+    "touchPointNotificacionPrefab": {
+      "__uuid__": "626c2766-f113-4cec-b13f-4c12f400c659"
+    },
     "scoreDisplay": {
       "__id__": 6
+    },
+    "horaDisplay": {
+      "__id__": 8
+    },
+    "notificacionComida": {
+      "__uuid__": "85ee7d06-37a8-4a81-8069-37372698098e"
+    },
+    "notificacionTiempo": {
+      "__uuid__": "ca5b5217-7cf6-4e4f-8f79-ff8a802aa59d"
     },
     "positionCircle": {
       "__type__": "cc.Vec2",
       "x": 0,
       "y": 0
     },
+    "positionNotification": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "positionTouchpoint": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": -100
+    },
     "cantVeces": 4,
     "aux": 1,
+    "horaNotificacion": 0,
+    "minutoNotificacion": 0,
+    "horaInicial": 12,
+    "minutoInicial": 30,
+    "velocidadReloj": 1,
+    "tiempoMax": 5,
     "cantVecesPresiona": 0,
     "arregloSecuencia": [],
     "_id": "a2/91M+F1LGL4zj53B3yyH"

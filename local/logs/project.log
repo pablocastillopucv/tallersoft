@@ -1,0 +1,111 @@
+2019-08-07T02:56:18.927Z - normal: Load ~/.CocosCreator/settings.json
+2019-08-07T02:56:20.544Z - normal: Initializing Asset Database
+2019-08-07T02:56:20.552Z - normal: checking language setting...
+2019-08-07T02:56:20.552Z - normal: Language: en
+2019-08-07T02:56:24.641Z - success: preview server running at http://localhost:7456
+2019-08-07T02:56:24.649Z - success: protocol editor-framework registered
+2019-08-07T02:56:24.653Z - success: protocol app registered
+2019-08-07T02:56:24.653Z - success: protocol theme registered
+2019-08-07T02:56:24.653Z - success: protocol packages registered
+2019-08-07T02:56:24.653Z - success: protocol uuid registerred
+2019-08-07T02:56:24.653Z - success: protocol db registerred
+2019-08-07T02:56:24.653Z - success: protocol thumbnail registerred
+2019-08-07T02:56:24.653Z - success: protocol unpack registerred
+2019-08-07T02:56:24.657Z - success: protocol disable-commonjs registerred
+2019-08-07T02:56:26.226Z - normal: connected!
+2019-08-07T02:56:26.230Z - normal: Check project D:\Proyecto\tallersoft
+2019-08-07T02:56:26.234Z - normal: Initializing project D:\Proyecto\tallersoft
+2019-08-07T02:56:28.150Z - normal: Initializing Cocos2d
+2019-08-07T02:56:37.639Z - normal: Initializing engine extends
+2019-08-07T02:56:38.078Z - success: asset-db-debugger loaded
+2019-08-07T02:56:38.106Z - success: baidu-adapter loaded
+2019-08-07T02:56:38.134Z - success: color-picker loaded
+2019-08-07T02:56:38.702Z - success: fb-audience-network loaded
+2019-08-07T02:56:38.938Z - success: fb-live-stream loaded
+2019-08-07T02:56:38.998Z - success: google-play-instant loaded
+2019-08-07T02:56:39.076Z - success: huawei-runtime loaded
+2019-08-07T02:56:40.996Z - success: cpk-publish loaded
+2019-08-07T02:56:41.004Z - success: jsb-adapter loaded
+2019-08-07T02:56:41.088Z - success: oppo-runtime loaded
+2019-08-07T02:56:41.112Z - success: package-manager loaded
+2019-08-07T02:56:41.772Z - success: qqplay-adapter loaded
+2019-08-07T02:56:41.796Z - success: runtime-dev-tools loaded
+2019-08-07T02:56:41.843Z - success: sdkbox loaded
+2019-08-07T02:56:41.875Z - success: tester loaded
+2019-08-07T02:56:41.899Z - success: ui-grid loaded
+2019-08-07T02:56:41.919Z - success: ui-kit-preview-extra loaded
+2019-08-07T02:56:41.941Z - success: ui-kit-preview loaded
+2019-08-07T02:56:41.961Z - success: ui-kit loaded
+2019-08-07T02:56:41.985Z - success: ui-tree loaded
+2019-08-07T02:56:42.063Z - success: vivo-runtime loaded
+2019-08-07T02:56:42.071Z - success: weapp-adapter loaded
+2019-08-07T02:56:42.083Z - success: xiaomi-adapter loaded
+2019-08-07T02:56:42.251Z - success: assets loaded
+2019-08-07T02:56:42.259Z - success: builder loaded
+2019-08-07T02:56:43.237Z - info: Cocos Services load base data!
+2019-08-07T02:56:43.237Z - success: cocos-services loaded
+2019-08-07T02:56:43.249Z - success: console loaded
+2019-08-07T02:56:43.349Z - success: fb-instant-games loaded
+2019-08-07T02:56:43.369Z - success: game-window loaded
+2019-08-07T02:56:43.373Z - success: google-instant-games loaded
+2019-08-07T02:56:43.389Z - success: hierarchy loaded
+2019-08-07T02:56:43.397Z - success: inspector loaded
+2019-08-07T02:56:43.401Z - success: keystore loaded
+2019-08-07T02:56:43.418Z - success: node-library loaded
+2019-08-07T02:56:43.422Z - success: package-asset loaded
+2019-08-07T02:56:43.426Z - success: preferences loaded
+2019-08-07T02:56:43.430Z - success: project-exporter loaded
+2019-08-07T02:56:43.434Z - success: project-importer loaded
+2019-08-07T02:56:43.442Z - success: project-settings loaded
+2019-08-07T02:56:43.450Z - success: scene loaded
+2019-08-07T02:56:43.454Z - success: simulator-debugger loaded
+2019-08-07T02:56:43.458Z - success: sprite-editor loaded
+2019-08-07T02:56:43.462Z - success: store loaded
+2019-08-07T02:56:43.478Z - success: timeline loaded
+2019-08-07T02:56:43.486Z - success: xiaomi-runtime loaded
+2019-08-07T02:57:25.857Z - normal: Loading packages
+2019-08-07T02:57:25.885Z - normal: Watching packages
+2019-08-07T02:57:27.275Z - normal: Run Application
+2019-08-07T05:35:51.848Z - warn: The Asset used by component "cc.Sprite" is missing. Detailed information:
+Node path: "Canvas/Notificacion"
+Missing uuid: "3ff58edf-d895-4e3d-887a-bbad9af45c4e"
+
+2019-08-07T05:35:51.852Z - warn: The Asset used by component "cc.Sprite" is missing. Detailed information:
+Node path: "Canvas/Notificacion"
+Missing uuid: "fa8107bc-b1b0-40c3-a373-0ec7bf8b2f2c"
+
+2019-08-07T05:39:38.000Z - info: Only the prefab node "Notificacion" and its child nodes are saved.
+2019-08-07T06:43:51.340Z - warn: The Label referenced by component "Game" is invalid. Detailed information:
+Node path: "Canvas"
+
+2019-08-07T06:44:14.116Z - warn: The Label referenced by component "Game" is invalid. Detailed information:
+Node path: "Canvas"
+
+2019-08-07T06:44:15.372Z - warn: The Label referenced by component "Game" is invalid. Detailed information:
+Node path: "Canvas"
+
+2019-08-07T06:44:15.958Z - warn: The Label referenced by component "Game" is invalid. Detailed information:
+Node path: "Canvas"
+
+2019-08-07T06:44:37.293Z - warn: The Label referenced by component "Game" is invalid. Detailed information:
+Node path: "Canvas"
+
+2019-08-07T06:47:01.843Z - warn: The Label referenced by component "Game" is invalid. Detailed information:
+Node path: "Canvas"
+
+2019-08-07T06:47:03.350Z - warn: The Label referenced by component "Game" is invalid. Detailed information:
+Node path: "Canvas"
+
+2019-08-07T06:47:23.630Z - warn: The Label referenced by component "Game" is invalid. Detailed information:
+Node path: "Canvas"
+
+2019-08-07T06:57:57.306Z - info: Only the prefab node "notificacionTiempo" and its child nodes are saved.
+2019-08-07T06:59:29.479Z - info: Only the prefab node "Notificacion" and its child nodes are saved.
+2019-08-07T07:32:35.257Z - success: oppo-runtime unloaded
+2019-08-07T07:32:35.278Z - success: oppo-runtime loaded
+2019-08-07T07:32:35.329Z - success: oppo-runtime unloaded
+2019-08-07T07:32:35.330Z - success: oppo-runtime loaded
+2019-08-07T07:41:37.265Z - info: Only the prefab node "notificacionTiempo" and its child nodes are saved.
+2019-08-07T07:41:42.846Z - info: Only the prefab node "notificacionTiempo" and its child nodes are saved.
+2019-08-07T08:09:10.050Z - info: ca5b5217-7cf6-4e4f-8f79-ff8a802aa59d (caW1IXfPZOT495/4qAKqWd), db://assets/Prefab/notificacionTiempo.prefab
+2019-08-07T08:13:22.036Z - info: Only the prefab node "touchPointNotificacion" and its child nodes are saved.

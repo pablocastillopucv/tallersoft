@@ -10,28 +10,135 @@ cc.Class({
             default: null,
             type: cc.Prefab
         },
+        touchPointNotificacionPrefab:{
+            default: null,
+            type:cc.Prefab
+        },
         scoreDisplay:{
             default:null,
             type:cc.Label
         },
+        horaDisplay:{
+            default:null,
+            type:cc.Label
+        },
+        notificacionComida:{
+            default:null,
+            type:cc.Prefab
+        },
+        notificacionTiempo:{
+            default:null,
+            type:cc.Prefab
+        },
         positionCircle:cc.v2(0,0),
+        positionNotification:cc.v2(0,0),
+        positionTouchpoint:cc.v2(0,100),
         cantVeces:4,
         aux:1,
+        horaNotificacion:0,
+        minutoNotificacion:0,
+        horaInicial:0,
+        minutoInicial:0,
+        velocidadReloj:1,
+        tiempoMax:30,
         cantVecesPresiona:0,
         arregloSecuencia:[],
 
     },
 
     onLoad: function () {
+        this.contador = 0;
         this.score = 0;
         this.timer = 0.0;
         this.spawnNewCircle();
-      
+        this.hora = this.horaInicial;
+        this.minuto = this.minutoInicial;
 
-       
+        this.schedule(function() {
+            this.mostrarHora();
+            this.aumentarHora();
+            if (this.hora>=13 && this.minuto>=1){
+
+                this.mostrarNotificacionComida();
+                this.spawnTouchPointNotificacion();
+    
+            }
+            if(this.contador<1){
+
+                this.schedule(function() {
+                
+                    this.mostrarNotificacionTiempo();
+                    this.spawnTouchPointNotificacion();
+                    this.contador++;
+                },this.tiempoMax);
+
+            }
+            
+        }, this.velocidadReloj);
+
+        
+      
     },
 
+    aumentarHora: function() {
+
+        this.minuto++;
+        if(this.minuto == 60){
+
+            this.minuto = 0;
+            this.hora++;
+
+        }
+        if(this.hora>23){
+
+            this.hora = 0;
+
+        }
+    },
+
+    mostrarHora: function() {
+
+        if(this.hora<10 && this.minuto<10){
+
+            this.horaDisplay.string = '0' + this.hora + ':0' + this.minuto;                
+
+        }else if(this.hora<10 && this.minuto>=10){
+
+            this.horaDisplay.string = '0' + this.hora + ':' + this.minuto;                
+
+        }else if(this.hora>=10 && this.minuto<10){
+
+            this.horaDisplay.string = this.hora + ':0' + this.minuto;                
+
+        }else if(this.hora>=10 && this.minuto>=10){
+
+            this.horaDisplay.string = this.hora + ':' + this.minuto;                
+
+        }
+
+    },
+
+    mostrarNotificacionComida: function() {
+
+          
+          var notificacionComida = cc.instantiate(this.notificacionComida);
+          
+          this.node.addChild(notificacionComida);
+          
+          notificacionComida.setPosition(this.positionNotification);
+    },
+    mostrarNotificacionTiempo: function() {
+
+        
+        var notificacionTiempo = cc.instantiate(this.notificacionTiempo);
+        
+        this.node.addChild(notificacionTiempo);
+        
+        notificacionTiempo.setPosition(this.positionNotification);
+  },
+
     spawnNewCircle: function() {
+
         // generate a new node in the scene with a preset template
         var newCircle = cc.instantiate(this.circlePrefab);
         // put the newly added node under the Canvas node
@@ -63,6 +170,14 @@ cc.Class({
         newTouchPoint.setPosition(this.positionCircle);
         newTouchPoint.getComponent('TouchPoint').game = this;
     },
+    spawnTouchPointNotificacion:function(){
+        var newTouchPointNotificacion = cc.instantiate(this.touchPointNotificacionPrefab);
+        // put the newly added node under the Canvas node
+        this.node.addChild(newTouchPointNotificacion);
+        // set up a random position for the circle
+        newTouchPointNotificacion.setPosition(this.positionTouchpoint);
+        newTouchPointNotificacion.getComponent('TouchPointNotificacion').game = this;
+    },
     gainScore: function () {
         this.score += 1;
         // update the words of the scoreDisplay Label
@@ -80,4 +195,5 @@ cc.Class({
     update: function(dt) {
         this.timer +=dt;
     },
+
 });
