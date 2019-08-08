@@ -250,7 +250,7 @@ cc.Class({
 
     },
     gameOver: function(){
-        cc.director.loadScene('movimiento');
+        this.spawnNewCircle();
     },
     update: function(dt) {
         

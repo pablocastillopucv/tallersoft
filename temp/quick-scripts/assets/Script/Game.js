@@ -230,7 +230,7 @@ cc.Class({
         this.arregloSecuencia.push(parametro1);
     },
     gameOver: function gameOver() {
-        cc.director.loadScene('movimiento');
+        this.spawnNewCircle();
     },
     update: function update(dt) {}
 

@@ -1,69 +1,65 @@
-2019-08-08T00:52:33.799Z - normal: Load ~/.CocosCreator/settings.json
-2019-08-08T00:52:34.967Z - normal: Initializing Asset Database
-2019-08-08T00:52:34.973Z - normal: checking language setting...
-2019-08-08T00:52:34.973Z - normal: Language: en
-2019-08-08T00:52:35.965Z - success: preview server running at http://localhost:7456
-2019-08-08T00:52:35.968Z - success: protocol editor-framework registered
-2019-08-08T00:52:35.968Z - success: protocol app registered
-2019-08-08T00:52:35.968Z - success: protocol theme registered
-2019-08-08T00:52:35.968Z - success: protocol packages registered
-2019-08-08T00:52:35.969Z - success: protocol uuid registerred
-2019-08-08T00:52:35.969Z - success: protocol db registerred
-2019-08-08T00:52:35.969Z - success: protocol thumbnail registerred
-2019-08-08T00:52:35.969Z - success: protocol unpack registerred
-2019-08-08T00:52:35.969Z - success: protocol disable-commonjs registerred
-2019-08-08T00:52:37.467Z - normal: connected!
-2019-08-08T00:52:37.468Z - normal: Check project C:\Users\Pablo\Documents\tallersoft
-2019-08-08T00:52:37.470Z - normal: Initializing project C:\Users\Pablo\Documents\tallersoft
-2019-08-08T00:52:37.932Z - normal: Initializing Cocos2d
-2019-08-08T00:52:38.869Z - normal: Initializing engine extends
-2019-08-08T00:52:38.892Z - success: asset-db-debugger loaded
-2019-08-08T00:52:38.898Z - success: baidu-adapter loaded
-2019-08-08T00:52:38.903Z - success: color-picker loaded
-2019-08-08T00:52:38.998Z - success: fb-audience-network loaded
-2019-08-08T00:52:39.079Z - success: fb-live-stream loaded
-2019-08-08T00:52:39.089Z - success: google-play-instant loaded
-2019-08-08T00:52:39.099Z - success: huawei-runtime loaded
-2019-08-08T00:52:39.105Z - success: jsb-adapter loaded
-2019-08-08T00:52:39.123Z - success: oppo-runtime loaded
-2019-08-08T00:52:39.131Z - success: package-manager loaded
-2019-08-08T00:52:39.262Z - success: qqplay-adapter loaded
-2019-08-08T00:52:39.264Z - success: runtime-dev-tools loaded
-2019-08-08T00:52:39.268Z - success: sdkbox loaded
-2019-08-08T00:52:39.271Z - success: tester loaded
-2019-08-08T00:52:39.273Z - success: ui-grid loaded
-2019-08-08T00:52:39.274Z - success: ui-kit-preview-extra loaded
-2019-08-08T00:52:39.276Z - success: ui-kit-preview loaded
-2019-08-08T00:52:39.278Z - success: ui-kit loaded
-2019-08-08T00:52:39.279Z - success: ui-tree loaded
-2019-08-08T00:52:39.285Z - success: vivo-runtime loaded
-2019-08-08T00:52:39.285Z - success: weapp-adapter loaded
-2019-08-08T00:52:39.330Z - success: assets loaded
-2019-08-08T00:52:39.332Z - success: builder loaded
-2019-08-08T00:52:39.772Z - success: cocos-services loaded
-2019-08-08T00:52:39.776Z - success: console loaded
-2019-08-08T00:52:39.837Z - success: fb-instant-games loaded
-2019-08-08T00:52:39.840Z - success: game-window loaded
-2019-08-08T00:52:39.841Z - success: google-instant-games loaded
-2019-08-08T00:52:39.845Z - success: hierarchy loaded
-2019-08-08T00:52:39.848Z - success: inspector loaded
-2019-08-08T00:52:39.849Z - success: keystore loaded
-2019-08-08T00:52:39.853Z - success: node-library loaded
-2019-08-08T00:52:39.854Z - success: package-asset loaded
-2019-08-08T00:52:39.855Z - success: preferences loaded
-2019-08-08T00:52:39.856Z - success: project-exporter loaded
-2019-08-08T00:52:39.858Z - success: project-importer loaded
-2019-08-08T00:52:39.860Z - success: project-settings loaded
-2019-08-08T00:52:39.864Z - success: scene loaded
-2019-08-08T00:52:39.866Z - success: simulator-debugger loaded
-2019-08-08T00:52:39.867Z - success: sprite-editor loaded
-2019-08-08T00:52:39.871Z - success: store loaded
-2019-08-08T00:52:39.874Z - success: timeline loaded
-2019-08-08T00:52:47.682Z - normal: Loading packages
-2019-08-08T00:52:47.688Z - normal: Watching packages
-2019-08-08T00:52:47.795Z - info: Cocos Services load base data!
-2019-08-08T00:52:48.044Z - normal: Run Application
-2019-08-08T01:01:43.314Z - info: Only the prefab node "notificacionTiempo" and its child nodes are saved.
-2019-08-08T01:07:16.853Z - info: Only the prefab node "Notificacion" and its child nodes are saved.
-2019-08-08T01:07:46.897Z - info: Only the prefab node "notificacionTiempo" and its child nodes are saved.
-2019-08-08T01:14:06.923Z - info: Only the prefab node "notificacionTiempo" and its child nodes are saved.
+2019-08-08T04:53:54.552Z - normal: Load ~/.CocosCreator/settings.json
+2019-08-08T04:53:55.773Z - normal: Initializing Asset Database
+2019-08-08T04:53:55.777Z - normal: checking language setting...
+2019-08-08T04:53:55.777Z - normal: Language: en
+2019-08-08T04:53:56.623Z - success: preview server running at http://localhost:7456
+2019-08-08T04:53:56.625Z - success: protocol editor-framework registered
+2019-08-08T04:53:56.625Z - success: protocol app registered
+2019-08-08T04:53:56.625Z - success: protocol theme registered
+2019-08-08T04:53:56.625Z - success: protocol packages registered
+2019-08-08T04:53:56.626Z - success: protocol uuid registerred
+2019-08-08T04:53:56.626Z - success: protocol db registerred
+2019-08-08T04:53:56.626Z - success: protocol thumbnail registerred
+2019-08-08T04:53:56.626Z - success: protocol unpack registerred
+2019-08-08T04:53:56.626Z - success: protocol disable-commonjs registerred
+2019-08-08T04:53:58.117Z - normal: connected!
+2019-08-08T04:53:58.119Z - normal: Check project F:\Taller\tallersoft
+2019-08-08T04:53:58.121Z - normal: Initializing project F:\Taller\tallersoft
+2019-08-08T04:53:58.660Z - normal: Initializing Cocos2d
+2019-08-08T04:53:59.667Z - normal: Initializing engine extends
+2019-08-08T04:53:59.690Z - success: asset-db-debugger loaded
+2019-08-08T04:53:59.694Z - success: baidu-adapter loaded
+2019-08-08T04:53:59.696Z - success: color-picker loaded
+2019-08-08T04:53:59.800Z - success: fb-audience-network loaded
+2019-08-08T04:53:59.877Z - success: fb-live-stream loaded
+2019-08-08T04:53:59.884Z - success: google-play-instant loaded
+2019-08-08T04:53:59.894Z - success: huawei-runtime loaded
+2019-08-08T04:53:59.897Z - success: jsb-adapter loaded
+2019-08-08T04:53:59.904Z - success: oppo-runtime loaded
+2019-08-08T04:53:59.913Z - success: package-manager loaded
+2019-08-08T04:54:00.066Z - success: qqplay-adapter loaded
+2019-08-08T04:54:00.069Z - success: runtime-dev-tools loaded
+2019-08-08T04:54:00.073Z - success: sdkbox loaded
+2019-08-08T04:54:00.076Z - success: tester loaded
+2019-08-08T04:54:00.079Z - success: ui-grid loaded
+2019-08-08T04:54:00.080Z - success: ui-kit-preview-extra loaded
+2019-08-08T04:54:00.083Z - success: ui-kit-preview loaded
+2019-08-08T04:54:00.085Z - success: ui-kit loaded
+2019-08-08T04:54:00.086Z - success: ui-tree loaded
+2019-08-08T04:54:00.092Z - success: vivo-runtime loaded
+2019-08-08T04:54:00.093Z - success: weapp-adapter loaded
+2019-08-08T04:54:00.142Z - success: assets loaded
+2019-08-08T04:54:00.145Z - success: builder loaded
+2019-08-08T04:54:00.437Z - success: cocos-services loaded
+2019-08-08T04:54:00.440Z - success: console loaded
+2019-08-08T04:54:00.475Z - success: fb-instant-games loaded
+2019-08-08T04:54:00.478Z - success: game-window loaded
+2019-08-08T04:54:00.479Z - success: google-instant-games loaded
+2019-08-08T04:54:00.483Z - success: hierarchy loaded
+2019-08-08T04:54:00.485Z - success: inspector loaded
+2019-08-08T04:54:00.486Z - success: keystore loaded
+2019-08-08T04:54:00.490Z - success: node-library loaded
+2019-08-08T04:54:00.491Z - success: package-asset loaded
+2019-08-08T04:54:00.492Z - success: preferences loaded
+2019-08-08T04:54:00.493Z - success: project-exporter loaded
+2019-08-08T04:54:00.495Z - success: project-importer loaded
+2019-08-08T04:54:00.497Z - success: project-settings loaded
+2019-08-08T04:54:00.502Z - success: scene loaded
+2019-08-08T04:54:00.503Z - success: simulator-debugger loaded
+2019-08-08T04:54:00.504Z - success: sprite-editor loaded
+2019-08-08T04:54:00.508Z - success: store loaded
+2019-08-08T04:54:00.511Z - success: timeline loaded
+2019-08-08T04:54:02.105Z - normal: Loading packages
+2019-08-08T04:54:02.110Z - normal: Watching packages
+2019-08-08T04:54:02.635Z - normal: Run Application
+2019-08-08T04:54:08.141Z - info: Cocos Services load base data!
