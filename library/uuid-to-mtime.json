@@ -495,8 +495,8 @@
     "relativePath": "Scene\\menu.fire"
   },
   "3ae8816e-4603-4733-b316-15d6c0d897b9": {
-    "asset": 1565251442607,
-    "meta": 1565251442633,
+    "asset": 1565254434334,
+    "meta": 1565254434355,
     "relativePath": "Scene\\movimiento.fire"
   },
   "4871af80-753c-463e-8dcf-5cd1d99c7166": {
@@ -560,13 +560,13 @@
     "relativePath": "Script\\Circle.js"
   },
   "4534da69-ca5d-454d-9bc2-4864bffa6ebf": {
-    "asset": 1565251439604,
-    "meta": 1565251441575,
+    "asset": 1565253859862,
+    "meta": 1565253874645,
     "relativePath": "Script\\CircleSecuencia.js"
   },
   "dd482034-ee60-49b4-99cc-1ae71b45ba5c": {
-    "asset": 1565251437667,
-    "meta": 1565251441577,
+    "asset": 1565254430851,
+    "meta": 1565254432923,
     "relativePath": "Script\\Game.js"
   }
 }

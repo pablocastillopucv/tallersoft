@@ -20,7 +20,6 @@ cc.Class({
             if (this.game.gainScore(posicion) == true){
                 this.node.destroy();
             }
-            
           }, this);
 
     },

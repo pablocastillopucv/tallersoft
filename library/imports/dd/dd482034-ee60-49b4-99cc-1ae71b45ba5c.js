@@ -210,20 +210,21 @@ cc.Class({
 
     gainScore: function gainScore(vector1) {
 
-        console.log(vector1);
-        console.log(this.arregloSecuenciaCorrecta[0]);
         if (vector1.equals(this.arregloSecuenciaCorrecta[0]) == true) {
+            this.toques += 1;
             this.arregloSecuenciaCorrecta.shift();
-            console.log(this.arregloSecuenciaCorrecta[0]);
             this.score += 1;
             this.scoreDisplay.string = 'Score: ' + this.score;
+            console.log(this.toques);
+            if (this.toques < this.cantVeces) {
+                return true;
+            }
+        }
+        if (this.toques == this.cantVeces) {
+            this.gameOver();
+            this.toques = 0;
             return true;
         }
-        if (this.arregloSecuenciaCorrecta.length == 0) {
-            this.gameOver();
-            return;
-        }
-        return false;
     },
 
     gameOver: function gameOver() {
