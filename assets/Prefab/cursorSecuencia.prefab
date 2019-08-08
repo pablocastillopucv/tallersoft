@@ -130,6 +130,9 @@
     "touchSound": {
       "__uuid__": "307f72ed-0328-41e3-ab4f-88b1e6626d76"
     },
+    "touchFail": {
+      "__uuid__": "b162632d-b5cc-4c3e-b9ac-18fa20c581df"
+    },
     "_id": ""
   },
   {

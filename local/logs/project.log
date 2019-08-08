@@ -99,3 +99,4 @@
     at Parser.pp$3.parseExprOps (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3404:19)
     at Parser.pp$3.parseMaybeConditional (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3381:19)
     at Parser.pp$3.parseMaybeAssign (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3344:19)
+2019-08-08T09:24:43.545Z - info: Only the prefab node "cursorSecuencia" and its child nodes are saved.

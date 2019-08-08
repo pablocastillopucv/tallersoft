@@ -495,8 +495,8 @@
     "relativePath": "Scene\\menu.fire"
   },
   "3ae8816e-4603-4733-b316-15d6c0d897b9": {
-    "asset": 1565254434334,
-    "meta": 1565254434355,
+    "asset": 1565256367405,
+    "meta": 1565256367423,
     "relativePath": "Scene\\movimiento.fire"
   },
   "4871af80-753c-463e-8dcf-5cd1d99c7166": {
@@ -535,8 +535,8 @@
     "relativePath": "Texture\\go.png"
   },
   "b7e265f9-5ebf-47e9-a52b-2094cbf48420": {
-    "asset": 1565244011947,
-    "meta": 1565244045546,
+    "asset": 1565256283552,
+    "meta": 1565256283583,
     "relativePath": "Prefab\\cursorSecuencia.prefab"
   },
   "39a96da2-8013-495c-9252-7464f32a615e": {
@@ -559,14 +559,19 @@
     "meta": 1565247722338,
     "relativePath": "Script\\Circle.js"
   },
-  "4534da69-ca5d-454d-9bc2-4864bffa6ebf": {
-    "asset": 1565253859862,
-    "meta": 1565253874645,
-    "relativePath": "Script\\CircleSecuencia.js"
-  },
   "dd482034-ee60-49b4-99cc-1ae71b45ba5c": {
     "asset": 1565254430851,
     "meta": 1565254432923,
     "relativePath": "Script\\Game.js"
+  },
+  "b162632d-b5cc-4c3e-b9ac-18fa20c581df": {
+    "asset": 1565256269005,
+    "meta": 1565256269031,
+    "relativePath": "Sound\\sectionfail.wav"
+  },
+  "4534da69-ca5d-454d-9bc2-4864bffa6ebf": {
+    "asset": 1565256364017,
+    "meta": 1565256367148,
+    "relativePath": "Script\\CircleSecuencia.js"
   }
 }
