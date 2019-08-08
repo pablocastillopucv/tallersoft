@@ -17,6 +17,7 @@ cc.Class({
         this.node.on('touchstart', function (event) {
             cc.audioEngine.playEffect(this.touchSound, false);
             this.node.destroy();
+            this.game.toques++;
             this.game.gainScore();
           }, this);
 

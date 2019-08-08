@@ -29,6 +29,8 @@ cc.Class({
         } else {
             if (Math.round(this.timer) == 2.0) {
                 this.node.destroy();
+
+                this.game.aux = 0;
                 this.game.spawnCircles();
             }
         }

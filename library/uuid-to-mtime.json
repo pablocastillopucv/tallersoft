@@ -495,8 +495,8 @@
     "relativePath": "Scene\\menu.fire"
   },
   "3ae8816e-4603-4733-b316-15d6c0d897b9": {
-    "asset": 1565240720396,
-    "meta": 1565240720439,
+    "asset": 1565242285238,
+    "meta": 1565242285280,
     "relativePath": "Scene\\movimiento.fire"
   },
   "4871af80-753c-463e-8dcf-5cd1d99c7166": {
@@ -539,29 +539,29 @@
     "meta": 1565240734812,
     "relativePath": "Prefab\\cursorSecuencia.prefab"
   },
-  "dd482034-ee60-49b4-99cc-1ae71b45ba5c": {
-    "asset": 1565240392252,
-    "meta": 1565240392881,
-    "relativePath": "Script\\Game.js"
-  },
   "39a96da2-8013-495c-9252-7464f32a615e": {
-    "asset": 1565240390425,
-    "meta": 1565240392898,
+    "asset": 1565240792092,
+    "meta": 1565240920083,
     "relativePath": "Script\\TouchPoint.js"
   },
   "c84731f6-ed5e-4613-8839-b765603d41f6": {
-    "asset": 1565240389710,
-    "meta": 1565240392906,
+    "asset": 1565240794109,
+    "meta": 1565240920085,
     "relativePath": "Script\\TouchPointNotificacion.js"
   },
+  "4534da69-ca5d-454d-9bc2-4864bffa6ebf": {
+    "asset": 1565241858774,
+    "meta": 1565241859664,
+    "relativePath": "Script\\CircleSecuencia.js"
+  },
   "bd961443-3fc4-42b5-a0c1-b9fef098f79a": {
-    "asset": 1565240541499,
-    "meta": 1565240544717,
+    "asset": 1565242204965,
+    "meta": 1565242252241,
     "relativePath": "Script\\Circle.js"
   },
-  "4534da69-ca5d-454d-9bc2-4864bffa6ebf": {
-    "asset": 1565240736553,
-    "meta": 1565240737206,
-    "relativePath": "Script\\CircleSecuencia.js"
+  "dd482034-ee60-49b4-99cc-1ae71b45ba5c": {
+    "asset": 1565242282842,
+    "meta": 1565242284146,
+    "relativePath": "Script\\Game.js"
   }
 }

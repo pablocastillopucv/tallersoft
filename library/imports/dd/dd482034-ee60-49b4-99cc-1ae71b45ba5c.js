@@ -58,7 +58,7 @@ cc.Class({
 
     onLoad: function onLoad() {
         this.contador = 0;
-        this.contadorSecuencia = 0;
+        this.toques = 0;
         this.score = 0;
 
         this.spawnNewCircle();
@@ -147,7 +147,7 @@ cc.Class({
     },
     spawnCircles: function spawnCircles() {
 
-        for (var i = 0; i < this.arregloSecuencia.length; i++) {
+        for (var i = 0; i < this.cantVeces; i++) {
 
             // generate a new node in the scene with a preset template
             var newCircle = cc.instantiate(this.cursorPrefab);
@@ -158,19 +158,7 @@ cc.Class({
             newCircle.setPosition(this.positionCircle);
             newCircle.getComponent('CircleSecuencia').game = this;
         }
-    },
-
-    spawnTouchPoints: function spawnTouchPoints() {
-
-        for (var i = 0; i < this.arregloSecuencia.length; i++) {
-
-            var newTouchPoint = cc.instantiate(this.touchPointPrefab);
-            // put the newly added node under the Canvas node
-            this.node.addChild(newTouchPoint);
-            // set up a random position for the circle
-            newTouchPoint.setPosition(this.arregloSecuencia[i]);
-            newTouchPoint.getComponent('TouchPoint').game = this;
-        }
+        this.arregloSecuencia = [];
     },
 
     getNewCirclePosition: function getNewCirclePosition() {
@@ -221,8 +209,9 @@ cc.Class({
         this.score += 1;
         // update the words of the scoreDisplay Label
         this.scoreDisplay.string = 'Score: ' + this.score;
-        if (this.score == 4) {
+        if (this.toques == this.cantVeces) {
             this.gameOver();
+            this.toques = 0;
         }
     },
     secuenciaCorrecta: function secuenciaCorrecta(parametro1) {
@@ -231,6 +220,7 @@ cc.Class({
     },
     gameOver: function gameOver() {
         this.spawnNewCircle();
+        this.aux++;
     },
     update: function update(dt) {}
 
