@@ -6,6 +6,7 @@ cc.Class({
     },
     onLoad: function() {
         this.timer = 0.0;
+        
     },
     onPicked: function() {
         this.game.spawnNewCircle();

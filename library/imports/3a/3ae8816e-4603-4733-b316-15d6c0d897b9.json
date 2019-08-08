@@ -464,6 +464,7 @@
     },
     "cantVeces": 4,
     "aux": 1,
+    "contador": 0,
     "horaNotificacion": 12,
     "minutoNotificacion": 50,
     "horaInicial": 0,
@@ -472,6 +473,8 @@
     "tiempoMax": 60,
     "cantVecesPresiona": 0,
     "arregloSecuencia": [],
+    "arregloSecuenciaCorrecta": [],
+    "arregloSecuenciaUsuario": [],
     "_id": "a2/91M+F1LGL4zj53B3yyH"
   }
 ]

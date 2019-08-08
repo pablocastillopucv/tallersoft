@@ -9,21 +9,24 @@ cc.Class({
         },
 
     },
+   
 
     // LIFE-CYCLE CALLBACKS:
 
-    onLoad () {
-
+    onLoad: function() {
         this.node.on('touchstart', function (event) {
             cc.audioEngine.playEffect(this.touchSound, false);
-            this.node.destroy();
-            this.game.toques++;
-            this.game.gainScore();
+            var posicion = cc.v2(this.node.getPosition());
+            if (this.game.gainScore(posicion) == true){
+                this.node.destroy();
+            }
+            
           }, this);
 
     },
 
-    //start () {},
 
-    // update (dt) {},
+    update:function (dt) {
+        
+    },
 });

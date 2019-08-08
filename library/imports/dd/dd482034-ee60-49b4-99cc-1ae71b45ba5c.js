@@ -45,6 +45,7 @@ cc.Class({
         positionTouchpoint: cc.v2(0, 0),
         cantVeces: 4,
         aux: 0,
+        contador: 0,
         horaNotificacion: 0,
         minutoNotificacion: 0,
         horaInicial: 0,
@@ -52,7 +53,9 @@ cc.Class({
         velocidadReloj: 1,
         tiempoMax: 30,
         cantVecesPresiona: 0,
-        arregloSecuencia: []
+        arregloSecuencia: [],
+        arregloSecuenciaCorrecta: [],
+        arregloSecuenciaUsuario: []
 
     },
 
@@ -60,7 +63,7 @@ cc.Class({
         this.contador = 0;
         this.toques = 0;
         this.score = 0;
-
+        this.numId = 0;
         this.spawnNewCircle();
 
         this.hora = this.horaInicial;
@@ -141,6 +144,7 @@ cc.Class({
         this.node.addChild(newCircle);
         // set up a random position for the circle
         this.positionCircle = this.getNewCirclePosition();
+        this.arregloSecuenciaCorrecta.push(this.positionCircle);
         newCircle.setPosition(this.positionCircle);
         newCircle.getComponent('Circle').game = this;
         this.arregloSecuencia.push(this.positionCircle);
@@ -148,7 +152,6 @@ cc.Class({
     spawnCircles: function spawnCircles() {
 
         for (var i = 0; i < this.cantVeces; i++) {
-
             // generate a new node in the scene with a preset template
             var newCircle = cc.instantiate(this.cursorPrefab);
             // put the newly added node under the Canvas node
@@ -205,19 +208,24 @@ cc.Class({
         }
     },
 
-    gainScore: function gainScore() {
-        this.score += 1;
-        // update the words of the scoreDisplay Label
-        this.scoreDisplay.string = 'Score: ' + this.score;
-        if (this.toques == this.cantVeces) {
-            this.gameOver();
-            this.toques = 0;
-        }
-    },
-    secuenciaCorrecta: function secuenciaCorrecta(parametro1) {
+    gainScore: function gainScore(vector1) {
 
-        this.arregloSecuencia.push(parametro1);
+        console.log(vector1);
+        console.log(this.arregloSecuenciaCorrecta[0]);
+        if (vector1.equals(this.arregloSecuenciaCorrecta[0]) == true) {
+            this.arregloSecuenciaCorrecta.shift();
+            console.log(this.arregloSecuenciaCorrecta[0]);
+            this.score += 1;
+            this.scoreDisplay.string = 'Score: ' + this.score;
+            return true;
+        }
+        if (this.arregloSecuenciaCorrecta.length == 0) {
+            this.gameOver();
+            return;
+        }
+        return false;
     },
+
     gameOver: function gameOver() {
         this.spawnNewCircle();
         this.aux++;
