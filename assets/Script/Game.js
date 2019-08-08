@@ -49,7 +49,7 @@ cc.Class({
     onLoad: function () {
         this.contador = 0;
         this.score = 0;
-        this.timer = 0.0;
+        
         this.spawnNewCircle();
         this.hora = this.horaInicial;
         this.minuto = this.minutoInicial;
@@ -228,7 +228,7 @@ cc.Class({
         cc.director.loadScene('movimiento');
     },
     update: function(dt) {
-        this.timer +=dt;
+        
     },
 
 });

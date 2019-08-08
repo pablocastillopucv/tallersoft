@@ -55,7 +55,7 @@ cc.Class({
     onLoad: function onLoad() {
         this.contador = 0;
         this.score = 0;
-        this.timer = 0.0;
+
         this.spawnNewCircle();
         this.hora = this.horaInicial;
         this.minuto = this.minutoInicial;
@@ -209,9 +209,7 @@ cc.Class({
     gameOver: function gameOver() {
         cc.director.loadScene('movimiento');
     },
-    update: function update(dt) {
-        this.timer += dt;
-    }
+    update: function update(dt) {}
 
 });
 

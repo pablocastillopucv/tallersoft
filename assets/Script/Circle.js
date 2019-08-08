@@ -5,28 +5,26 @@ cc.Class({
     properties: {
     },
     onLoad: function() {
-        
+        this.timer = 0.0;
     },
     onPicked: function() {
         this.game.spawnNewCircle();
         // then destroy the current star's node
         this.node.destroy();
-        this.game.spawnTouchPoint();
+        
       
     },
     update: function(dt){
+        
+        this.timer +=dt;
+        console.log(this.timer);
         if(this.game.aux< this.game.cantVeces){
-            console.log(this.timer);
-        if ( Math.round(this.timer) == 5.0 ) {
-            console.log('I am done!');
-            this.timer += 1.0
-        }
-            if(this.minTime == 100){
-                this.game.spawnTouchPoint();
+
+            if ( Math.round(this.timer) == 2.0 ) {
                 this.game.aux++;
                 this.onPicked();
                 return;
-             }
+            }
         }
         else{
             this.node.destroy();

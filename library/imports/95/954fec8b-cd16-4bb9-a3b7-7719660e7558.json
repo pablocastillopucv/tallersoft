@@ -35,57 +35,13 @@
       "path": ""
     },
     {
-      "name": "capsule",
-      "scale": [
-        100,
-        100,
-        100
-      ],
-      "mesh": 0,
-      "parent": null,
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "quat": [
-        8.14603353660459e-8,
-        0,
-        0,
-        1
-      ],
-      "path": "capsule"
-    },
-    {
-      "name": "plane",
-      "scale": [
-        100,
-        100,
-        100
-      ],
-      "mesh": 1,
-      "parent": null,
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "quat": [
-        8.14603353660459e-8,
-        0,
-        0,
-        1
-      ],
-      "path": "plane"
-    },
-    {
       "name": "cone",
       "scale": [
         100,
         100,
         100
       ],
-      "mesh": 2,
+      "mesh": 0,
       "parent": null,
       "position": [
         0,
@@ -107,7 +63,7 @@
         100,
         100
       ],
-      "mesh": 3,
+      "mesh": 1,
       "parent": null,
       "position": [
         0,
@@ -129,7 +85,7 @@
         100,
         100
       ],
-      "mesh": 4,
+      "mesh": 2,
       "parent": null,
       "position": [
         0,
@@ -151,7 +107,7 @@
         100,
         100
       ],
-      "mesh": 5,
+      "mesh": 3,
       "parent": null,
       "position": [
         0,
@@ -167,7 +123,51 @@
       "path": "quad"
     },
     {
+      "name": "plane",
+      "scale": [
+        100,
+        100,
+        100
+      ],
+      "mesh": 4,
+      "parent": null,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "quat": [
+        8.14603353660459e-8,
+        0,
+        0,
+        1
+      ],
+      "path": "plane"
+    },
+    {
       "name": "cylinder",
+      "scale": [
+        100,
+        100,
+        100
+      ],
+      "mesh": 5,
+      "parent": null,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "quat": [
+        8.14603353660459e-8,
+        0,
+        0,
+        1
+      ],
+      "path": "cylinder"
+    },
+    {
+      "name": "capsule",
       "scale": [
         100,
         100,
@@ -186,7 +186,7 @@
         0,
         1
       ],
-      "path": "cylinder"
+      "path": "capsule"
     },
     {
       "name": "box",
