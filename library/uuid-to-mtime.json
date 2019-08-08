@@ -459,11 +459,6 @@
     "meta": 1565223491166,
     "relativePath": "Script\\Notificacion.js"
   },
-  "c84731f6-ed5e-4613-8839-b765603d41f6": {
-    "asset": 1565221195962,
-    "meta": 1565223491201,
-    "relativePath": "Script\\TouchPointNotificacion.js"
-  },
   "e212f115-7333-4cdc-8956-4003d98ec40d": {
     "asset": 1565228529043,
     "meta": 1565228529055,
@@ -500,8 +495,8 @@
     "relativePath": "Scene\\menu.fire"
   },
   "3ae8816e-4603-4733-b316-15d6c0d897b9": {
-    "asset": 1565235860965,
-    "meta": 1565235861010,
+    "asset": 1565240720396,
+    "meta": 1565240720439,
     "relativePath": "Scene\\movimiento.fire"
   },
   "4871af80-753c-463e-8dcf-5cd1d99c7166": {
@@ -540,28 +535,33 @@
     "relativePath": "Texture\\go.png"
   },
   "b7e265f9-5ebf-47e9-a52b-2094cbf48420": {
-    "asset": 1565235858730,
-    "meta": 1565235858743,
+    "asset": 1565240734797,
+    "meta": 1565240734812,
     "relativePath": "Prefab\\cursorSecuencia.prefab"
   },
-  "4534da69-ca5d-454d-9bc2-4864bffa6ebf": {
-    "asset": 1565234661427,
-    "meta": 1565234673389,
-    "relativePath": "Script\\CircleSecuencia.js"
+  "dd482034-ee60-49b4-99cc-1ae71b45ba5c": {
+    "asset": 1565240392252,
+    "meta": 1565240392881,
+    "relativePath": "Script\\Game.js"
   },
   "39a96da2-8013-495c-9252-7464f32a615e": {
-    "asset": 1565234662464,
-    "meta": 1565234673434,
+    "asset": 1565240390425,
+    "meta": 1565240392898,
     "relativePath": "Script\\TouchPoint.js"
   },
+  "c84731f6-ed5e-4613-8839-b765603d41f6": {
+    "asset": 1565240389710,
+    "meta": 1565240392906,
+    "relativePath": "Script\\TouchPointNotificacion.js"
+  },
   "bd961443-3fc4-42b5-a0c1-b9fef098f79a": {
-    "asset": 1565235774955,
-    "meta": 1565235784518,
+    "asset": 1565240541499,
+    "meta": 1565240544717,
     "relativePath": "Script\\Circle.js"
   },
-  "dd482034-ee60-49b4-99cc-1ae71b45ba5c": {
-    "asset": 1565236190726,
-    "meta": 1565236191356,
-    "relativePath": "Script\\Game.js"
+  "4534da69-ca5d-454d-9bc2-4864bffa6ebf": {
+    "asset": 1565240736553,
+    "meta": 1565240737206,
+    "relativePath": "Script\\CircleSecuencia.js"
   }
 }

@@ -127,6 +127,9 @@
       "__id__": 1
     },
     "_enabled": true,
+    "touchSound": {
+      "__uuid__": "307f72ed-0328-41e3-ab4f-88b1e6626d76"
+    },
     "_id": ""
   },
   {

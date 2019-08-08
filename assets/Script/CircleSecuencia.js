@@ -3,6 +3,10 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+        touchSound:{
+            default:null,
+            type:cc.AudioClip
+        },
 
     },
 
@@ -10,7 +14,11 @@ cc.Class({
 
     onLoad () {
 
-        
+        this.node.on('touchstart', function (event) {
+            cc.audioEngine.playEffect(this.touchSound, false);
+            this.node.destroy();
+            this.game.gainScore();
+          }, this);
 
     },
 

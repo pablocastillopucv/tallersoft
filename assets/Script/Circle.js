@@ -29,7 +29,6 @@ cc.Class({
             if ( Math.round(this.timer) == 2.0 ) {
                 this.node.destroy();
                 this.game.spawnCircles();
-                this.game.spawnTouchPoints();
 
             }
             
