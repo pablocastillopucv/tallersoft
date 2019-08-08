@@ -12,6 +12,10 @@ cc.Class({
             default: null,
             type: cc.Prefab
         },
+        cursorPrefab: {
+            default: null,
+            type: cc.Prefab
+        },
         touchPointPrefab: {
             default: null,
             type: cc.Prefab
@@ -40,7 +44,7 @@ cc.Class({
         positionNotification: cc.v2(0, 0),
         positionTouchpoint: cc.v2(0, 0),
         cantVeces: 4,
-        aux: 1,
+        aux: 0,
         horaNotificacion: 0,
         minutoNotificacion: 0,
         horaInicial: 0,
@@ -54,9 +58,11 @@ cc.Class({
 
     onLoad: function onLoad() {
         this.contador = 0;
+        this.contadorSecuencia = 0;
         this.score = 0;
 
         this.spawnNewCircle();
+
         this.hora = this.horaInicial;
         this.minuto = this.minutoInicial;
 
@@ -137,6 +143,34 @@ cc.Class({
         this.positionCircle = this.getNewCirclePosition();
         newCircle.setPosition(this.positionCircle);
         newCircle.getComponent('Circle').game = this;
+        this.arregloSecuencia.push(this.positionCircle);
+    },
+    spawnCircles: function spawnCircles() {
+
+        for (var i = 0; i < this.arregloSecuencia.length; i++) {
+
+            // generate a new node in the scene with a preset template
+            var newCircle = cc.instantiate(this.cursorPrefab);
+            // put the newly added node under the Canvas node
+            this.node.addChild(newCircle);
+            // set up a random position for the circle
+            this.positionCircle = this.arregloSecuencia[i];
+            newCircle.setPosition(this.positionCircle);
+            newCircle.getComponent('CircleSecuencia').game = this;
+        }
+    },
+
+    spawnTouchPoints: function spawnTouchPoints() {
+
+        for (var i = 0; i < this.arregloSecuencia.length; i++) {
+
+            var newTouchPoint = cc.instantiate(this.touchPointPrefab);
+            // put the newly added node under the Canvas node
+            this.node.addChild(newTouchPoint);
+            // set up a random position for the circle
+            newTouchPoint.setPosition(this.arregloSecuencia[i]);
+            newTouchPoint.getComponent('TouchPoint').game = this;
+        }
     },
 
     getNewCirclePosition: function getNewCirclePosition() {
@@ -182,19 +216,7 @@ cc.Class({
             notificacion.destroy();
         }
     },
-    notificacionActiva: function notificacionActiva() {
 
-        var notificacionT = this.node.getChildByName('notificacionTiempo');
-
-        var notificacionC = this.node.getChildByName('notificacionComida');
-        if (notificacionT) {
-
-            return 'tiempo';
-        } else if (notificacionC) {
-
-            return 'comida';
-        }
-    },
     gainScore: function gainScore() {
         this.score += 1;
         // update the words of the scoreDisplay Label
@@ -204,6 +226,7 @@ cc.Class({
         }
     },
     secuenciaCorrecta: function secuenciaCorrecta(parametro1) {
+
         this.arregloSecuencia.push(parametro1);
     },
     gameOver: function gameOver() {

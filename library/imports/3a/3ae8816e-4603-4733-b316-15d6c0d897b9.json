@@ -426,6 +426,9 @@
     "circlePrefab": {
       "__uuid__": "e212f115-7333-4cdc-8956-4003d98ec40d"
     },
+    "cursorPrefab": {
+      "__uuid__": "b7e265f9-5ebf-47e9-a52b-2094cbf48420"
+    },
     "touchPointPrefab": {
       "__uuid__": "66f3879c-e84a-41b8-b2e2-ed84421e9c8f"
     },
@@ -463,10 +466,10 @@
     "aux": 1,
     "horaNotificacion": 12,
     "minutoNotificacion": 50,
-    "horaInicial": 12,
-    "minutoInicial": 30,
+    "horaInicial": 0,
+    "minutoInicial": 0,
     "velocidadReloj": 1,
-    "tiempoMax": 5,
+    "tiempoMax": 60,
     "cantVecesPresiona": 0,
     "arregloSecuencia": [],
     "_id": "a2/91M+F1LGL4zj53B3yyH"

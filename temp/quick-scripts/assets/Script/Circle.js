@@ -19,7 +19,6 @@ cc.Class({
     update: function update(dt) {
 
         this.timer += dt;
-        console.log(this.timer);
         if (this.game.aux < this.game.cantVeces) {
 
             if (Math.round(this.timer) == 2.0) {
@@ -28,7 +27,11 @@ cc.Class({
                 return;
             }
         } else {
-            this.node.destroy();
+            if (Math.round(this.timer) == 2.0) {
+                this.node.destroy();
+                this.game.spawnCircles();
+                this.game.spawnTouchPoints();
+            }
         }
     }
 
