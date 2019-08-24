@@ -78,12 +78,11 @@
       "y": 1,
       "z": 1
     },
-    "_quat": {
-      "__type__": "cc.Quat",
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 0,
-      "w": 1
+      "z": 0
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -93,7 +92,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "cone",
+    "_name": "capsule",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -139,12 +138,11 @@
       "y": 100,
       "z": 100
     },
-    "_quat": {
-      "__type__": "cc.Quat",
-      "x": -0.707106828689575,
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0.000009334666828389458,
       "y": 0,
-      "z": 0,
-      "w": 0.707106709480286
+      "z": 0
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -166,7 +164,7 @@
       }
     ],
     "_mesh": {
-      "__uuid__": "7a17de6e-227a-46b1-8009-e7157d4d3acf"
+      "__uuid__": "83f5eff8-3385-4f95-9b76-8da0aa1d96cd"
     },
     "_receiveShadows": false,
     "_shadowCastingMode": 0,
@@ -181,12 +179,12 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "cone",
+    "fileId": "capsule",
     "sync": false
   },
   {
     "__type__": "cc.Node",
-    "_name": "torus",
+    "_name": "plane",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -232,12 +230,11 @@
       "y": 100,
       "z": 100
     },
-    "_quat": {
-      "__type__": "cc.Quat",
-      "x": 8.14603353660459e-8,
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0.000009334666828389458,
       "y": 0,
-      "z": 0,
-      "w": 1
+      "z": 0
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -259,7 +256,7 @@
       }
     ],
     "_mesh": {
-      "__uuid__": "14c74869-bdb4-4f57-86d8-a7875de2be30"
+      "__uuid__": "a1ef2fc9-9c57-418a-8f69-6bed9a7a0e7f"
     },
     "_receiveShadows": false,
     "_shadowCastingMode": 0,
@@ -274,12 +271,12 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "torus",
+    "fileId": "plane",
     "sync": false
   },
   {
     "__type__": "cc.Node",
-    "_name": "sphere",
+    "_name": "cone",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -325,12 +322,11 @@
       "y": 100,
       "z": 100
     },
-    "_quat": {
-      "__type__": "cc.Quat",
-      "x": 8.14603353660459e-8,
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": -90.00000769819565,
       "y": 0,
-      "z": 0,
-      "w": 1
+      "z": 0
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -352,7 +348,7 @@
       }
     ],
     "_mesh": {
-      "__uuid__": "3bbdb0f6-c5f6-45de-9f33-8b5cbafb4d6d"
+      "__uuid__": "7a17de6e-227a-46b1-8009-e7157d4d3acf"
     },
     "_receiveShadows": false,
     "_shadowCastingMode": 0,
@@ -367,12 +363,12 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "sphere",
+    "fileId": "cone",
     "sync": false
   },
   {
     "__type__": "cc.Node",
-    "_name": "quad",
+    "_name": "torus",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -418,12 +414,11 @@
       "y": 100,
       "z": 100
     },
-    "_quat": {
-      "__type__": "cc.Quat",
-      "x": 8.14603353660459e-8,
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0.000009334666828389458,
       "y": 0,
-      "z": 0,
-      "w": 1
+      "z": 0
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -445,7 +440,7 @@
       }
     ],
     "_mesh": {
-      "__uuid__": "e93d3fa9-8c21-4375-8a21-14ba84066c77"
+      "__uuid__": "14c74869-bdb4-4f57-86d8-a7875de2be30"
     },
     "_receiveShadows": false,
     "_shadowCastingMode": 0,
@@ -460,12 +455,12 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "quad",
+    "fileId": "torus",
     "sync": false
   },
   {
     "__type__": "cc.Node",
-    "_name": "plane",
+    "_name": "sphere",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -511,12 +506,11 @@
       "y": 100,
       "z": 100
     },
-    "_quat": {
-      "__type__": "cc.Quat",
-      "x": 8.14603353660459e-8,
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0.000009334666828389458,
       "y": 0,
-      "z": 0,
-      "w": 1
+      "z": 0
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -538,7 +532,7 @@
       }
     ],
     "_mesh": {
-      "__uuid__": "a1ef2fc9-9c57-418a-8f69-6bed9a7a0e7f"
+      "__uuid__": "3bbdb0f6-c5f6-45de-9f33-8b5cbafb4d6d"
     },
     "_receiveShadows": false,
     "_shadowCastingMode": 0,
@@ -553,12 +547,12 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "plane",
+    "fileId": "sphere",
     "sync": false
   },
   {
     "__type__": "cc.Node",
-    "_name": "cylinder",
+    "_name": "quad",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -604,12 +598,11 @@
       "y": 100,
       "z": 100
     },
-    "_quat": {
-      "__type__": "cc.Quat",
-      "x": 8.14603353660459e-8,
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0.000009334666828389458,
       "y": 0,
-      "z": 0,
-      "w": 1
+      "z": 0
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -631,7 +624,7 @@
       }
     ],
     "_mesh": {
-      "__uuid__": "b430cea3-6ab3-4106-b073-26c698918edd"
+      "__uuid__": "e93d3fa9-8c21-4375-8a21-14ba84066c77"
     },
     "_receiveShadows": false,
     "_shadowCastingMode": 0,
@@ -646,12 +639,12 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "cylinder",
+    "fileId": "quad",
     "sync": false
   },
   {
     "__type__": "cc.Node",
-    "_name": "capsule",
+    "_name": "cylinder",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -697,12 +690,11 @@
       "y": 100,
       "z": 100
     },
-    "_quat": {
-      "__type__": "cc.Quat",
-      "x": 8.14603353660459e-8,
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0.000009334666828389458,
       "y": 0,
-      "z": 0,
-      "w": 1
+      "z": 0
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -724,7 +716,7 @@
       }
     ],
     "_mesh": {
-      "__uuid__": "83f5eff8-3385-4f95-9b76-8da0aa1d96cd"
+      "__uuid__": "b430cea3-6ab3-4106-b073-26c698918edd"
     },
     "_receiveShadows": false,
     "_shadowCastingMode": 0,
@@ -739,7 +731,7 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "capsule",
+    "fileId": "cylinder",
     "sync": false
   },
   {
@@ -790,12 +782,11 @@
       "y": 100,
       "z": 100
     },
-    "_quat": {
-      "__type__": "cc.Quat",
-      "x": 8.14603353660459e-8,
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0.000009334666828389458,
       "y": 0,
-      "z": 0,
-      "w": 1
+      "z": 0
     },
     "_skewX": 0,
     "_skewY": 0,
