@@ -545,6 +545,9 @@
     "notificacionTiempo": {
       "__uuid__": "ca5b5217-7cf6-4e4f-8f79-ff8a802aa59d"
     },
+    "levelSound": {
+      "__uuid__": "14fe617a-08c2-46aa-82b0-07f5cf5f6523"
+    },
     "positionCircle": {
       "__type__": "cc.Vec2",
       "x": 0,

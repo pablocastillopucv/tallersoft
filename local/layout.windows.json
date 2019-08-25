@@ -65,7 +65,7 @@
                 "width": 818
               },
               {
-                "active": 1,
+                "active": 0,
                 "children": [
                   "console",
                   "timeline",
@@ -108,6 +108,12 @@
   },
   "panels": {
     "preferences": {
+      "x": 385,
+      "y": 84,
+      "width": 600,
+      "height": 565
+    },
+    "project-settings": {
       "x": 385,
       "y": 84,
       "width": 600,
