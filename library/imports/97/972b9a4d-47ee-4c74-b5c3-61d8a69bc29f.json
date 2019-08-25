@@ -63,16 +63,17 @@
     },
     "_rotationX": 0,
     "_rotationY": 0,
-    "_skewX": 0,
-    "_skewY": 0,
-    "groupIndex": 0,
-    "_id": "",
-    "_eulerAngles": {
+    "_quat": {
+      "__type__": "cc.Quat",
       "x": 0,
       "y": 0,
       "z": 0,
-      "__type__": "cc.Vec3"
-    }
+      "w": 1
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "groupIndex": 0,
+    "_id": ""
   },
   {
     "__type__": "cc.Node",
@@ -131,16 +132,17 @@
     },
     "_rotationX": 0,
     "_rotationY": 0,
-    "_skewX": 0,
-    "_skewY": 0,
-    "groupIndex": 0,
-    "_id": "",
-    "_eulerAngles": {
+    "_quat": {
+      "__type__": "cc.Quat",
       "x": 0,
       "y": 0,
       "z": 0,
-      "__type__": "cc.Vec3"
-    }
+      "w": 1
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "groupIndex": 0,
+    "_id": ""
   },
   {
     "__type__": "cc.Node",
@@ -192,16 +194,17 @@
     },
     "_rotationX": 0,
     "_rotationY": 0,
-    "_skewX": 0,
-    "_skewY": 0,
-    "groupIndex": 0,
-    "_id": "",
-    "_eulerAngles": {
+    "_quat": {
+      "__type__": "cc.Quat",
       "x": 0,
       "y": 0,
       "z": 0,
-      "__type__": "cc.Vec3"
-    }
+      "w": 1
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "groupIndex": 0,
+    "_id": ""
   },
   {
     "__type__": "cc.Label",
