@@ -490,8 +490,8 @@
     "relativePath": "resources\\materials\\builtin-2d-base.mtl"
   },
   "e212f115-7333-4cdc-8956-4003d98ec40d": {
-    "asset": 1566694636065,
-    "meta": 1566694636109,
+    "asset": 1566709354601,
+    "meta": 1566709354628,
     "relativePath": "cursor.prefab"
   },
   "b7e265f9-5ebf-47e9-a52b-2094cbf48420": {
@@ -515,8 +515,8 @@
     "relativePath": "Prefab\\notificacionTiempo.prefab"
   },
   "66f3879c-e84a-41b8-b2e2-ed84421e9c8f": {
-    "asset": 1566690723508,
-    "meta": 1566690723543,
+    "asset": 1566708395904,
+    "meta": 1566708395952,
     "relativePath": "Prefab\\touchPoint.prefab"
   },
   "626c2766-f113-4cec-b13f-4c12f400c659": {
@@ -565,8 +565,8 @@
     "relativePath": "Texture\\go.png"
   },
   "3ae8816e-4603-4733-b316-15d6c0d897b9": {
-    "asset": 1566693607948,
-    "meta": 1566693607985,
+    "asset": 1566710618263,
+    "meta": 1566710618307,
     "relativePath": "Scene\\movimiento.fire"
   },
   "00490b3a-c60c-4bc5-ae57-e98762b9637e": {
@@ -574,19 +574,19 @@
     "meta": 1566690868285,
     "relativePath": "animationCursor.anim"
   },
-  "dd482034-ee60-49b4-99cc-1ae71b45ba5c": {
-    "asset": 1566693795473,
-    "meta": 1566693816314,
-    "relativePath": "Script\\Game.js"
-  },
   "6735d371-2582-45b1-9dca-70b847a4e8dc": {
     "asset": 1566694815213,
     "meta": 1566694815257,
     "relativePath": "animationCirculo.anim"
   },
   "bd961443-3fc4-42b5-a0c1-b9fef098f79a": {
-    "asset": 1566694600955,
-    "meta": 1566694603713,
+    "asset": 1566708427207,
+    "meta": 1566708429325,
     "relativePath": "Script\\Circle.js"
+  },
+  "dd482034-ee60-49b4-99cc-1ae71b45ba5c": {
+    "asset": 1566711107257,
+    "meta": 1566711108117,
+    "relativePath": "Script\\Game.js"
   }
 }

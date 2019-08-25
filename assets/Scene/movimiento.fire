@@ -72,16 +72,19 @@
       },
       {
         "__id__": 7
+      },
+      {
+        "__id__": 9
       }
     ],
     "_active": true,
     "_level": 1,
     "_components": [
       {
-        "__id__": 9
+        "__id__": 11
       },
       {
-        "__id__": 10
+        "__id__": 12
       }
     ],
     "_prefab": null,
@@ -336,7 +339,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 208.98,
+      "width": 260.19,
       "height": 50.4
     },
     "_anchorPoint": {
@@ -347,7 +350,7 @@
     "_position": {
       "__type__": "cc.Vec3",
       "x": 325.108,
-      "y": 243.658,
+      "y": 248.267,
       "z": 0
     },
     "_scale": {
@@ -386,7 +389,7 @@
     "_useOriginalSize": false,
     "_string": "Hora Actual",
     "_N$string": "Hora Actual",
-    "_fontSize": 40,
+    "_fontSize": 49.8,
     "_lineHeight": 40,
     "_enableWrapText": true,
     "_N$file": null,
@@ -399,6 +402,96 @@
     "_N$overflow": 0,
     "_N$cacheMode": 0,
     "_id": "65rmxY9LpLioIhpJbJkkNk"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Nivel",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 2
+    },
+    "_children": [],
+    "_active": true,
+    "_level": 2,
+    "_components": [
+      {
+        "__id__": 10
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 166.06,
+      "height": 50.4
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_position": {
+      "__type__": "cc.Vec3",
+      "x": 12.688,
+      "y": 248.267,
+      "z": 0
+    },
+    "_scale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "groupIndex": 0,
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_id": "4aJgPREFtJBbrCj6JpB6sj"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 9
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_useOriginalSize": false,
+    "_string": "Nivel: 1",
+    "_N$string": "Nivel: 1",
+    "_fontSize": 49.8,
+    "_lineHeight": 40,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0,
+    "_N$cacheMode": 0,
+    "_id": "83f+68+4ZNCr5mhn1R7BRo"
   },
   {
     "__type__": "cc.Canvas",
@@ -440,6 +533,9 @@
     "scoreDisplay": {
       "__id__": 6
     },
+    "nivelDisplay": {
+      "__id__": 10
+    },
     "horaDisplay": {
       "__id__": 8
     },
@@ -464,7 +560,7 @@
       "x": 0,
       "y": -88
     },
-    "cantVeces": 4,
+    "cantVeces": 2,
     "aux": 1,
     "contador": 0,
     "horaNotificacion": 12,
@@ -477,6 +573,7 @@
     "arregloSecuencia": [],
     "arregloSecuenciaCorrecta": [],
     "arregloSecuenciaUsuario": [],
+    "nivel": 1,
     "_id": "a2/91M+F1LGL4zj53B3yyH"
   }
 ]
