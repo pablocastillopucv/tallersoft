@@ -64,7 +64,7 @@ cc.Class({
         arregloSecuencia: [],
         arregloSecuenciaCorrecta: [],
         arregloSecuenciaUsuario: [],
-        nivel: 1
+        secuenciafinal: []
 
     },
 
@@ -158,6 +158,7 @@ cc.Class({
         newCircle.getComponent('Circle').game = this;
         this.arregloSecuencia.push(this.positionCircle);
     },
+
     spawnCircles: function spawnCircles() {
 
         for (var i = 0; i < this.cantVeces; i++) {
@@ -167,23 +168,79 @@ cc.Class({
             this.node.addChild(newCircle);
             // set up a random position for the circle
             this.positionCircle = this.arregloSecuencia[i];
+            //se llena el arreglo con la secuencia final
+            this.secuenciafinal[i] = this.arregloSecuencia[i];
             newCircle.setPosition(this.positionCircle);
             newCircle.getComponent('CircleSecuencia').game = this;
         }
         this.arregloSecuencia = [];
     },
 
+    mostrarsecuencia: function mostrarsecuencia() {
+
+        for (var i = 0; i < this.cantVeces; i++) {
+            var newCircle = cc.instantiate(this.cursorPrefab);
+            // put the newly added node under the Canvas node
+            this.node.addChild(newCircle);
+            this.positionCircle = this.secuenciafinal[i];
+            newCircle.setPosition(this.positionCircle);
+            newCircle.getComponent('CircleSecuencia').game = this;
+        }
+    },
+
     getNewCirclePosition: function getNewCirclePosition() {
-        var randX = 0;
-        // According to the position of the ground level and the main character's jump height, randomly obtain an anchor point of the star on the y axis
-        var randY = 0;
-        // according to the width of the screen, randomly obtain an anchor point of star on the x axis
-        var maxX = this.node.width / 2;
-        var maxY = this.node.height / 2;
-        randX = (Math.random() - 0.5) * 2 * maxX;
-        randY = (Math.random() - 0.5) * 2 * maxY;
-        // return to the anchor point of the star
-        return cc.v2(randX, randY);
+        while (true) {
+            var randX = 0;
+            var randY = 0;
+            var posX = 0;
+            var posY = 0;
+            var elevadox = 0;
+            var elevadoy = 0;
+            var suma = 0;
+            var formula = 0;
+            var maxX = this.node.width / 2;
+            var maxY = this.node.height / 2;
+            randX = (Math.random() - 0.5) * 2 * maxX;
+            randY = (Math.random() - 0.5) * 2 * maxY;
+
+            if (randX < 0) {
+                randX += 100;
+            }
+            if (randX > 0) {
+                randX -= 100;
+            }
+            if (randY < 0) {
+                randY += 100;
+            }
+            if (randY > 0) {
+                randY -= 100;
+            }
+            var estado = true;
+
+            if (this.arregloSecuenciaCorrecta.length == 0) {
+                return cc.v2(randX, randY);
+            }
+            for (var index = 0; index < this.arregloSecuenciaCorrecta.length; index++) {
+                posX = this.arregloSecuenciaCorrecta[index].x;
+                posY = this.arregloSecuenciaCorrecta[index].y;
+                console.log("vector de arreglo" + this.arregloSecuenciaCorrecta[index]);
+                console.log("posicion del posible ciruclo" + cc.v2(randX, randY));
+                elevadox = Math.pow(posX - randX, 2);
+                elevadoy = Math.pow(posY - randY, 2);
+                suma = elevadox + elevadoy;
+                formula = Math.sqrt(suma);
+                console.log(formula);
+                if (formula < 300) {
+                    console.log("no se cumple");
+                    estado = false;
+                    break;
+                }
+            }
+            if (estado == true) {
+                console.log("circulo a guardar" + cc.v2(randX, randY));
+                return cc.v2(randX, randY);
+            }
+        }
     },
     spawnTouchPoint: function spawnTouchPoint() {
         var newTouchPoint = cc.instantiate(this.touchPointPrefab);
