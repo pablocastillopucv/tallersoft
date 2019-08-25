@@ -1,102 +1,70 @@
-2019-08-08T06:00:34.822Z - normal: Load ~/.CocosCreator/settings.json
-2019-08-08T06:00:35.962Z - normal: Initializing Asset Database
-2019-08-08T06:00:35.969Z - normal: checking language setting...
-2019-08-08T06:00:35.969Z - normal: Language: en
-2019-08-08T06:00:36.597Z - success: preview server running at http://localhost:7456
-2019-08-08T06:00:36.599Z - success: protocol editor-framework registered
-2019-08-08T06:00:36.599Z - success: protocol app registered
-2019-08-08T06:00:36.599Z - success: protocol theme registered
-2019-08-08T06:00:36.599Z - success: protocol packages registered
-2019-08-08T06:00:36.599Z - success: protocol uuid registerred
-2019-08-08T06:00:36.600Z - success: protocol db registerred
-2019-08-08T06:00:36.600Z - success: protocol thumbnail registerred
-2019-08-08T06:00:36.600Z - success: protocol unpack registerred
-2019-08-08T06:00:36.600Z - success: protocol disable-commonjs registerred
-2019-08-08T06:00:38.225Z - normal: connected!
-2019-08-08T06:00:38.226Z - normal: Check project C:\Users\Pablo\Documents\tallersoft
-2019-08-08T06:00:38.227Z - normal: Initializing project C:\Users\Pablo\Documents\tallersoft
-2019-08-08T06:00:38.599Z - normal: Initializing Cocos2d
-2019-08-08T06:00:39.423Z - normal: Initializing engine extends
-2019-08-08T06:00:39.446Z - success: asset-db-debugger loaded
-2019-08-08T06:00:39.451Z - success: baidu-adapter loaded
-2019-08-08T06:00:39.455Z - success: color-picker loaded
-2019-08-08T06:00:39.542Z - success: fb-audience-network loaded
-2019-08-08T06:00:39.596Z - success: fb-live-stream loaded
-2019-08-08T06:00:39.602Z - success: google-play-instant loaded
-2019-08-08T06:00:39.609Z - success: huawei-runtime loaded
-2019-08-08T06:00:39.612Z - success: jsb-adapter loaded
-2019-08-08T06:00:39.620Z - success: oppo-runtime loaded
-2019-08-08T06:00:39.633Z - success: package-manager loaded
-2019-08-08T06:00:39.743Z - success: qqplay-adapter loaded
-2019-08-08T06:00:39.745Z - success: runtime-dev-tools loaded
-2019-08-08T06:00:39.749Z - success: sdkbox loaded
-2019-08-08T06:00:39.751Z - success: tester loaded
-2019-08-08T06:00:39.753Z - success: ui-grid loaded
-2019-08-08T06:00:39.755Z - success: ui-kit-preview-extra loaded
-2019-08-08T06:00:39.756Z - success: ui-kit-preview loaded
-2019-08-08T06:00:39.758Z - success: ui-kit loaded
-2019-08-08T06:00:39.759Z - success: ui-tree loaded
-2019-08-08T06:00:39.763Z - success: vivo-runtime loaded
-2019-08-08T06:00:39.764Z - success: weapp-adapter loaded
-2019-08-08T06:00:39.805Z - success: assets loaded
-2019-08-08T06:00:39.806Z - success: builder loaded
-2019-08-08T06:00:40.070Z - success: cocos-services loaded
-2019-08-08T06:00:40.074Z - success: console loaded
-2019-08-08T06:00:40.111Z - success: fb-instant-games loaded
-2019-08-08T06:00:40.116Z - success: game-window loaded
-2019-08-08T06:00:40.117Z - success: google-instant-games loaded
-2019-08-08T06:00:40.121Z - success: hierarchy loaded
-2019-08-08T06:00:40.124Z - success: inspector loaded
-2019-08-08T06:00:40.125Z - success: keystore loaded
-2019-08-08T06:00:40.129Z - success: node-library loaded
-2019-08-08T06:00:40.130Z - success: package-asset loaded
-2019-08-08T06:00:40.131Z - success: preferences loaded
-2019-08-08T06:00:40.133Z - success: project-exporter loaded
-2019-08-08T06:00:40.134Z - success: project-importer loaded
-2019-08-08T06:00:40.136Z - success: project-settings loaded
-2019-08-08T06:00:40.140Z - success: scene loaded
-2019-08-08T06:00:40.141Z - success: simulator-debugger loaded
-2019-08-08T06:00:40.142Z - success: sprite-editor loaded
-2019-08-08T06:00:40.146Z - success: store loaded
-2019-08-08T06:00:40.149Z - success: timeline loaded
-2019-08-08T06:00:46.500Z - normal: Loading packages
-2019-08-08T06:00:46.506Z - normal: Watching packages
-2019-08-08T06:00:46.877Z - normal: Run Application
-2019-08-08T06:01:05.202Z - info: Cocos Services load base data!
-2019-08-08T07:43:03.464Z - failed: [db-task][sync-changes] Failed to import asset C:\Users\Pablo\Documents\tallersoft\assets\Script\Game.js, message: Compile error: SyntaxError: C:/Users/Pablo/Documents/tallersoft/assets/Script/Game.js: Unexpected token, expected , (239:8)
-  237 |         }
-  238 |        
-> 239 |         this.score += 1;
-      |         ^
-  240 |         // update the words of the scoreDisplay Label
-  241 |         this.scoreDisplay.string = 'Score: ' + this.score;
-  242 |         if(this.toques==this.cantVeces){
-    at Parser.pp$5.raise (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
-    at Parser.pp.unexpected (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
-    at Parser.pp.expect (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1749:33)
-    at Parser.pp$3.parseObj (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3978:12)
-    at Parser.pp$3.parseExprAtom (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3719:19)
-    at Parser.pp$3.parseExprSubscripts (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3494:19)
-    at Parser.pp$3.parseMaybeUnary (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3474:19)
-    at Parser.pp$3.parseExprOps (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3404:19)
-    at Parser.pp$3.parseMaybeConditional (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3381:19)
-    at Parser.pp$3.parseMaybeAssign (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3344:19)
-2019-08-08T07:44:09.053Z - failed: [db-task][sync-changes] Failed to import asset C:\Users\Pablo\Documents\tallersoft\assets\Script\Game.js, message: Compile error: SyntaxError: C:/Users/Pablo/Documents/tallersoft/assets/Script/Game.js: Unexpected token, expected , (240:8)
-  238 |         }
-  239 |        
-> 240 |         this.score += 1;
-      |         ^
-  241 |         // update the words of the scoreDisplay Label
-  242 |         this.scoreDisplay.string = 'Score: ' + this.score;
-  243 |         if(this.toques==this.cantVeces){
-    at Parser.pp$5.raise (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
-    at Parser.pp.unexpected (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
-    at Parser.pp.expect (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1749:33)
-    at Parser.pp$3.parseObj (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3978:12)
-    at Parser.pp$3.parseExprAtom (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3719:19)
-    at Parser.pp$3.parseExprSubscripts (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3494:19)
-    at Parser.pp$3.parseMaybeUnary (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3474:19)
-    at Parser.pp$3.parseExprOps (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3404:19)
-    at Parser.pp$3.parseMaybeConditional (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3381:19)
-    at Parser.pp$3.parseMaybeAssign (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3344:19)
-2019-08-08T09:24:43.545Z - info: Only the prefab node "cursorSecuencia" and its child nodes are saved.
+2019-08-24T23:12:02.827Z - normal: Load ~/.CocosCreator/settings.json
+2019-08-24T23:12:04.169Z - normal: Initializing Asset Database
+2019-08-24T23:12:04.184Z - normal: checking language setting...
+2019-08-24T23:12:04.184Z - normal: Language: en
+2019-08-24T23:12:06.467Z - success: preview server running at http://localhost:7456
+2019-08-24T23:12:06.467Z - success: protocol editor-framework registered
+2019-08-24T23:12:06.467Z - success: protocol app registered
+2019-08-24T23:12:06.467Z - success: protocol theme registered
+2019-08-24T23:12:06.467Z - success: protocol packages registered
+2019-08-24T23:12:06.467Z - success: protocol uuid registerred
+2019-08-24T23:12:06.467Z - success: protocol db registerred
+2019-08-24T23:12:06.467Z - success: protocol thumbnail registerred
+2019-08-24T23:12:06.467Z - success: protocol unpack registerred
+2019-08-24T23:12:06.467Z - success: protocol disable-commonjs registerred
+2019-08-24T23:12:07.999Z - normal: connected!
+2019-08-24T23:12:07.999Z - normal: Check project D:\Proyecto\tallersoft
+2019-08-24T23:12:07.999Z - normal: Initializing project D:\Proyecto\tallersoft
+2019-08-24T23:12:08.999Z - normal: Initializing Cocos2d
+2019-08-24T23:12:13.970Z - normal: Initializing engine extends
+2019-08-24T23:12:14.251Z - success: asset-db-debugger loaded
+2019-08-24T23:12:14.267Z - success: baidu-adapter loaded
+2019-08-24T23:12:14.267Z - success: color-picker loaded
+2019-08-24T23:12:14.564Z - success: fb-audience-network loaded
+2019-08-24T23:12:14.704Z - success: fb-live-stream loaded
+2019-08-24T23:12:14.736Z - success: google-play-instant loaded
+2019-08-24T23:12:14.798Z - success: huawei-runtime loaded
+2019-08-24T23:12:15.908Z - success: cpk-publish loaded
+2019-08-24T23:12:15.908Z - success: jsb-adapter loaded
+2019-08-24T23:12:15.970Z - success: oppo-runtime loaded
+2019-08-24T23:12:15.986Z - success: package-manager loaded
+2019-08-24T23:12:16.580Z - success: qqplay-adapter loaded
+2019-08-24T23:12:16.596Z - success: runtime-dev-tools loaded
+2019-08-24T23:12:16.627Z - success: sdkbox loaded
+2019-08-24T23:12:16.658Z - success: tester loaded
+2019-08-24T23:12:16.674Z - success: ui-grid loaded
+2019-08-24T23:12:16.689Z - success: ui-kit-preview-extra loaded
+2019-08-24T23:12:16.721Z - success: ui-kit-preview loaded
+2019-08-24T23:12:16.721Z - success: ui-kit loaded
+2019-08-24T23:12:16.736Z - success: ui-tree loaded
+2019-08-24T23:12:16.799Z - success: vivo-runtime loaded
+2019-08-24T23:12:16.814Z - success: weapp-adapter loaded
+2019-08-24T23:12:16.814Z - success: xiaomi-adapter loaded
+2019-08-24T23:12:16.986Z - success: assets loaded
+2019-08-24T23:12:16.986Z - success: builder loaded
+2019-08-24T23:12:17.736Z - success: cocos-services loaded
+2019-08-24T23:12:17.736Z - success: console loaded
+2019-08-24T23:12:17.830Z - success: fb-instant-games loaded
+2019-08-24T23:12:17.830Z - success: game-window loaded
+2019-08-24T23:12:17.830Z - success: google-instant-games loaded
+2019-08-24T23:12:17.846Z - success: hierarchy loaded
+2019-08-24T23:12:17.846Z - success: inspector loaded
+2019-08-24T23:12:17.862Z - success: keystore loaded
+2019-08-24T23:12:17.862Z - success: node-library loaded
+2019-08-24T23:12:17.862Z - success: package-asset loaded
+2019-08-24T23:12:17.877Z - success: preferences loaded
+2019-08-24T23:12:17.877Z - success: project-exporter loaded
+2019-08-24T23:12:17.877Z - success: project-importer loaded
+2019-08-24T23:12:17.877Z - success: project-settings loaded
+2019-08-24T23:12:17.893Z - success: scene loaded
+2019-08-24T23:12:17.893Z - success: simulator-debugger loaded
+2019-08-24T23:12:17.893Z - success: sprite-editor loaded
+2019-08-24T23:12:17.908Z - success: store loaded
+2019-08-24T23:12:17.908Z - success: timeline loaded
+2019-08-24T23:12:17.924Z - success: xiaomi-runtime loaded
+2019-08-24T23:12:25.725Z - info: Cocos Services load base data!
+2019-08-24T23:12:39.270Z - normal: Loading packages
+2019-08-24T23:12:39.280Z - normal: Watching packages
+2019-08-24T23:12:40.655Z - normal: Run Application
+2019-08-24T23:13:12.219Z - success: oppo-runtime unloaded
+2019-08-24T23:13:12.227Z - success: oppo-runtime loaded
