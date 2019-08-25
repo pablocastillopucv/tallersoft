@@ -22,6 +22,10 @@ cc.Class({
             default:null,
             type:cc.Label
         },
+        nivelDisplay:{
+            default:null,
+            type:cc.Label
+        },
         horaDisplay:{
             default:null,
             type:cc.Label
@@ -50,6 +54,7 @@ cc.Class({
         arregloSecuencia:[],
         arregloSecuenciaCorrecta:[],
         arregloSecuenciaUsuario:[],
+        nivel:1,
         
 
     },
@@ -245,15 +250,24 @@ cc.Class({
             this.gameOver();
             this.toques=0;
             return true;
-        }    
+        }
+        
         
         
        
     },
    
     gameOver: function(){
+        
         this.spawnNewCircle();
         this.aux++;
+        if (this.score >= (this.cantVeces*this.cantVeces)){
+            this.nivel++;
+            this.cantVeces++;
+            console.log(this.cantVeces);
+            this.nivelDisplay.string = 'Nivel: ' + this.nivel;
+
+        }
     },
     update: function(dt) {
        
