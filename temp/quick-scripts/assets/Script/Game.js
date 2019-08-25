@@ -64,8 +64,8 @@ cc.Class({
         arregloSecuencia: [],
         arregloSecuenciaCorrecta: [],
         arregloSecuenciaUsuario: [],
-        secuenciafinal: []
-
+        secuenciafinal: [],
+        nivel: 1
     },
 
     onLoad: function onLoad() {

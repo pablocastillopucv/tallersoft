@@ -59,7 +59,7 @@ cc.Class({
         arregloSecuenciaCorrecta:[],
         arregloSecuenciaUsuario:[],
         secuenciafinal:[],
-
+        nivel:1,
     },
 
     onLoad: function () {
