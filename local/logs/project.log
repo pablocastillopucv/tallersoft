@@ -1,70 +1,65 @@
-2019-08-27T17:20:02.875Z - normal: Load ~/.CocosCreator/settings.json
-2019-08-27T17:20:04.030Z - normal: Initializing Asset Database
-2019-08-27T17:20:04.032Z - normal: checking language setting...
-2019-08-27T17:20:04.032Z - normal: Language: en
-2019-08-27T17:20:04.932Z - success: preview server running at http://localhost:7456
-2019-08-27T17:20:04.934Z - success: protocol editor-framework registered
-2019-08-27T17:20:04.934Z - success: protocol app registered
-2019-08-27T17:20:04.934Z - success: protocol theme registered
-2019-08-27T17:20:04.934Z - success: protocol packages registered
-2019-08-27T17:20:04.934Z - success: protocol uuid registerred
-2019-08-27T17:20:04.934Z - success: protocol db registerred
-2019-08-27T17:20:04.934Z - success: protocol thumbnail registerred
-2019-08-27T17:20:04.934Z - success: protocol unpack registerred
-2019-08-27T17:20:04.934Z - success: protocol disable-commonjs registerred
-2019-08-27T17:20:06.363Z - normal: connected!
-2019-08-27T17:20:06.364Z - normal: Check project D:\Taller\tallersoft
-2019-08-27T17:20:06.365Z - normal: Initializing project D:\Taller\tallersoft
-2019-08-27T17:20:06.762Z - normal: Initializing Cocos2d
-2019-08-27T17:20:09.263Z - normal: Initializing engine extends
-2019-08-27T17:20:09.315Z - success: asset-db-debugger loaded
-2019-08-27T17:20:09.323Z - success: baidu-adapter loaded
-2019-08-27T17:20:09.332Z - success: color-picker loaded
-2019-08-27T17:20:09.439Z - success: fb-audience-network loaded
-2019-08-27T17:20:09.510Z - success: fb-live-stream loaded
-2019-08-27T17:20:09.525Z - success: google-play-instant loaded
-2019-08-27T17:20:09.547Z - success: huawei-runtime loaded
-2019-08-27T17:20:09.954Z - success: cpk-publish loaded
-2019-08-27T17:20:09.957Z - success: jsb-adapter loaded
-2019-08-27T17:20:09.977Z - success: oppo-runtime loaded
-2019-08-27T17:20:09.986Z - success: package-manager loaded
-2019-08-27T17:20:10.153Z - success: qqplay-adapter loaded
-2019-08-27T17:20:10.160Z - success: runtime-dev-tools loaded
-2019-08-27T17:20:10.170Z - success: sdkbox loaded
-2019-08-27T17:20:10.180Z - success: tester loaded
-2019-08-27T17:20:10.188Z - success: ui-grid loaded
-2019-08-27T17:20:10.196Z - success: ui-kit-preview-extra loaded
-2019-08-27T17:20:10.202Z - success: ui-kit-preview loaded
-2019-08-27T17:20:10.203Z - success: ui-kit loaded
-2019-08-27T17:20:10.209Z - success: ui-tree loaded
-2019-08-27T17:20:10.229Z - success: vivo-runtime loaded
-2019-08-27T17:20:10.232Z - success: weapp-adapter loaded
-2019-08-27T17:20:10.234Z - success: xiaomi-adapter loaded
-2019-08-27T17:20:10.274Z - success: assets loaded
-2019-08-27T17:20:10.276Z - success: builder loaded
-2019-08-27T17:20:10.520Z - success: cocos-services loaded
-2019-08-27T17:20:10.524Z - success: console loaded
-2019-08-27T17:20:10.553Z - success: fb-instant-games loaded
-2019-08-27T17:20:10.556Z - success: game-window loaded
-2019-08-27T17:20:10.557Z - success: google-instant-games loaded
-2019-08-27T17:20:10.560Z - success: hierarchy loaded
-2019-08-27T17:20:10.562Z - success: inspector loaded
-2019-08-27T17:20:10.563Z - success: keystore loaded
-2019-08-27T17:20:10.567Z - success: node-library loaded
-2019-08-27T17:20:10.568Z - success: package-asset loaded
-2019-08-27T17:20:10.569Z - success: preferences loaded
-2019-08-27T17:20:10.570Z - success: project-exporter loaded
-2019-08-27T17:20:10.571Z - success: project-importer loaded
-2019-08-27T17:20:10.573Z - success: project-settings loaded
-2019-08-27T17:20:10.579Z - success: scene loaded
-2019-08-27T17:20:10.580Z - success: simulator-debugger loaded
-2019-08-27T17:20:10.580Z - success: sprite-editor loaded
-2019-08-27T17:20:10.582Z - success: store loaded
-2019-08-27T17:20:10.587Z - success: timeline loaded
-2019-08-27T17:20:10.590Z - success: xiaomi-runtime loaded
-2019-08-27T17:20:12.117Z - normal: Loading packages
-2019-08-27T17:20:12.121Z - normal: Watching packages
-2019-08-27T17:20:12.464Z - normal: Run Application
-2019-08-27T17:20:16.899Z - info: Cocos Services load base data!
-2019-08-27T17:53:50.587Z - warn: The 'type' attribute of 'LevelUpAudio.levelUpSound' is undefined when loading script
-2019-08-27T17:57:14.125Z - warn: The 'type' attribute of 'LevelUpAudio.levelUpSound' is undefined when loading script
+2019-08-27T19:24:40.560Z - normal: Load ~/.CocosCreator/settings.json
+2019-08-27T19:24:41.795Z - normal: Initializing Asset Database
+2019-08-27T19:24:41.797Z - normal: checking language setting...
+2019-08-27T19:24:41.797Z - normal: Language: en
+2019-08-27T19:24:45.200Z - success: preview server running at http://localhost:7456
+2019-08-27T19:24:45.203Z - success: protocol editor-framework registered
+2019-08-27T19:24:45.203Z - success: protocol app registered
+2019-08-27T19:24:45.203Z - success: protocol theme registered
+2019-08-27T19:24:45.203Z - success: protocol packages registered
+2019-08-27T19:24:45.203Z - success: protocol uuid registerred
+2019-08-27T19:24:45.203Z - success: protocol db registerred
+2019-08-27T19:24:45.203Z - success: protocol thumbnail registerred
+2019-08-27T19:24:45.203Z - success: protocol unpack registerred
+2019-08-27T19:24:45.203Z - success: protocol disable-commonjs registerred
+2019-08-27T19:24:46.701Z - normal: connected!
+2019-08-27T19:24:46.702Z - normal: Check project D:\Proyecto-Abuelo-Gamer\tallersoft
+2019-08-27T19:24:46.704Z - normal: Initializing project D:\Proyecto-Abuelo-Gamer\tallersoft
+2019-08-27T19:24:47.625Z - normal: Initializing Cocos2d
+2019-08-27T19:24:54.312Z - normal: Initializing engine extends
+2019-08-27T19:24:54.947Z - success: asset-db-debugger loaded
+2019-08-27T19:24:54.951Z - success: baidu-adapter loaded
+2019-08-27T19:24:54.958Z - success: color-picker loaded
+2019-08-27T19:24:55.436Z - success: fb-audience-network loaded
+2019-08-27T19:24:55.605Z - success: fb-live-stream loaded
+2019-08-27T19:24:55.631Z - success: google-play-instant loaded
+2019-08-27T19:24:55.714Z - success: huawei-runtime loaded
+2019-08-27T19:24:55.717Z - success: jsb-adapter loaded
+2019-08-27T19:24:55.784Z - success: oppo-runtime loaded
+2019-08-27T19:24:55.815Z - success: package-manager loaded
+2019-08-27T19:24:56.358Z - success: qqplay-adapter loaded
+2019-08-27T19:24:56.373Z - success: runtime-dev-tools loaded
+2019-08-27T19:24:56.430Z - success: sdkbox loaded
+2019-08-27T19:24:56.465Z - success: tester loaded
+2019-08-27T19:24:56.476Z - success: ui-grid loaded
+2019-08-27T19:24:56.498Z - success: ui-kit-preview-extra loaded
+2019-08-27T19:24:56.524Z - success: ui-kit-preview loaded
+2019-08-27T19:24:56.525Z - success: ui-kit loaded
+2019-08-27T19:24:56.533Z - success: ui-tree loaded
+2019-08-27T19:24:56.596Z - success: vivo-runtime loaded
+2019-08-27T19:24:56.599Z - success: weapp-adapter loaded
+2019-08-27T19:24:56.674Z - success: assets loaded
+2019-08-27T19:24:56.676Z - success: builder loaded
+2019-08-27T19:24:57.278Z - success: cocos-services loaded
+2019-08-27T19:24:57.283Z - success: console loaded
+2019-08-27T19:24:57.351Z - success: fb-instant-games loaded
+2019-08-27T19:24:57.359Z - success: game-window loaded
+2019-08-27T19:24:57.361Z - success: google-instant-games loaded
+2019-08-27T19:24:57.369Z - success: hierarchy loaded
+2019-08-27T19:24:57.373Z - success: inspector loaded
+2019-08-27T19:24:57.376Z - success: keystore loaded
+2019-08-27T19:24:57.382Z - success: node-library loaded
+2019-08-27T19:24:57.385Z - success: package-asset loaded
+2019-08-27T19:24:57.387Z - success: preferences loaded
+2019-08-27T19:24:57.389Z - success: project-exporter loaded
+2019-08-27T19:24:57.392Z - success: project-importer loaded
+2019-08-27T19:24:57.399Z - success: project-settings loaded
+2019-08-27T19:24:57.404Z - success: scene loaded
+2019-08-27T19:24:57.406Z - success: simulator-debugger loaded
+2019-08-27T19:24:57.408Z - success: sprite-editor loaded
+2019-08-27T19:24:57.413Z - success: store loaded
+2019-08-27T19:24:57.418Z - success: timeline loaded
+2019-08-27T19:25:03.175Z - info: Cocos Services load base data!
+2019-08-27T19:25:16.377Z - normal: Loading packages
+2019-08-27T19:25:16.384Z - normal: Watching packages
+2019-08-27T19:25:17.562Z - normal: Run Application

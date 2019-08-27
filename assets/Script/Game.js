@@ -98,8 +98,15 @@ cc.Class({
             
         }, this.velocidadReloj);
 
-        
-      
+        //  cargar datos del usuario
+        var datosGuardados = JSON.parse(cc.sys.localStorage.getItem('datosUsuario'));
+        console.log(datosGuardados);
+        if (datosGuardados!= null){
+            this.score = datosGuardados.score;
+            this.nivel = datosGuardados.nivel;
+            console.log("Score: " + this.score);
+            console.log("Nivel: " + this.nivel);
+        }
     },
 
     aumentarHora: function() {
@@ -248,22 +255,22 @@ cc.Class({
             for (let index = 0; index < this.arregloSecuenciaCorrecta.length; index++) {
                 posX= this.arregloSecuenciaCorrecta[index].x;
                 posY= this.arregloSecuenciaCorrecta[index].y;
-                console.log("vector de arreglo"+this.arregloSecuenciaCorrecta[index]);
-                console.log("posicion del posible ciruclo"+cc.v2(randX,randY));
+                // console.log("vector de arreglo"+this.arregloSecuenciaCorrecta[index]);
+                // console.log("posicion del posible ciruclo"+cc.v2(randX,randY));
                 elevadox=  Math.pow((posX-randX),2);
                 elevadoy= Math.pow((posY-randY),2);
                 suma= elevadox+elevadoy;
                 formula= Math.sqrt(suma);
-                console.log(formula);
+                // console.log(formula);
                 if (formula<200) {
-                    console.log("no se cumple");
+                    // console.log("no se cumple");
                     estado= false;
                     break;
                 }
                   
             }
             if (estado== true) {
-                console.log("circulo a guardar"+ cc.v2(randX,randY));
+                // console.log("circulo a guardar"+ cc.v2(randX,randY));
                 return cc.v2(randX,randY);
             }
 
@@ -316,7 +323,7 @@ cc.Class({
                 this.arregloSecuenciaCorrecta.shift();
                 this.score += 1;
                 this.scoreDisplay.string = 'Score: ' + this.score;
-                console.log(this.toques);
+                // console.log(this.toques);
                 if(this.toques < this.cantVeces){
                     return true;
                 }
@@ -346,12 +353,26 @@ cc.Class({
             this.mostrarNotificacionComida;
 
         }
+
+        //  subir de nivel
         if (this.score >= (this.cantVeces*this.cantVeces*this.cantVeces)){
             this.nivel++;
             this.cantVeces++;
-            console.log(this.cantVeces);
+            // console.log(this.cantVeces);
             this.nivelDisplay.string = 'Nivel: ' + this.nivel;
             this.levelSound.play();
+
+            
+            //  datos a guardar localmente
+            var datosUsuario = {
+                nivel: this.nivel,
+                score: this.score,
+            };
+            cc.sys.localStorage.setItem('datosUsuario',JSON.stringify(datosUsuario));
+
+            //  leer datos guardados 
+            //  var datosGuardados = JSON.parse(cc.sys.localStorage.getItem('datosUsuario'));
+
 
         }
     },
