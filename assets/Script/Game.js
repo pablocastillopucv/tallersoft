@@ -42,6 +42,10 @@ cc.Class({
             default:null,
             type:cc.AudioSource
         },
+        pausaPrefab:{
+            type: cc.Prefab,
+            default: null
+        },
         positionCircle:cc.v2(0,0),
         positionNotification:cc.v2(0,0),
         positionTouchpoint:cc.v2(0,0),
@@ -323,19 +327,43 @@ cc.Class({
                 
         }
         if(this.toques == this.cantVeces){
+
+
+            var pausaIntermedia = cc.instantiate(this.pausaPrefab);
+        
+            this.node.addChild(pausaIntermedia);
+            
+            pausaIntermedia.setPosition(this.positionNotification);
+        
+            this.scheduleOnce(function(){
+
+                
+                pausaIntermedia.setPosition(999,999,999);
+          
+            },1);
+            
+
+            
+
+        
             this.gameOver();
             this.toques=0;
             return true;
-        }
-        
-        
-        
        
+
+            
+            
+        }
     },
     
     gameOver: function(){
-        
-        this.spawnNewCircle();
+
+        this.scheduleOnce(function(){
+
+
+            this.spawnNewCircle();  
+
+        },1)
         this.aux++;
         if (this.esNotificacionHora){
 
@@ -352,6 +380,9 @@ cc.Class({
             console.log(this.cantVeces);
             this.nivelDisplay.string = 'Nivel: ' + this.nivel;
             this.levelSound.play();
+            
+
+            
 
         }
     },

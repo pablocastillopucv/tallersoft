@@ -55,7 +55,7 @@
     "relativePath": "Scene"
   },
   "4734c20c-0db8-4eb2-92ea-e692f4d70934": {
-    "asset": 1566862996121,
+    "asset": 1566928342366,
     "meta": 1566862996118,
     "relativePath": "Script"
   },
@@ -430,7 +430,7 @@
     "relativePath": "Sound"
   },
   "a0e338b1-3688-4df6-9bd2-3783f7a61118": {
-    "asset": 1566862996117,
+    "asset": 1566935514081,
     "meta": 1566862996116,
     "relativePath": "Prefab"
   },
@@ -440,7 +440,7 @@
     "relativePath": "Script\\MenuBoton.js"
   },
   "36f0bfde-cd0b-4cca-a1de-642213bfab82": {
-    "asset": 1566862996116,
+    "asset": 1566932226912,
     "meta": 1566862996116,
     "relativePath": "migration"
   },
@@ -492,7 +492,7 @@
   "e212f115-7333-4cdc-8956-4003d98ec40d": {
     "asset": 1566862957914,
     "meta": 1566863544281,
-    "relativePath": "cursor.prefab"
+    "relativePath": "Prefab\\cursor.prefab"
   },
   "b7e265f9-5ebf-47e9-a52b-2094cbf48420": {
     "asset": 1566862957913,
@@ -505,13 +505,13 @@
     "relativePath": "Prefab\\circle.prefab"
   },
   "85ee7d06-37a8-4a81-8069-37372698098e": {
-    "asset": 1566862996117,
-    "meta": 1566863544313,
+    "asset": 1566932369747,
+    "meta": 1566932369766,
     "relativePath": "Prefab\\notificacionComida.prefab"
   },
   "ca5b5217-7cf6-4e4f-8f79-ff8a802aa59d": {
-    "asset": 1566862996117,
-    "meta": 1566863544318,
+    "asset": 1566932418319,
+    "meta": 1566932418332,
     "relativePath": "Prefab\\notificacionTiempo.prefab"
   },
   "66f3879c-e84a-41b8-b2e2-ed84421e9c8f": {
@@ -565,19 +565,19 @@
     "relativePath": "Texture\\go.png"
   },
   "3ae8816e-4603-4733-b316-15d6c0d897b9": {
-    "asset": 1566929052416,
-    "meta": 1566929052431,
+    "asset": 1566938161822,
+    "meta": 1566938161839,
     "relativePath": "Scene\\movimiento.fire"
   },
   "00490b3a-c60c-4bc5-ae57-e98762b9637e": {
     "asset": 1566862957912,
     "meta": 1566863544138,
-    "relativePath": "animationCursor.anim"
+    "relativePath": "Animations\\animationCursor.anim"
   },
   "6735d371-2582-45b1-9dca-70b847a4e8dc": {
     "asset": 1566862996116,
     "meta": 1566863544139,
-    "relativePath": "animationCirculo.anim"
+    "relativePath": "Animations\\animationCirculo.anim"
   },
   "bd961443-3fc4-42b5-a0c1-b9fef098f79a": {
     "asset": 1566862996119,
@@ -594,9 +594,49 @@
     "meta": 1566928951441,
     "relativePath": "Script\\LevelUpAudio.js"
   },
+  "1f0a1c62-f350-4d90-975f-58c813af34d7": {
+    "asset": 1566935495936,
+    "meta": 1566935495955,
+    "relativePath": "Animations\\animationCongrats.anim"
+  },
+  "b66c50ca-8c32-4973-8e3d-58e19271fd60": {
+    "asset": 1566931418009,
+    "meta": 1566931409642,
+    "relativePath": "Fonts"
+  },
+  "96744305-90b6-491d-80d2-ace5abc06e78": {
+    "asset": 1566931418002,
+    "meta": 1566931418043,
+    "relativePath": "Fonts\\Short Baby.ttf"
+  },
+  "af5f6719-5fc2-4f1b-9003-b8d5f7af13d8": {
+    "asset": 1566932889739,
+    "meta": 1566932234470,
+    "relativePath": "Animations"
+  },
+  "411cd9b8-73f7-4428-8ea8-e3e84b6a014c": {
+    "asset": 1566932359663,
+    "meta": 1566932359679,
+    "relativePath": "Animations\\animationComida.anim"
+  },
+  "ee88a6cd-682f-4e6f-a73d-bebda3f0e7d3": {
+    "asset": 1566932410655,
+    "meta": 1566932410667,
+    "relativePath": "Animations\\animationHora.anim"
+  },
+  "2dc3eecd-4b43-43b8-b8e7-be05d2ed66a5": {
+    "asset": 1566935067292,
+    "meta": 1566935067303,
+    "relativePath": "Animations\\animationMensaje.anim"
+  },
+  "fa8fbc40-e1ab-4268-a075-06f5412d7fb7": {
+    "asset": 1566937662858,
+    "meta": 1566937662878,
+    "relativePath": "Prefab\\Mensaje.prefab"
+  },
   "dd482034-ee60-49b4-99cc-1ae71b45ba5c": {
-    "asset": 1566929029369,
-    "meta": 1566929047695,
+    "asset": 1566938162807,
+    "meta": 1566938165895,
     "relativePath": "Script\\Game.js"
   }
 }
