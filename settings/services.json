@@ -36,7 +36,19 @@
 		}
 	],
 	"game": {
-		"name": "UNKNOW GAME",
-		"appid": "UNKNOW"
-	}
+		"name": "GoodOldMan",
+		"appid": "669280343",
+		"cid": "0"
+	},
+	"configs": [
+		{
+			"appid": "669280343",
+			"services": [
+				{
+					"service_id": "242",
+					"enable": false
+				}
+			]
+		}
+	]
 }

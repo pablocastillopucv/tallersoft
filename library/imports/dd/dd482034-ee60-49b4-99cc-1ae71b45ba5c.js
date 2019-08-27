@@ -46,7 +46,7 @@ cc.Class({
         },
         levelSound: {
             default: null,
-            type: cc.AudioClip
+            type: cc.AudioSource
         },
         positionCircle: cc.v2(0, 0),
         positionNotification: cc.v2(0, 0),
@@ -315,7 +315,7 @@ cc.Class({
             this.cantVeces++;
             console.log(this.cantVeces);
             this.nivelDisplay.string = 'Nivel: ' + this.nivel;
-            cc.audioEngine.playEffect(this.levelSound, false);
+            this.levelSound.play();
         }
     },
 

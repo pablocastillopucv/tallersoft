@@ -565,8 +565,8 @@
     "relativePath": "Texture\\go.png"
   },
   "3ae8816e-4603-4733-b316-15d6c0d897b9": {
-    "asset": 1566866065323,
-    "meta": 1566866065350,
+    "asset": 1566929052416,
+    "meta": 1566929052431,
     "relativePath": "Scene\\movimiento.fire"
   },
   "00490b3a-c60c-4bc5-ae57-e98762b9637e": {
@@ -589,9 +589,14 @@
     "meta": 1566863544598,
     "relativePath": "Sound\\match-confirm.wav"
   },
+  "2bdfad6c-f886-489b-8efc-04dbaf8d922d": {
+    "asset": 1566928950947,
+    "meta": 1566928951441,
+    "relativePath": "Script\\LevelUpAudio.js"
+  },
   "dd482034-ee60-49b4-99cc-1ae71b45ba5c": {
-    "asset": 1566866064450,
-    "meta": 1566866065005,
+    "asset": 1566929029369,
+    "meta": 1566929047695,
     "relativePath": "Script\\Game.js"
   }
 }

@@ -75,16 +75,19 @@
       },
       {
         "__id__": 9
+      },
+      {
+        "__id__": 11
       }
     ],
     "_active": true,
     "_level": 1,
     "_components": [
       {
-        "__id__": 11
+        "__id__": 14
       },
       {
-        "__id__": 12
+        "__id__": 15
       }
     ],
     "_prefab": null,
@@ -494,6 +497,98 @@
     "_id": "83f+68+4ZNCr5mhn1R7BRo"
   },
   {
+    "__type__": "cc.Node",
+    "_name": "LevelUp",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 2
+    },
+    "_children": [],
+    "_active": true,
+    "_level": 2,
+    "_components": [
+      {
+        "__id__": 12
+      },
+      {
+        "__id__": 13
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_position": {
+      "__type__": "cc.Vec3",
+      "x": -480,
+      "y": -320,
+      "z": 0
+    },
+    "_scale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "groupIndex": 0,
+    "_id": "c90w0DKm9IhKq/UhrihAsS"
+  },
+  {
+    "__type__": "cc.AudioSource",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 11
+    },
+    "_enabled": true,
+    "_clip": {
+      "__uuid__": "14fe617a-08c2-46aa-82b0-07f5cf5f6523"
+    },
+    "_volume": 0.2,
+    "_mute": false,
+    "_loop": false,
+    "playOnLoad": false,
+    "preload": false,
+    "_id": "f7xiT+B05JM4drbn3uh3Dd"
+  },
+  {
+    "__type__": "2bdfa1s+IZIm478BNuvjZIt",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 11
+    },
+    "_enabled": true,
+    "audioSource": {
+      "__id__": 12
+    },
+    "_id": "6bw0CGB91HpKU4p2zsRRwU"
+  },
+  {
     "__type__": "cc.Canvas",
     "_name": "",
     "_objFlags": 0,
@@ -546,7 +641,7 @@
       "__uuid__": "ca5b5217-7cf6-4e4f-8f79-ff8a802aa59d"
     },
     "levelSound": {
-      "__uuid__": "14fe617a-08c2-46aa-82b0-07f5cf5f6523"
+      "__id__": 12
     },
     "positionCircle": {
       "__type__": "cc.Vec2",
