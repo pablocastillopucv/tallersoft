@@ -66,13 +66,17 @@ cc.Class({
         arregloSecuenciaUsuario: [],
         secuenciafinal: [],
         nivel: 1
+
     },
 
     onLoad: function onLoad() {
+        this.esNotificacionComida = false;
+        this.esNotificacionHora = false;
         this.contador = 0;
         this.toques = 0;
         this.score = 0;
         this.numId = 0;
+
         this.spawnNewCircle();
 
         this.hora = this.horaInicial;
@@ -80,8 +84,7 @@ cc.Class({
 
         this.scheduleOnce(function () {
 
-            this.mostrarNotificacionTiempo();
-            this.spawnTouchPointNotificacion();
+            this.esNotificacionHora = true;
         }, this.tiempoMax + 1);
 
         this.schedule(function () {
@@ -90,8 +93,7 @@ cc.Class({
             this.aumentarHora();
             if (this.hora == this.horaNotificacion && this.minuto == this.minutoNotificacion + 1 && this.contador == 0) {
 
-                this.mostrarNotificacionComida();
-                this.spawnTouchPointNotificacion();
+                this.esNotificacionComida = true;
                 this.contador++;
             }
         }, this.velocidadReloj);
@@ -135,6 +137,8 @@ cc.Class({
         this.node.addChild(notificacionComida);
 
         notificacionComida.setPosition(this.positionNotification);
+
+        this.spawnTouchPointNotificacion();
     },
     mostrarNotificacionTiempo: function mostrarNotificacionTiempo() {
 
@@ -143,6 +147,8 @@ cc.Class({
         this.node.addChild(notificacionTiempo);
 
         notificacionTiempo.setPosition(this.positionNotification);
+
+        this.spawnTouchPointNotificacion();
     },
 
     spawnNewCircle: function spawnNewCircle() {
@@ -230,7 +236,7 @@ cc.Class({
                 suma = elevadox + elevadoy;
                 formula = Math.sqrt(suma);
                 console.log(formula);
-                if (formula < 300) {
+                if (formula < 200) {
                     console.log("no se cumple");
                     estado = false;
                     break;
@@ -297,7 +303,14 @@ cc.Class({
 
         this.spawnNewCircle();
         this.aux++;
-        if (this.score >= this.cantVeces * this.cantVeces) {
+        if (this.esNotificacionHora) {
+
+            this.mostrarNotificacionTiempo;
+        } else if (this.esNotificacionComida) {
+
+            this.mostrarNotificacionComida;
+        }
+        if (this.score >= this.cantVeces * this.cantVeces * this.cantVeces) {
             this.nivel++;
             this.cantVeces++;
             console.log(this.cantVeces);
