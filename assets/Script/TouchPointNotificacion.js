@@ -16,6 +16,8 @@ cc.Class({
             this.game.eliminarNotificacionTiempo();
             this.game.eliminarNotificacionComida();
             this.node.destroy();
+            this.game.esNotificacionComida = false;
+            this.game.esNotificacionHora = false;
 
           }, this);
     },

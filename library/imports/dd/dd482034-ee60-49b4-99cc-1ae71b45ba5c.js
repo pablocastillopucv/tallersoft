@@ -84,7 +84,7 @@ cc.Class({
         horaInicial: 0,
         minutoInicial: 0,
         velocidadReloj: 1,
-        tiempoMax: 55,
+        tiempoMax: 20,
         cantVecesPresiona: 0,
         arregloSecuencia: [],
         arregloSecuenciaCorrecta: [],
@@ -230,6 +230,15 @@ cc.Class({
         }
 
         this.arregloSecuencia = [];
+
+        if (this.esNotificacionHora) {
+
+            this.mostrarNotificacionTiempo();
+        }
+        if (this.esNotificacionComida) {
+
+            this.mostrarNotificacionComida();
+        }
     },
 
     mostrarsecuencia: function mostrarsecuencia() {
@@ -385,13 +394,6 @@ cc.Class({
                 this.aux++;
             }, 4);
 
-            if (this.esNotificacionHora) {
-
-                this.mostrarNotificacionTiempo;
-
-                this.mostrarNotificacionComida;
-            }
-
             // animacion subida de nivel
 
             var subidaDeNivel = cc.instantiate(this.nuevoSonidoPrefab);
@@ -429,66 +431,62 @@ cc.Class({
                 this.spawnNewCircle();
                 this.aux++;
             }, 1);
-            if (this.esNotificacionHora) {
-
-                this.mostrarNotificacionTiempo;
-            } else if (this.esNotificacionComida) {
-
-                this.mostrarNotificacionComida;
-            }
         }
     },
 
     brindarAyuda: function brindarAyuda() {
-        if (this.nivel == 1) {
-            if (this.controlFlecha == 0) {
-                var posX = 0;
-                var posY = 0;
-                posX = this.arregloSecuenciaCorrecta[0].x;
-                posY = this.arregloSecuenciaCorrecta[0].y;
-                if (posY <= -108) {
-                    // flecha apuntando hacia abajo
-                    var newArrow = cc.instantiate(this.flechaApuntaAbajoPrefab);
-                    this.node.addChild(newArrow);
-                    posY += 80;
-                    newArrow.setPosition(cc.v2(posX, posY));
-                    newArrow.getComponent('Arrow').game = this;
-                    this.controlFlecha++;
-                    var text = cc.instantiate(this.presioneAquiPrefab);
-                    this.node.addChild(text);
-                    if (posX >= 360) {
-                        text.setPosition(cc.v2(posX - 20, posY + 60));
-                        text.getComponent('PresioneAqui').game = this;
-                    } else if (posX < -360) {
-                        text.setPosition(cc.v2(posX + 20, posY + 60));
-                        text.getComponent('PresioneAqui').game = this;
+        if (!this.esNotificacionComida && !this.esNotificacionHora) {
+
+            if (this.nivel == 1) {
+                if (this.controlFlecha == 0) {
+                    var posX = 0;
+                    var posY = 0;
+                    posX = this.arregloSecuenciaCorrecta[0].x;
+                    posY = this.arregloSecuenciaCorrecta[0].y;
+                    if (posY <= -108) {
+                        // flecha apuntando hacia abajo
+                        var newArrow = cc.instantiate(this.flechaApuntaAbajoPrefab);
+                        this.node.addChild(newArrow);
+                        posY += 80;
+                        newArrow.setPosition(cc.v2(posX, posY));
+                        newArrow.getComponent('Arrow').game = this;
+                        this.controlFlecha++;
+                        var text = cc.instantiate(this.presioneAquiPrefab);
+                        this.node.addChild(text);
+                        if (posX >= 360) {
+                            text.setPosition(cc.v2(posX - 20, posY + 60));
+                            text.getComponent('PresioneAqui').game = this;
+                        } else if (posX < -360) {
+                            text.setPosition(cc.v2(posX + 20, posY + 60));
+                            text.getComponent('PresioneAqui').game = this;
+                        } else {
+                            text.setPosition(cc.v2(posX, posY + 60));
+                            text.getComponent('PresioneAqui').game = this;
+                        }
                     } else {
-                        text.setPosition(cc.v2(posX, posY + 60));
-                        text.getComponent('PresioneAqui').game = this;
-                    }
-                } else {
-                    // flecha apuntando hacia arriba
-                    var newArrow = cc.instantiate(this.flechaApuntaArribaPrefab);
-                    this.node.addChild(newArrow);
-                    posY = this.arregloSecuenciaCorrecta[0].y - 80;
-                    newArrow.setPosition(cc.v2(posX, posY));
-                    newArrow.getComponent('Arrow').game = this;
-                    this.controlFlecha++;
-                    var text = cc.instantiate(this.presioneAquiPrefab);
-                    this.node.addChild(text);
-                    if (posX >= 360) {
-                        text.setPosition(cc.v2(posX - 20, posY - 50));
-                        text.getComponent('PresioneAqui').game = this;
-                    } else if (posX < -360) {
-                        text.setPosition(cc.v2(posX + 20, posY + 60));
-                        text.getComponent('PresioneAqui').game = this;
-                    } else {
-                        text.setPosition(cc.v2(posX, posY - 50));
-                        text.getComponent('PresioneAqui').game = this;
+                        // flecha apuntando hacia arriba
+                        var newArrow = cc.instantiate(this.flechaApuntaArribaPrefab);
+                        this.node.addChild(newArrow);
+                        posY = this.arregloSecuenciaCorrecta[0].y - 80;
+                        newArrow.setPosition(cc.v2(posX, posY));
+                        newArrow.getComponent('Arrow').game = this;
+                        this.controlFlecha++;
+                        var text = cc.instantiate(this.presioneAquiPrefab);
+                        this.node.addChild(text);
+                        if (posX >= 360) {
+                            text.setPosition(cc.v2(posX - 20, posY - 50));
+                            text.getComponent('PresioneAqui').game = this;
+                        } else if (posX < -360) {
+                            text.setPosition(cc.v2(posX + 20, posY + 60));
+                            text.getComponent('PresioneAqui').game = this;
+                        } else {
+                            text.setPosition(cc.v2(posX, posY - 50));
+                            text.getComponent('PresioneAqui').game = this;
+                        }
                     }
                 }
             }
-        }
+        } else {}
     },
     verificarCirculoCorrecto: function verificarCirculoCorrecto(vector) {
         if (vector.equals(this.arregloSecuenciaCorrecta[0]) == true) {

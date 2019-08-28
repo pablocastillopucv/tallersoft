@@ -459,11 +459,6 @@
     "meta": 1567025840432,
     "relativePath": "Script\\TouchPoint.js"
   },
-  "c84731f6-ed5e-4613-8839-b765603d41f6": {
-    "asset": 1566862996121,
-    "meta": 1567025840439,
-    "relativePath": "Script\\TouchPointNotificacion.js"
-  },
   "b162632d-b5cc-4c3e-b9ac-18fa20c581df": {
     "asset": 1566862957919,
     "meta": 1567025840697,
@@ -503,16 +498,6 @@
     "asset": 1567025840022,
     "meta": 1567025840030,
     "relativePath": "Prefab\\circle.prefab"
-  },
-  "85ee7d06-37a8-4a81-8069-37372698098e": {
-    "asset": 1567025840072,
-    "meta": 1567025840084,
-    "relativePath": "Prefab\\notificacionComida.prefab"
-  },
-  "ca5b5217-7cf6-4e4f-8f79-ff8a802aa59d": {
-    "asset": 1567025840078,
-    "meta": 1567025840085,
-    "relativePath": "Prefab\\notificacionTiempo.prefab"
   },
   "66f3879c-e84a-41b8-b2e2-ed84421e9c8f": {
     "asset": 1567025840093,
@@ -563,11 +548,6 @@
     "asset": 1564721065302,
     "meta": 1567025840899,
     "relativePath": "Texture\\go.png"
-  },
-  "3ae8816e-4603-4733-b316-15d6c0d897b9": {
-    "asset": 1567028666759,
-    "meta": 1567028666779,
-    "relativePath": "Scene\\movimiento.fire"
   },
   "00490b3a-c60c-4bc5-ae57-e98762b9637e": {
     "asset": 1566962901643,
@@ -749,9 +729,29 @@
     "meta": 1567026891802,
     "relativePath": "Script\\Circle.js"
   },
+  "85ee7d06-37a8-4a81-8069-37372698098e": {
+    "asset": 1567034085191,
+    "meta": 1567034162652,
+    "relativePath": "Prefab\\notificacionComida.prefab"
+  },
+  "ca5b5217-7cf6-4e4f-8f79-ff8a802aa59d": {
+    "asset": 1567034085194,
+    "meta": 1567034162654,
+    "relativePath": "Prefab\\notificacionTiempo.prefab"
+  },
+  "3ae8816e-4603-4733-b316-15d6c0d897b9": {
+    "asset": 1567034394621,
+    "meta": 1567034394644,
+    "relativePath": "Scene\\movimiento.fire"
+  },
   "dd482034-ee60-49b4-99cc-1ae71b45ba5c": {
-    "asset": 1567029461005,
-    "meta": 1567029465319,
+    "asset": 1567035020751,
+    "meta": 1567035021342,
     "relativePath": "Script\\Game.js"
+  },
+  "c84731f6-ed5e-4613-8839-b765603d41f6": {
+    "asset": 1567035144712,
+    "meta": 1567035145282,
+    "relativePath": "Script\\TouchPointNotificacion.js"
   }
 }
