@@ -46,12 +46,11 @@
       "y": 1,
       "z": 1
     },
-    "_quat": {
-      "__type__": "cc.Quat",
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 0,
-      "w": 1
+      "z": 0
     },
     "_is3DNode": true,
     "groupIndex": 0,
@@ -123,17 +122,17 @@
       "y": 1.032,
       "z": 1
     },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_is3DNode": false,
-    "groupIndex": 0,
-    "_id": "2anmWIXaNK0KLBRrENEVD3",
     "_eulerAngles": {
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
       "z": 0
-    }
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "groupIndex": 0,
+    "_id": "2anmWIXaNK0KLBRrENEVD3"
   },
   {
     "__type__": "cc.Node",
@@ -181,17 +180,17 @@
       "y": 1,
       "z": 1
     },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_is3DNode": false,
-    "groupIndex": 0,
-    "_id": "2bxigLTmhOGrAHsJ677BDW",
     "_eulerAngles": {
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
       "z": 0
-    }
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "groupIndex": 0,
+    "_id": "2bxigLTmhOGrAHsJ677BDW"
   },
   {
     "__type__": "cc.Camera",
@@ -274,19 +273,19 @@
       "y": 1,
       "z": 1
     },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "_skewX": 0,
     "_skewY": 0,
     "_is3DNode": false,
     "groupIndex": 0,
     "_rotationX": 0,
     "_rotationY": 0,
-    "_id": "6dwP37jclBYJQnavv50NTM",
-    "_eulerAngles": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    }
+    "_id": "6dwP37jclBYJQnavv50NTM"
   },
   {
     "__type__": "cc.Label",
@@ -296,7 +295,11 @@
       "__id__": 5
     },
     "_enabled": true,
-    "_materials": [],
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
     "_useOriginalSize": false,
     "_string": "Score: 0",
     "_N$string": "Score: 0",
@@ -362,19 +365,19 @@
       "y": 1,
       "z": 1
     },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "_skewX": 0,
     "_skewY": 0,
     "_is3DNode": false,
     "groupIndex": 0,
     "_rotationX": 0,
     "_rotationY": 0,
-    "_id": "c7mzoshzhC86q3snHGWLre",
-    "_eulerAngles": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    }
+    "_id": "c7mzoshzhC86q3snHGWLre"
   },
   {
     "__type__": "cc.Label",
@@ -384,7 +387,11 @@
       "__id__": 7
     },
     "_enabled": true,
-    "_materials": [],
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
     "_useOriginalSize": false,
     "_string": "Hora Actual",
     "_N$string": "Hora Actual",
@@ -450,19 +457,19 @@
       "y": 1,
       "z": 1
     },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
     "_skewX": 0,
     "_skewY": 0,
     "_is3DNode": false,
     "groupIndex": 0,
     "_rotationX": 0,
     "_rotationY": 0,
-    "_id": "4aJgPREFtJBbrCj6JpB6sj",
-    "_eulerAngles": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    }
+    "_id": "4aJgPREFtJBbrCj6JpB6sj"
   },
   {
     "__type__": "cc.Label",
@@ -472,7 +479,11 @@
       "__id__": 9
     },
     "_enabled": true,
-    "_materials": [],
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
     "_useOriginalSize": false,
     "_string": "Nivel: 1",
     "_N$string": "Nivel: 1",
@@ -615,6 +626,9 @@
     "cursorPrefab": {
       "__uuid__": "b7e265f9-5ebf-47e9-a52b-2094cbf48420"
     },
+    "distraccionPrefab": {
+      "__uuid__": "059c7267-4f13-436c-9acd-8ada1a1a9270"
+    },
     "touchPointPrefab": {
       "__uuid__": "66f3879c-e84a-41b8-b2e2-ed84421e9c8f"
     },
@@ -665,6 +679,11 @@
       "__type__": "cc.Vec2",
       "x": 0,
       "y": -88
+    },
+    "positionPelota": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
     },
     "cantVeces": 2,
     "aux": 1,
