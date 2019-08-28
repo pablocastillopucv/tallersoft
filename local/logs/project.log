@@ -1,89 +1,68 @@
-2019-08-27T21:49:02.874Z - normal: Load ~/.CocosCreator/settings.json
-2019-08-27T21:49:03.989Z - normal: Initializing Asset Database
-2019-08-27T21:49:03.991Z - normal: checking language setting...
-2019-08-27T21:49:03.992Z - normal: Language: en
-2019-08-27T21:49:04.871Z - success: preview server running at http://localhost:7456
-2019-08-27T21:49:04.873Z - success: protocol editor-framework registered
-2019-08-27T21:49:04.874Z - success: protocol app registered
-2019-08-27T21:49:04.874Z - success: protocol theme registered
-2019-08-27T21:49:04.874Z - success: protocol packages registered
-2019-08-27T21:49:04.874Z - success: protocol uuid registerred
-2019-08-27T21:49:04.875Z - success: protocol db registerred
-2019-08-27T21:49:04.875Z - success: protocol thumbnail registerred
-2019-08-27T21:49:04.875Z - success: protocol unpack registerred
-2019-08-27T21:49:04.875Z - success: protocol disable-commonjs registerred
-2019-08-27T21:49:07.872Z - normal: failed to connect login server due to request timeout
-2019-08-27T21:49:07.873Z - normal: Check project C:\Users\Pablo\Documents\tallersoft
-2019-08-27T21:49:07.875Z - normal: Initializing project C:\Users\Pablo\Documents\tallersoft
-2019-08-27T21:49:08.328Z - normal: Initializing Cocos2d
-2019-08-27T21:49:10.940Z - normal: Initializing engine extends
-2019-08-27T21:49:10.971Z - success: asset-db-debugger loaded
-2019-08-27T21:49:10.977Z - success: baidu-adapter loaded
-2019-08-27T21:49:10.984Z - success: color-picker loaded
-2019-08-27T21:49:11.105Z - success: fb-audience-network loaded
-2019-08-27T21:49:11.169Z - success: fb-live-stream loaded
-2019-08-27T21:49:11.187Z - success: google-play-instant loaded
-2019-08-27T21:49:11.209Z - success: huawei-runtime loaded
-2019-08-27T21:49:11.213Z - success: jsb-adapter loaded
-2019-08-27T21:49:11.237Z - success: oppo-runtime loaded
-2019-08-27T21:49:11.245Z - success: package-manager loaded
-2019-08-27T21:49:11.414Z - success: qqplay-adapter loaded
-2019-08-27T21:49:11.422Z - success: runtime-dev-tools loaded
-2019-08-27T21:49:11.435Z - success: sdkbox loaded
-2019-08-27T21:49:11.446Z - success: tester loaded
-2019-08-27T21:49:11.454Z - success: ui-grid loaded
-2019-08-27T21:49:11.462Z - success: ui-kit-preview-extra loaded
-2019-08-27T21:49:11.470Z - success: ui-kit-preview loaded
-2019-08-27T21:49:11.478Z - success: ui-kit loaded
-2019-08-27T21:49:11.486Z - success: ui-tree loaded
-2019-08-27T21:49:11.513Z - success: vivo-runtime loaded
-2019-08-27T21:49:11.518Z - success: weapp-adapter loaded
-2019-08-27T21:49:11.558Z - success: assets loaded
-2019-08-27T21:49:11.560Z - success: builder loaded
-2019-08-27T21:49:11.805Z - success: cocos-services loaded
-2019-08-27T21:49:11.808Z - success: console loaded
-2019-08-27T21:49:11.841Z - success: fb-instant-games loaded
-2019-08-27T21:49:11.844Z - success: game-window loaded
-2019-08-27T21:49:11.846Z - success: google-instant-games loaded
-2019-08-27T21:49:11.849Z - success: hierarchy loaded
-2019-08-27T21:49:11.851Z - success: inspector loaded
-2019-08-27T21:49:11.852Z - success: keystore loaded
-2019-08-27T21:49:11.856Z - success: node-library loaded
-2019-08-27T21:49:11.857Z - success: package-asset loaded
-2019-08-27T21:49:11.858Z - success: preferences loaded
-2019-08-27T21:49:11.859Z - success: project-exporter loaded
-2019-08-27T21:49:11.860Z - success: project-importer loaded
-2019-08-27T21:49:11.862Z - success: project-settings loaded
-2019-08-27T21:49:11.865Z - success: scene loaded
-2019-08-27T21:49:11.866Z - success: simulator-debugger loaded
-2019-08-27T21:49:11.868Z - success: sprite-editor loaded
-2019-08-27T21:49:11.870Z - success: store loaded
-2019-08-27T21:49:11.873Z - success: timeline loaded
-2019-08-27T21:49:13.610Z - normal: Loading packages
-2019-08-27T21:49:13.616Z - normal: Watching packages
-2019-08-27T21:49:13.998Z - normal: Run Application
-2019-08-27T21:49:16.244Z - info: Cocos Services load base data!
-2019-08-27T22:36:53.222Z - error: animation not added or already removed
-    at Object.cc.errorID (D:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at AnimationAnimator.p.removeAnimation (D:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\animation\animation-animator.js:68:20)
-    at AnimationState.proto.onStop (D:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\animation\animation-state.js:107:31)
-    at AnimationState.prototype.stop (D:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\animation\playable.js:52:22)
-    at AnimationState.process [as _process] (D:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\animation\animation-state.js:145:22)
-    at AnimationState.proto.update (D:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\animation\animation-state.js:189:18)
-    at CCClass.update (D:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\animation\animation-manager.js:28:30)
-    at cc.Scheduler.update (D:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCScheduler.js:262:38)
-    at cc.Director.mainLoop.now._purgeDirectorInNextLoop [as mainLoop] (D:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDirector.js:436:41)
-2019-08-27T22:40:10.702Z - error: animation not added or already removed
-    at Object.cc.errorID (D:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
-    at AnimationAnimator.p.removeAnimation (D:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\animation\animation-animator.js:68:20)
-    at AnimationState.proto.onStop (D:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\animation\animation-state.js:107:31)
-    at AnimationState.prototype.stop (D:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\animation\playable.js:52:22)
-    at AnimationState.process [as _process] (D:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\animation\animation-state.js:145:22)
-    at AnimationState.proto.update (D:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\animation\animation-state.js:189:18)
-    at CCClass.update (D:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\animation\animation-manager.js:28:30)
-    at cc.Scheduler.update (D:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCScheduler.js:262:38)
-    at cc.Director.mainLoop.now._purgeDirectorInNextLoop [as mainLoop] (D:\Cocos Creator\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDirector.js:436:41)
-2019-08-27T23:31:48.447Z - failed: [db-task][sync-changes] Failed to import asset C:\Users\Pablo\Documents\tallersoft\assets\Script\Game.js, message: Compile error: SyntaxError: C:/Users/Pablo/Documents/tallersoft/assets/Script/Game.js: Unexpected token (394:16)
+2019-08-28T02:40:42.863Z - normal: Load ~/.CocosCreator/settings.json
+2019-08-28T02:40:44.000Z - normal: Initializing Asset Database
+2019-08-28T02:40:44.002Z - normal: checking language setting...
+2019-08-28T02:40:44.002Z - normal: Language: en
+2019-08-28T02:40:44.510Z - success: preview server running at http://localhost:7456
+2019-08-28T02:40:44.512Z - success: protocol editor-framework registered
+2019-08-28T02:40:44.512Z - success: protocol app registered
+2019-08-28T02:40:44.512Z - success: protocol theme registered
+2019-08-28T02:40:44.512Z - success: protocol packages registered
+2019-08-28T02:40:44.512Z - success: protocol uuid registerred
+2019-08-28T02:40:44.512Z - success: protocol db registerred
+2019-08-28T02:40:44.512Z - success: protocol thumbnail registerred
+2019-08-28T02:40:44.512Z - success: protocol unpack registerred
+2019-08-28T02:40:44.512Z - success: protocol disable-commonjs registerred
+2019-08-28T02:40:47.020Z - normal: connected!
+2019-08-28T02:40:47.021Z - normal: Check project D:\Taller\tallersoft
+2019-08-28T02:40:47.023Z - normal: Initializing project D:\Taller\tallersoft
+2019-08-28T02:40:47.325Z - normal: Initializing Cocos2d
+2019-08-28T02:40:48.002Z - normal: Initializing engine extends
+2019-08-28T02:40:48.016Z - success: asset-db-debugger loaded
+2019-08-28T02:40:48.017Z - success: baidu-adapter loaded
+2019-08-28T02:40:48.017Z - success: color-picker loaded
+2019-08-28T02:40:48.087Z - success: fb-audience-network loaded
+2019-08-28T02:40:48.128Z - success: fb-live-stream loaded
+2019-08-28T02:40:48.131Z - success: google-play-instant loaded
+2019-08-28T02:40:48.134Z - success: huawei-runtime loaded
+2019-08-28T02:40:48.322Z - success: cpk-publish loaded
+2019-08-28T02:40:48.323Z - success: jsb-adapter loaded
+2019-08-28T02:40:48.326Z - success: oppo-runtime loaded
+2019-08-28T02:40:48.328Z - success: package-manager loaded
+2019-08-28T02:40:48.413Z - success: qqplay-adapter loaded
+2019-08-28T02:40:48.414Z - success: runtime-dev-tools loaded
+2019-08-28T02:40:48.421Z - success: sdkbox loaded
+2019-08-28T02:40:48.423Z - success: tester loaded
+2019-08-28T02:40:48.424Z - success: ui-grid loaded
+2019-08-28T02:40:48.425Z - success: ui-kit-preview-extra loaded
+2019-08-28T02:40:48.426Z - success: ui-kit-preview loaded
+2019-08-28T02:40:48.427Z - success: ui-kit loaded
+2019-08-28T02:40:48.428Z - success: ui-tree loaded
+2019-08-28T02:40:48.431Z - success: vivo-runtime loaded
+2019-08-28T02:40:48.432Z - success: weapp-adapter loaded
+2019-08-28T02:40:48.432Z - success: xiaomi-adapter loaded
+2019-08-28T02:40:48.472Z - success: assets loaded
+2019-08-28T02:40:48.473Z - success: builder loaded
+2019-08-28T02:40:48.686Z - success: cocos-services loaded
+2019-08-28T02:40:48.690Z - success: console loaded
+2019-08-28T02:40:48.718Z - success: fb-instant-games loaded
+2019-08-28T02:40:48.720Z - success: game-window loaded
+2019-08-28T02:40:48.721Z - success: google-instant-games loaded
+2019-08-28T02:40:48.723Z - success: hierarchy loaded
+2019-08-28T02:40:48.725Z - success: inspector loaded
+2019-08-28T02:40:48.725Z - success: keystore loaded
+2019-08-28T02:40:48.728Z - success: node-library loaded
+2019-08-28T02:40:48.729Z - success: package-asset loaded
+2019-08-28T02:40:48.730Z - success: preferences loaded
+2019-08-28T02:40:48.730Z - success: project-exporter loaded
+2019-08-28T02:40:48.732Z - success: project-importer loaded
+2019-08-28T02:40:48.733Z - success: project-settings loaded
+2019-08-28T02:40:48.736Z - success: scene loaded
+2019-08-28T02:40:48.736Z - success: simulator-debugger loaded
+2019-08-28T02:40:48.737Z - success: sprite-editor loaded
+2019-08-28T02:40:48.739Z - success: store loaded
+2019-08-28T02:40:48.743Z - success: timeline loaded
+2019-08-28T02:40:48.745Z - success: xiaomi-runtime loaded
+2019-08-28T02:40:53.522Z - failed: [db-task][init] Failed to import asset D:\Taller\tallersoft\assets\Script\Game.js, message: Compile error: SyntaxError: D:/Taller/tallersoft/assets/Script/Game.js: Unexpected token (394:16)
   392 |                     
   393 |                 }
 > 394 |                 else{ // flecha apuntando hacia arriba
@@ -91,25 +70,17 @@
   395 |                     var newArrow = cc.instantiate(this.flechaApuntaArribaPrefab);
   396 |                     this.node.addChild(newArrow);
   397 |                     posY = this.arregloSecuenciaCorrecta[0].y-80;
-    at Parser.pp$5.raise (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
-    at Parser.pp.unexpected (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
-    at Parser.pp$3.parseExprAtom (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3750:12)
-    at Parser.pp$3.parseExprSubscripts (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3494:19)
-    at Parser.pp$3.parseMaybeUnary (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3474:19)
-    at Parser.pp$3.parseExprOps (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3404:19)
-    at Parser.pp$3.parseMaybeConditional (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3381:19)
-    at Parser.pp$3.parseMaybeAssign (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3344:19)
-    at Parser.pp$3.parseExpression (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3306:19)
-    at Parser.pp$1.parseStatement (D:\Cocos Creator\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1906:19)
-2019-08-27T23:46:59.047Z - info: Only the prefab node "cursorSecuencia" and its child nodes are saved.
-2019-08-27T23:51:53.881Z - warn: The Asset used by component "Circle" in prefab "cursor.prefab" is missing. Detailed information:
-Node path: "cursor"
-Asset url: "db://assets/cursor.prefab"
-Missing uuid: "443980d6-e495-4f85-b4e7-01132c3d241a"
-
-2019-08-27T23:51:53.892Z - warn: The Asset used by component "Circle" in prefab "cursor.prefab" is missing. Detailed information:
-Node path: "cursor"
-Asset url: "db://assets/cursor.prefab"
-Missing uuid: "443980d6-e495-4f85-b4e7-01132c3d241a"
-
-2019-08-27T23:52:00.103Z - info: Only the prefab node "cursor" and its child nodes are saved.
+    at Parser.pp$5.raise (C:\CocosCreator_2.1.2\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp.unexpected (C:\CocosCreator_2.1.2\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
+    at Parser.pp$3.parseExprAtom (C:\CocosCreator_2.1.2\resources\app.asar\node_modules\babylon\lib\index.js:3750:12)
+    at Parser.pp$3.parseExprSubscripts (C:\CocosCreator_2.1.2\resources\app.asar\node_modules\babylon\lib\index.js:3494:19)
+    at Parser.pp$3.parseMaybeUnary (C:\CocosCreator_2.1.2\resources\app.asar\node_modules\babylon\lib\index.js:3474:19)
+    at Parser.pp$3.parseExprOps (C:\CocosCreator_2.1.2\resources\app.asar\node_modules\babylon\lib\index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (C:\CocosCreator_2.1.2\resources\app.asar\node_modules\babylon\lib\index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (C:\CocosCreator_2.1.2\resources\app.asar\node_modules\babylon\lib\index.js:3344:19)
+    at Parser.pp$3.parseExpression (C:\CocosCreator_2.1.2\resources\app.asar\node_modules\babylon\lib\index.js:3306:19)
+    at Parser.pp$1.parseStatement (C:\CocosCreator_2.1.2\resources\app.asar\node_modules\babylon\lib\index.js:1906:19)
+2019-08-28T02:40:54.044Z - normal: Loading packages
+2019-08-28T02:40:54.048Z - normal: Watching packages
+2019-08-28T02:40:54.372Z - normal: Run Application
+2019-08-28T02:40:55.557Z - info: Cocos Services load base data!

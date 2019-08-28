@@ -1,6 +1,6 @@
 {
   "__type__": "cc.EffectAsset",
-  "_name": "builtin-spine",
+  "_name": "builtin-2d-spine",
   "_objFlags": 0,
   "_native": "",
   "properties": {

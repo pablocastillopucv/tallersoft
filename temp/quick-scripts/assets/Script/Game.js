@@ -20,18 +20,6 @@ cc.Class({
             default: null,
             type: cc.Prefab
         },
-        presioneAquiPrefab: {
-            default: null,
-            type: cc.Prefab
-        },
-        flechaApuntaArribaPrefab: {
-            default: null,
-            type: cc.Prefab
-        },
-        flechaApuntaAbajoPrefab: {
-            default: null,
-            type: cc.Prefab
-        },
         touchPointNotificacionPrefab: {
             default: null,
             type: cc.Prefab
@@ -77,9 +65,7 @@ cc.Class({
         arregloSecuenciaCorrecta: [],
         arregloSecuenciaUsuario: [],
         secuenciafinal: [],
-        nivel: 1,
-        controlFlecha: 0
-
+        nivel: 1
     },
 
     onLoad: function onLoad() {
@@ -88,7 +74,8 @@ cc.Class({
         this.score = 0;
         this.numId = 0;
         this.spawnNewCircle();
-        this.destroyFlecha = false, this.destroyTexto = false, this.hora = this.horaInicial;
+
+        this.hora = this.horaInicial;
         this.minuto = this.minutoInicial;
 
         this.scheduleOnce(function () {
@@ -319,57 +306,8 @@ cc.Class({
         }
     },
 
-    brindarAyuda: function brindarAyuda() {
-        if (this.nivel == 1) {
-            if (this.controlFlecha == 0) {
-                var posX = 0;
-                var posY = 0;
-                posX = this.arregloSecuenciaCorrecta[0].x;
-                posY = this.arregloSecuenciaCorrecta[0].y;
-                if (posY <= -108) {
-                    // flecha apuntando hacia abajo
-                    var newArrow = cc.instantiate(this.flechaApuntaAbajoPrefab);
-                    this.node.addChild(newArrow);
-                    posY += 80;
-                    newArrow.setPosition(cc.v2(posX, posY));
-                    newArrow.getComponent('Arrow').game = this;
-                    this.controlFlecha++;
-                    var text = cc.instantiate(this.presioneAquiPrefab);
-                    this.node.addChild(text);
-                    if (posX >= 360) {
-                        text.setPosition(cc.v2(posX - 20, posY + 60));
-                        text.getComponent('PresioneAqui').game = this;
-                    } else {
-                        text.setPosition(cc.v2(posX, posY + 60));
-                        text.getComponent('PresioneAqui').game = this;
-                    }
-                } else {
-                    // flecha apuntando hacia arriba
-                    var newArrow = cc.instantiate(this.flechaApuntaArribaPrefab);
-                    this.node.addChild(newArrow);
-                    posY = this.arregloSecuenciaCorrecta[0].y - 80;
-                    newArrow.setPosition(cc.v2(posX, posY));
-                    newArrow.getComponent('Arrow').game = this;
-                    this.controlFlecha++;
-                    var text = cc.instantiate(this.presioneAquiPrefab);
-                    this.node.addChild(text);
-                    if (posX >= 360) {
-                        text.setPosition(cc.v2(posX - 20, posY - 50));
-                        text.getComponent('PresioneAqui').game = this;
-                    } else {
-                        text.setPosition(cc.v2(posX, posY - 50));
-                        text.getComponent('PresioneAqui').game = this;
-                    }
-                }
-            }
-        }
-    },
-    verificarCirculoCorrecto: function verificarCirculoCorrecto(vector) {
-        if (vector.equals(this.arregloSecuenciaCorrecta[0]) == true) {
-            return true;
-        }
-        return false;
-    },
+    secuenciaPerfecta: function secuenciaPerfecta() {},
+
     update: function update(dt) {}
 
 });
