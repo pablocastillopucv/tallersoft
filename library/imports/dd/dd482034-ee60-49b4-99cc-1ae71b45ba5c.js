@@ -2,7 +2,7 @@
 cc._RF.push(module, 'dd482A07mBJtJnMGucbRbpc', 'Game');
 // Script/Game.js
 
-"use strict";
+'use strict';
 
 cc.Class({
     extends: cc.Component,
@@ -21,6 +21,18 @@ cc.Class({
             type: cc.Prefab
         },
         touchPointPrefab: {
+            default: null,
+            type: cc.Prefab
+        },
+        presioneAquiPrefab: {
+            default: null,
+            type: cc.Prefab
+        },
+        flechaApuntaArribaPrefab: {
+            default: null,
+            type: cc.Prefab
+        },
+        flechaApuntaAbajoPrefab: {
             default: null,
             type: cc.Prefab
         },
@@ -75,7 +87,8 @@ cc.Class({
         arregloSecuenciaUsuario: [],
         secuenciafinal: [],
 
-        nivel: 1
+        nivel: 1,
+        controlFlecha: 0
 
     },
 
@@ -88,8 +101,7 @@ cc.Class({
         this.numId = 0;
 
         this.spawnNewCircle();
-
-        this.hora = this.horaInicial;
+        this.destroyFlecha = false, this.destroyTexto = false, this.hora = this.horaInicial;
         this.minuto = this.minutoInicial;
 
         this.scheduleOnce(function () {
@@ -107,16 +119,6 @@ cc.Class({
                 this.contador++;
             }
         }, this.velocidadReloj);
-
-        //  cargar datos del usuario
-        var datosGuardados = JSON.parse(cc.sys.localStorage.getItem('datosUsuario'));
-        console.log(datosGuardados);
-        if (datosGuardados != null) {
-            this.score = datosGuardados.score;
-            this.nivel = datosGuardados.nivel;
-            console.log("Score: " + this.score);
-            console.log("Nivel: " + this.nivel);
-        }
     },
 
     aumentarHora: function aumentarHora() {
@@ -376,13 +378,68 @@ cc.Class({
             cc.sys.localStorage.setItem('datosUsuario', JSON.stringify(datosUsuario));
 
             //  leer datos guardados 
-            //  var datosGuardados = JSON.parse(cc.sys.localStorage.getItem('datosUsuario'));
-
+            var datosGuardados = JSON.parse(cc.sys.localStorage.getItem('datosUsuario'));
+            console.log(datosGuardados);
         }
     },
 
-    secuenciaPerfecta: function secuenciaPerfecta() {},
-
+    brindarAyuda: function brindarAyuda() {
+        if (this.nivel == 1) {
+            if (this.controlFlecha == 0) {
+                var posX = 0;
+                var posY = 0;
+                posX = this.arregloSecuenciaCorrecta[0].x;
+                posY = this.arregloSecuenciaCorrecta[0].y;
+                if (posY <= -108) {
+                    // flecha apuntando hacia abajo
+                    var newArrow = cc.instantiate(this.flechaApuntaAbajoPrefab);
+                    this.node.addChild(newArrow);
+                    posY += 80;
+                    newArrow.setPosition(cc.v2(posX, posY));
+                    newArrow.getComponent('Arrow').game = this;
+                    this.controlFlecha++;
+                    var text = cc.instantiate(this.presioneAquiPrefab);
+                    this.node.addChild(text);
+                    if (posX >= 360) {
+                        text.setPosition(cc.v2(posX - 20, posY + 60));
+                        text.getComponent('PresioneAqui').game = this;
+                    } else if (posX < -360) {
+                        text.setPosition(cc.v2(posX + 20, posY + 60));
+                        text.getComponent('PresioneAqui').game = this;
+                    } else {
+                        text.setPosition(cc.v2(posX, posY + 60));
+                        text.getComponent('PresioneAqui').game = this;
+                    }
+                } else {
+                    // flecha apuntando hacia arriba
+                    var newArrow = cc.instantiate(this.flechaApuntaArribaPrefab);
+                    this.node.addChild(newArrow);
+                    posY = this.arregloSecuenciaCorrecta[0].y - 80;
+                    newArrow.setPosition(cc.v2(posX, posY));
+                    newArrow.getComponent('Arrow').game = this;
+                    this.controlFlecha++;
+                    var text = cc.instantiate(this.presioneAquiPrefab);
+                    this.node.addChild(text);
+                    if (posX >= 360) {
+                        text.setPosition(cc.v2(posX - 20, posY - 50));
+                        text.getComponent('PresioneAqui').game = this;
+                    } else if (posX < -360) {
+                        text.setPosition(cc.v2(posX + 20, posY + 60));
+                        text.getComponent('PresioneAqui').game = this;
+                    } else {
+                        text.setPosition(cc.v2(posX, posY - 50));
+                        text.getComponent('PresioneAqui').game = this;
+                    }
+                }
+            }
+        }
+    },
+    verificarCirculoCorrecto: function verificarCirculoCorrecto(vector) {
+        if (vector.equals(this.arregloSecuenciaCorrecta[0]) == true) {
+            return true;
+        }
+        return false;
+    },
     update: function update(dt) {}
 
 });

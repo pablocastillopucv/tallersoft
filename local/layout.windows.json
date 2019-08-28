@@ -19,23 +19,23 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 469.609375,
+                "height": 470,
                 "type": "panel",
-                "width": 301.5625
+                "width": 302
               },
               {
                 "active": 0,
                 "children": [
                   "assets"
                 ],
-                "height": 465.390625,
+                "height": 465,
                 "type": "panel",
-                "width": 301.5625
+                "width": 302
               }
             ],
             "height": 937,
             "type": "dock-v",
-            "width": 301.5625
+            "width": 302
           },
           {
             "children": [
@@ -46,23 +46,23 @@
                     "children": [
                       "scene"
                     ],
-                    "height": 466.796875,
+                    "height": 467,
                     "type": "panel",
-                    "width": 741.109375
+                    "width": 740.984375
                   },
                   {
                     "active": 0,
                     "children": [
                       "node-library"
                     ],
-                    "height": 466.796875,
+                    "height": 467,
                     "type": "panel",
-                    "width": 407.046875
+                    "width": 407
                   }
                 ],
-                "height": 466.796875,
+                "height": 467,
                 "type": "dock-h",
-                "width": 1150.15625
+                "width": 1149.984375
               },
               {
                 "active": 1,
@@ -71,14 +71,14 @@
                   "timeline",
                   "game-window"
                 ],
-                "height": 468.203125,
+                "height": 468,
                 "type": "panel",
-                "width": 1150.15625
+                "width": 1149.984375
               }
             ],
             "height": 937,
             "type": "dock-v",
-            "width": 1150.15625
+            "width": 1149.984375
           },
           {
             "active": 0,
@@ -88,7 +88,7 @@
             ],
             "height": 937,
             "type": "panel",
-            "width": 464.265625
+            "width": 464
           }
         ],
         "type": "dock-h"

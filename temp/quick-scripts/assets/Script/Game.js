@@ -2,7 +2,7 @@
 cc._RF.push(module, 'dd482A07mBJtJnMGucbRbpc', 'Game', __filename);
 // Script/Game.js
 
-"use strict";
+'use strict';
 
 cc.Class({
     extends: cc.Component,
@@ -86,6 +86,7 @@ cc.Class({
         arregloSecuenciaCorrecta: [],
         arregloSecuenciaUsuario: [],
         secuenciafinal: [],
+
         nivel: 1,
         controlFlecha: 0
 
@@ -118,16 +119,6 @@ cc.Class({
                 this.contador++;
             }
         }, this.velocidadReloj);
-
-        //  cargar datos del usuario
-        var datosGuardados = JSON.parse(cc.sys.localStorage.getItem('datosUsuario'));
-        console.log(datosGuardados);
-        if (datosGuardados != null) {
-            this.score = datosGuardados.score;
-            this.nivel = datosGuardados.nivel;
-            console.log("Score: " + this.score);
-            console.log("Nivel: " + this.nivel);
-        }
     },
 
     aumentarHora: function aumentarHora() {
@@ -387,8 +378,8 @@ cc.Class({
             cc.sys.localStorage.setItem('datosUsuario', JSON.stringify(datosUsuario));
 
             //  leer datos guardados 
-            //  var datosGuardados = JSON.parse(cc.sys.localStorage.getItem('datosUsuario'));
-
+            var datosGuardados = JSON.parse(cc.sys.localStorage.getItem('datosUsuario'));
+            console.log(datosGuardados);
         }
     },
 

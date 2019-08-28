@@ -1,6 +1,6 @@
 {
   "__type__": "cc.Material",
-  "_name": "builtin-gray-sprite",
+  "_name": "builtin-2d-gray-sprite",
   "_objFlags": 0,
   "_native": "",
   "_effectAsset": {
