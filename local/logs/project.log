@@ -76,6 +76,72 @@
 2019-08-28T19:09:39.723Z - warn: The Asset used by node "nuevoSonido" is missing. Detailed information:
 Node path: "nuevoSonido"
 Missing uuid: "5e444ce7-01af-43b6-903e-1dc007bb992e"
+2019-08-28T20:21:38.820Z - normal: Load ~/.CocosCreator/settings.json
+2019-08-28T20:21:39.970Z - normal: Initializing Asset Database
+2019-08-28T20:21:39.972Z - normal: checking language setting...
+2019-08-28T20:21:39.972Z - normal: Language: en
+2019-08-28T20:21:40.604Z - success: preview server running at http://localhost:7456
+2019-08-28T20:21:40.606Z - success: protocol editor-framework registered
+2019-08-28T20:21:40.607Z - success: protocol app registered
+2019-08-28T20:21:40.607Z - success: protocol theme registered
+2019-08-28T20:21:40.607Z - success: protocol packages registered
+2019-08-28T20:21:40.607Z - success: protocol uuid registerred
+2019-08-28T20:21:40.607Z - success: protocol db registerred
+2019-08-28T20:21:40.607Z - success: protocol thumbnail registerred
+2019-08-28T20:21:40.607Z - success: protocol unpack registerred
+2019-08-28T20:21:40.607Z - success: protocol disable-commonjs registerred
+2019-08-28T20:21:42.211Z - normal: connected!
+2019-08-28T20:21:42.215Z - normal: Check project C:\Users\Miguel\Documents\tallersoft
+2019-08-28T20:21:42.222Z - normal: Initializing project C:\Users\Miguel\Documents\tallersoft
+2019-08-28T20:21:42.636Z - normal: Initializing Cocos2d
+2019-08-28T20:21:43.486Z - normal: Initializing engine extends
+2019-08-28T20:21:43.503Z - success: asset-db-debugger loaded
+2019-08-28T20:21:43.505Z - success: baidu-adapter loaded
+2019-08-28T20:21:43.506Z - success: color-picker loaded
+2019-08-28T20:21:43.592Z - success: fb-audience-network loaded
+2019-08-28T20:21:43.644Z - success: fb-live-stream loaded
+2019-08-28T20:21:43.650Z - success: google-play-instant loaded
+2019-08-28T20:21:43.660Z - success: huawei-runtime loaded
+2019-08-28T20:21:43.664Z - success: jsb-adapter loaded
+2019-08-28T20:21:43.671Z - success: oppo-runtime loaded
+2019-08-28T20:21:43.676Z - success: package-manager loaded
+2019-08-28T20:21:43.799Z - success: qqplay-adapter loaded
+2019-08-28T20:21:43.806Z - success: runtime-dev-tools loaded
+2019-08-28T20:21:43.815Z - success: sdkbox loaded
+2019-08-28T20:21:43.823Z - success: tester loaded
+2019-08-28T20:21:43.825Z - success: ui-grid loaded
+2019-08-28T20:21:43.827Z - success: ui-kit-preview-extra loaded
+2019-08-28T20:21:43.828Z - success: ui-kit-preview loaded
+2019-08-28T20:21:43.830Z - success: ui-kit loaded
+2019-08-28T20:21:43.831Z - success: ui-tree loaded
+2019-08-28T20:21:43.836Z - success: vivo-runtime loaded
+2019-08-28T20:21:43.836Z - success: weapp-adapter loaded
+2019-08-28T20:21:43.877Z - success: assets loaded
+2019-08-28T20:21:43.879Z - success: builder loaded
+2019-08-28T20:21:44.136Z - success: cocos-services loaded
+2019-08-28T20:21:44.139Z - success: console loaded
+2019-08-28T20:21:44.174Z - success: fb-instant-games loaded
+2019-08-28T20:21:44.177Z - success: game-window loaded
+2019-08-28T20:21:44.178Z - success: google-instant-games loaded
+2019-08-28T20:21:44.182Z - success: hierarchy loaded
+2019-08-28T20:21:44.184Z - success: inspector loaded
+2019-08-28T20:21:44.186Z - success: keystore loaded
+2019-08-28T20:21:44.189Z - success: node-library loaded
+2019-08-28T20:21:44.191Z - success: package-asset loaded
+2019-08-28T20:21:44.192Z - success: preferences loaded
+2019-08-28T20:21:44.193Z - success: project-exporter loaded
+2019-08-28T20:21:44.195Z - success: project-importer loaded
+2019-08-28T20:21:44.197Z - success: project-settings loaded
+2019-08-28T20:21:44.201Z - success: scene loaded
+2019-08-28T20:21:44.203Z - success: simulator-debugger loaded
+2019-08-28T20:21:44.204Z - success: sprite-editor loaded
+2019-08-28T20:21:44.208Z - success: store loaded
+2019-08-28T20:21:44.211Z - success: timeline loaded
+2019-08-28T20:21:48.892Z - info: Cocos Services load base data!
+2019-08-28T20:21:52.151Z - normal: Loading packages
+2019-08-28T20:21:52.156Z - normal: Watching packages
+2019-08-28T20:21:52.695Z - normal: Run Application
+2019-08-28T20:29:00.725Z - info: shutdown preview server
 
 2019-08-28T19:13:54.860Z - info: Only the prefab node "nuevoSonido" and its child nodes are saved.
 2019-08-28T19:13:56.553Z - info: Only the prefab node "nuevoSonido" and its child nodes are saved.

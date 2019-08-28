@@ -76,7 +76,7 @@ cc.Class({
         positionNotification: cc.v2(0, 0),
         positionTouchpoint: cc.v2(0, 0),
         positionPelota: cc.v2(0, 0),
-        cantVeces: 4,
+        cantVeces: 2,
         aux: 0,
         contador: 0,
         horaNotificacion: 0,
@@ -206,13 +206,25 @@ cc.Class({
             newCircle.getComponent('CircleSecuencia').game = this;
         }
 
-        if (this.nivel >= 3) {
-            for (var i = 0; i < this.nivel - 2; i++) {
-                var pelota = cc.instantiate(this.distraccionPrefab);
-                this.node.addChild(pelota);
-                this.positionPelota = this.getNewCirclePosition();
-                pelota.setPosition(this.positionPelota);
-                pelota.getComponent('cursorDistraccion').game = this;
+        //limitar la cantidad de distracciones
+        if (this.nivel > 3) {
+            if (this.nivel >= 4) {
+                for (var i = 0; i < 3; i++) {
+                    var pelota = cc.instantiate(this.distraccionPrefab);
+                    this.node.addChild(pelota);
+                    this.positionPelota = this.getNewCirclePosition();
+                    pelota.setPosition(this.positionPelota);
+                    pelota.getComponent('cursorDistraccion').game = this;
+                }
+            } else {
+
+                for (var i = 0; i < this.nivel - 2; i++) {
+                    var pelota = cc.instantiate(this.distraccionPrefab);
+                    this.node.addChild(pelota);
+                    this.positionPelota = this.getNewCirclePosition();
+                    pelota.setPosition(this.positionPelota);
+                    pelota.getComponent('cursorDistraccion').game = this;
+                }
             }
         }
 
@@ -355,9 +367,12 @@ cc.Class({
     gameOver: function gameOver() {
 
         //  subir de nivel
-        if (this.score >= this.cantVeces * this.cantVeces * this.cantVeces) {
+        if (this.score >= Math.pow(this.nivel, 3)) {
             this.nivel++;
-            this.cantVeces++;
+            if (this.nivel < 4) {
+
+                this.cantVeces++;
+            }
             this.nivelDisplay.string = 'Nivel: ' + this.nivel;
             this.levelSound.play();
 

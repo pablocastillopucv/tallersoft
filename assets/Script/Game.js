@@ -70,7 +70,7 @@ cc.Class({
         positionNotification:cc.v2(0,0),
         positionTouchpoint:cc.v2(0,0),
         positionPelota:cc.v2(0,0),
-        cantVeces:4,
+        cantVeces:2,
         aux:0,
         contador:0,
         horaNotificacion:0,
@@ -211,28 +211,45 @@ cc.Class({
 
     spawnCircles: function() {
 
+        
         for(var i = 0; i<this.cantVeces;i++){
-            // generate a new node in the scene with a preset template
-            var newCircle = cc.instantiate(this.cursorPrefab);
-            // put the newly added node under the Canvas node
-            this.node.addChild(newCircle);
-            // set up a random position for the circle
-            this.positionCircle = this.arregloSecuencia[i];
-            //se llena el arreglo con la secuencia final
-            this.secuenciafinal[i]=this.arregloSecuencia[i];
-            newCircle.setPosition(this.positionCircle);
-            newCircle.getComponent('CircleSecuencia').game = this;
-
+                // generate a new node in the scene with a preset template
+                var newCircle = cc.instantiate(this.cursorPrefab);
+                // put the newly added node under the Canvas node
+                this.node.addChild(newCircle);
+                // set up a random position for the circle
+                this.positionCircle = this.arregloSecuencia[i];
+                //se llena el arreglo con la secuencia final
+                this.secuenciafinal[i]=this.arregloSecuencia[i];
+                newCircle.setPosition(this.positionCircle);
+                newCircle.getComponent('CircleSecuencia').game = this;
+    
         }
-      
-        if (this.nivel>=3) {
-            for (var i=0;i<(this.nivel-2);i++){
-                var pelota = cc.instantiate(this.distraccionPrefab);
-                this.node.addChild(pelota);
-                this.positionPelota = this.getNewCirclePosition();
-                pelota.setPosition(this.positionPelota);
-                pelota.getComponent('cursorDistraccion').game=this;
+        
+       
+        //limitar la cantidad de distracciones
+        if (this.nivel>3) {
+            if (this.nivel>=4){
+                for (var i=0;i<(3);i++){
+                    var pelota = cc.instantiate(this.distraccionPrefab);
+                    this.node.addChild(pelota);
+                    this.positionPelota = this.getNewCirclePosition();
+                    pelota.setPosition(this.positionPelota);
+                    pelota.getComponent('cursorDistraccion').game=this;
+                }
             }
+
+            else{
+
+                for (var i=0;i<(this.nivel-2);i++){
+                    var pelota = cc.instantiate(this.distraccionPrefab);
+                    this.node.addChild(pelota);
+                    this.positionPelota = this.getNewCirclePosition();
+                    pelota.setPosition(this.positionPelota);
+                    pelota.getComponent('cursorDistraccion').game=this;
+                }
+            }
+           
             
         }
 
@@ -403,12 +420,14 @@ cc.Class({
     
     gameOver: function(){
 
-        
-
         //  subir de nivel
-        if (this.score >= (this.cantVeces*this.cantVeces*this.cantVeces)){
+        if (this.score >= (Math.pow(this.nivel,3))){
             this.nivel++;
-            this.cantVeces++;
+            if(this.nivel<4){
+
+                this.cantVeces++;
+
+            }
             this.nivelDisplay.string = 'Nivel: ' + this.nivel;
             this.levelSound.play();
 
@@ -424,8 +443,7 @@ cc.Class({
             if (this.esNotificacionHora){
 
                 this.mostrarNotificacionTiempo;
-
-            } else if (this.esNotificacionComida){
+       
 
                 this.mostrarNotificacionComida;
 
