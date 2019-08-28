@@ -13,25 +13,22 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "cursorSecuencia",
+    "_name": "presioneAqui",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
     "_active": true,
-    "_level": 1,
+    "_level": 2,
     "_components": [
       {
         "__id__": 2
       },
       {
         "__id__": 3
-      },
-      {
-        "__id__": 4
       }
     ],
     "_prefab": {
-      "__id__": 5
+      "__id__": 4
     },
     "_opacity": 255,
     "_color": {
@@ -43,8 +40,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 120,
-      "height": 120
+      "width": 188.45,
+      "height": 50.4
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -53,20 +50,22 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -348.307,
-      "y": 202.882,
+      "x": -69.96,
+      "y": 2.591,
       "z": 0
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
+      "x": 1.055,
+      "y": 1.055,
+      "z": 1.055
     },
     "_skewX": 0,
     "_skewY": 0,
     "_is3DNode": false,
     "groupIndex": 0,
+    "_rotationX": 0,
+    "_rotationY": 0,
     "_id": "",
     "_eulerAngles": {
       "__type__": "cc.Vec3",
@@ -76,7 +75,7 @@
     }
   },
   {
-    "__type__": "cc.Sprite",
+    "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -84,57 +83,31 @@
     },
     "_enabled": true,
     "_materials": [],
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_spriteFrame": {
-      "__uuid__": "b1f67f6b-0bb3-43bb-b077-bbdbb50c3dc1"
-    },
-    "_type": 0,
-    "_sizeMode": 0,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_atlas": null,
+    "_useOriginalSize": false,
+    "_string": "Presione Aquí",
+    "_N$string": "Presione Aquí",
+    "_fontSize": 30,
+    "_lineHeight": 40,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0,
+    "_N$cacheMode": 0,
     "_id": ""
   },
   {
-    "__type__": "cc.Animation",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": false,
-    "_defaultClip": null,
-    "_clips": [
-      null
-    ],
-    "playOnLoad": false,
-    "_id": ""
-  },
-  {
-    "__type__": "4534dppyl1FTZvCSGS/+m6/",
+    "__type__": "3fa0fIWgAREWrWD5mWJo1DA",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 1
     },
     "_enabled": true,
-    "touchSound": {
-      "__uuid__": "307f72ed-0328-41e3-ab4f-88b1e6626d76"
-    },
-    "touchFail": {
-      "__uuid__": "b162632d-b5cc-4c3e-b9ac-18fa20c581df"
-    },
-    "spawnSound": {
-      "__uuid__": "071905af-1d59-4933-86b5-2cce5094a8ef"
-    },
     "_id": ""
   },
   {
@@ -143,9 +116,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "b7e265f9-5ebf-47e9-a52b-2094cbf48420"
+      "__id__": 0
     },
-    "fileId": "644UKvG6VGH46n4TrSpnx6",
+    "fileId": "a1bbmeU4dIKZYrqkkFic0a",
     "sync": false
   }
 ]

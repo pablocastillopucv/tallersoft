@@ -45,11 +45,12 @@
       "y": 1,
       "z": 1
     },
-    "_eulerAngles": {
-      "__type__": "cc.Vec3",
+    "_quat": {
+      "__type__": "cc.Quat",
       "x": 0,
       "y": 0,
-      "z": 0
+      "z": 0,
+      "w": 1
     },
     "_is3DNode": true,
     "groupIndex": 0,
@@ -118,20 +119,20 @@
     "_scale": {
       "__type__": "cc.Vec3",
       "x": 1,
-      "y": 1,
+      "y": 1.032,
       "z": 1
-    },
-    "_eulerAngles": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
     },
     "_skewX": 0,
     "_skewY": 0,
     "_is3DNode": false,
     "groupIndex": 0,
-    "_id": "2anmWIXaNK0KLBRrENEVD3"
+    "_id": "2anmWIXaNK0KLBRrENEVD3",
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
   },
   {
     "__type__": "cc.Node",
@@ -169,9 +170,9 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 554.2562584220408
+      "x": -13.433,
+      "y": 42.072,
+      "z": 554.25626
     },
     "_scale": {
       "__type__": "cc.Vec3",
@@ -179,17 +180,17 @@
       "y": 1,
       "z": 1
     },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "groupIndex": 0,
+    "_id": "2bxigLTmhOGrAHsJ677BDW",
     "_eulerAngles": {
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
       "z": 0
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_is3DNode": false,
-    "groupIndex": 0,
-    "_id": "2bxigLTmhOGrAHsJ677BDW"
+    }
   },
   {
     "__type__": "cc.Camera",
@@ -272,19 +273,19 @@
       "y": 1,
       "z": 1
     },
-    "_eulerAngles": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
     "_skewX": 0,
     "_skewY": 0,
     "_is3DNode": false,
     "groupIndex": 0,
     "_rotationX": 0,
     "_rotationY": 0,
-    "_id": "6dwP37jclBYJQnavv50NTM"
+    "_id": "6dwP37jclBYJQnavv50NTM",
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
   },
   {
     "__type__": "cc.Label",
@@ -294,11 +295,7 @@
       "__id__": 5
     },
     "_enabled": true,
-    "_materials": [
-      {
-        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
-      }
-    ],
+    "_materials": [],
     "_useOriginalSize": false,
     "_string": "Score: 0",
     "_N$string": "Score: 0",
@@ -364,19 +361,19 @@
       "y": 1,
       "z": 1
     },
-    "_eulerAngles": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
     "_skewX": 0,
     "_skewY": 0,
     "_is3DNode": false,
     "groupIndex": 0,
     "_rotationX": 0,
     "_rotationY": 0,
-    "_id": "c7mzoshzhC86q3snHGWLre"
+    "_id": "c7mzoshzhC86q3snHGWLre",
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
   },
   {
     "__type__": "cc.Label",
@@ -386,11 +383,7 @@
       "__id__": 7
     },
     "_enabled": true,
-    "_materials": [
-      {
-        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
-      }
-    ],
+    "_materials": [],
     "_useOriginalSize": false,
     "_string": "Hora Actual",
     "_N$string": "Hora Actual",
@@ -456,19 +449,19 @@
       "y": 1,
       "z": 1
     },
-    "_eulerAngles": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
     "_skewX": 0,
     "_skewY": 0,
     "_is3DNode": false,
     "groupIndex": 0,
     "_rotationX": 0,
     "_rotationY": 0,
-    "_id": "4aJgPREFtJBbrCj6JpB6sj"
+    "_id": "4aJgPREFtJBbrCj6JpB6sj",
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
   },
   {
     "__type__": "cc.Label",
@@ -478,11 +471,7 @@
       "__id__": 9
     },
     "_enabled": true,
-    "_materials": [
-      {
-        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
-      }
-    ],
+    "_materials": [],
     "_useOriginalSize": false,
     "_string": "Nivel: 1",
     "_N$string": "Nivel: 1",
@@ -628,6 +617,15 @@
     "touchPointPrefab": {
       "__uuid__": "66f3879c-e84a-41b8-b2e2-ed84421e9c8f"
     },
+    "presioneAquiPrefab": {
+      "__uuid__": "9402057b-4c48-4409-a5ad-09843a3b85fc"
+    },
+    "flechaApuntaArribaPrefab": {
+      "__uuid__": "e9604868-5570-4062-904c-ee11292c3bc0"
+    },
+    "flechaApuntaAbajoPrefab": {
+      "__uuid__": "85682277-a4ba-498d-aa9c-d5c83a4d887f"
+    },
     "touchPointNotificacionPrefab": {
       "__uuid__": "626c2766-f113-4cec-b13f-4c12f400c659"
     },
@@ -682,6 +680,7 @@
     "arregloSecuenciaUsuario": [],
     "secuenciafinal": [],
     "nivel": 1,
+    "controlFlecha": 0,
     "_id": "a2/91M+F1LGL4zj53B3yyH"
   }
 ]
