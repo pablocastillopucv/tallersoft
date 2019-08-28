@@ -525,8 +525,8 @@
     "relativePath": "Prefab\\touchPointNotificacion.prefab"
   },
   "2acb10be-f69b-4b5e-961f-bdb309fa7102": {
-    "asset": 1567025840118,
-    "meta": 1567025840124,
+    "asset": 1567028685360,
+    "meta": 1567028685380,
     "relativePath": "Scene\\menu.fire"
   },
   "4871af80-753c-463e-8dcf-5cd1d99c7166": {
@@ -565,8 +565,8 @@
     "relativePath": "Texture\\go.png"
   },
   "3ae8816e-4603-4733-b316-15d6c0d897b9": {
-    "asset": 1567026891998,
-    "meta": 1567026892021,
+    "asset": 1567028666759,
+    "meta": 1567028666779,
     "relativePath": "Scene\\movimiento.fire"
   },
   "00490b3a-c60c-4bc5-ae57-e98762b9637e": {
@@ -635,8 +635,8 @@
     "relativePath": "Prefab\\distraccion.prefab"
   },
   "85682277-a4ba-498d-aa9c-d5c83a4d887f": {
-    "asset": 1567025840055,
-    "meta": 1567025840060,
+    "asset": 1567028639560,
+    "meta": 1567028639573,
     "relativePath": "Prefab\\DownArrow.prefab"
   },
   "fa8fbc40-e1ab-4268-a075-06f5412d7fb7": {
@@ -650,8 +650,8 @@
     "relativePath": "Prefab\\presioneAqui.prefab"
   },
   "e9604868-5570-4062-904c-ee11292c3bc0": {
-    "asset": 1567025840110,
-    "meta": 1567025840116,
+    "asset": 1567028631124,
+    "meta": 1567028631138,
     "relativePath": "Prefab\\UpArrow.prefab"
   },
   "43dd9aa6-b307-4fa0-880c-e130416af729": {
