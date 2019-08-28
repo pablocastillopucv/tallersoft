@@ -224,9 +224,9 @@ cc.Class({
         
        
         //limitar la cantidad de distracciones
-        if (this.nivel>=3) {
-            if (this.nivel>=6){
-                for (var i=0;i<(4);i++){
+        if (this.nivel>3) {
+            if (this.nivel>=4){
+                for (var i=0;i<(3);i++){
                     var pelota = cc.instantiate(this.distraccionPrefab);
                     this.node.addChild(pelota);
                     this.positionPelota = this.getNewCirclePosition();
@@ -436,7 +436,7 @@ cc.Class({
         //  subir de nivel
         if (this.score >= (Math.pow(this.nivel,3))){
             this.nivel++;
-            if(this.nivel<2){
+            if(this.nivel<4){
 
                 this.cantVeces++;
 
