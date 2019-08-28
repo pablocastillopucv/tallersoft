@@ -3,9 +3,14 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+        spawnSound:{
+            default:null,
+            type:cc.AudioClip
+        },
     },
     onLoad: function() {
         this.timer = 0.0;
+        cc.audioEngine.playEffect(this.spawnSound, false);
         
     },
     onPicked: function() {
@@ -18,14 +23,14 @@ cc.Class({
         this.timer +=dt;
         if(this.game.aux< this.game.cantVeces){
 
-            if ( Math.round(this.timer) == 1.0 ) {
+            if ( Math.round(this.timer) == 2.0 ) {
                 this.game.aux++;
                 this.onPicked();
                 return;
             }
         }
         else{
-            if ( Math.round(this.timer) == 1.0 ) {
+            if ( Math.round(this.timer) == 2.0 ) {
                 
                 this.node.destroy();
                 this.game.aux=0;
