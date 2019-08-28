@@ -10,6 +10,10 @@ cc.Class({
             default: null,
             type: cc.Prefab
         },
+        distraccionPrefab: {
+            default: null,
+            type: cc.Prefab
+        },
         touchPointPrefab:{
             default: null,
             type: cc.Prefab
@@ -42,9 +46,14 @@ cc.Class({
             default:null,
             type:cc.AudioSource
         },
+        pausaPrefab:{
+            type: cc.Prefab,
+            default: null
+        },
         positionCircle:cc.v2(0,0),
         positionNotification:cc.v2(0,0),
         positionTouchpoint:cc.v2(0,0),
+        positionPelota:cc.v2(0,0),
         cantVeces:4,
         aux:0,
         contador:0,
@@ -59,6 +68,7 @@ cc.Class({
         arregloSecuenciaCorrecta:[],
         arregloSecuenciaUsuario:[],
         secuenciafinal:[],
+
         nivel:1,
         
     },
@@ -204,6 +214,18 @@ cc.Class({
             newCircle.getComponent('CircleSecuencia').game = this;
 
         }
+      
+        if (this.nivel>=3) {
+            for (var i=0;i<(this.nivel-2);i++){
+                var pelota = cc.instantiate(this.distraccionPrefab);
+                this.node.addChild(pelota);
+                this.positionPelota = this.getNewCirclePosition();
+                pelota.setPosition(this.positionPelota);
+                pelota.getComponent('cursorDistraccion').game=this;
+            }
+            
+        }
+
         this.arregloSecuencia=[];
     },
 
@@ -255,22 +277,18 @@ cc.Class({
             for (let index = 0; index < this.arregloSecuenciaCorrecta.length; index++) {
                 posX= this.arregloSecuenciaCorrecta[index].x;
                 posY= this.arregloSecuenciaCorrecta[index].y;
-                // console.log("vector de arreglo"+this.arregloSecuenciaCorrecta[index]);
-                // console.log("posicion del posible ciruclo"+cc.v2(randX,randY));
+              
                 elevadox=  Math.pow((posX-randX),2);
                 elevadoy= Math.pow((posY-randY),2);
                 suma= elevadox+elevadoy;
                 formula= Math.sqrt(suma);
-                // console.log(formula);
                 if (formula<200) {
-                    // console.log("no se cumple");
                     estado= false;
                     break;
                 }
                   
             }
             if (estado== true) {
-                // console.log("circulo a guardar"+ cc.v2(randX,randY));
                 return cc.v2(randX,randY);
             }
 
@@ -323,26 +341,62 @@ cc.Class({
                 this.arregloSecuenciaCorrecta.shift();
                 this.score += 1;
                 this.scoreDisplay.string = 'Score: ' + this.score;
-                // console.log(this.toques);
                 if(this.toques < this.cantVeces){
                     return true;
                 }
                 
         }
+        else{
+            this.score-=1;
+            if (this.score<1){
+                this.score=0;
+            }
+           
+            this.scoreDisplay.string = 'Score: ' + this.score;
+            
+            return false;
+
+
+
+        }
         if(this.toques == this.cantVeces){
+
+
+            var pausaIntermedia = cc.instantiate(this.pausaPrefab);
+        
+            this.node.addChild(pausaIntermedia);
+            
+            pausaIntermedia.setPosition(this.positionNotification);
+        
+            this.scheduleOnce(function(){
+
+                
+                pausaIntermedia.setPosition(999,999,999);
+          
+            },1);
+            
+
+            
+
+        
             this.gameOver();
             this.toques=0;
             return true;
-        }
-        
-        
-        
        
+
+            
+            
+        }
     },
     
     gameOver: function(){
-        
-        this.spawnNewCircle();
+
+        this.scheduleOnce(function(){
+
+
+            this.spawnNewCircle();  
+
+        },1)
         this.aux++;
         if (this.esNotificacionHora){
 
@@ -358,11 +412,10 @@ cc.Class({
         if (this.score >= (this.cantVeces*this.cantVeces*this.cantVeces)){
             this.nivel++;
             this.cantVeces++;
-            // console.log(this.cantVeces);
             this.nivelDisplay.string = 'Nivel: ' + this.nivel;
             this.levelSound.play();
 
-            
+
             //  datos a guardar localmente
             var datosUsuario = {
                 nivel: this.nivel,
@@ -372,7 +425,9 @@ cc.Class({
 
             //  leer datos guardados 
             //  var datosGuardados = JSON.parse(cc.sys.localStorage.getItem('datosUsuario'));
+            
 
+            
 
         }
     },
