@@ -385,11 +385,9 @@ cc.Class({
                     else{
                         text.setPosition(cc.v2(posX,posY+60));
                         text.getComponent('PresioneAqui').game = this;
-                    {
+                    }
                         
-                    
-
-                    
+                
                 }
                 else{ // flecha apuntando hacia arriba
                     var newArrow = cc.instantiate(this.flechaApuntaArribaPrefab);

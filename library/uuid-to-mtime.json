@@ -472,7 +472,7 @@
   "e212f115-7333-4cdc-8956-4003d98ec40d": {
     "asset": 1566960053209,
     "meta": 1566960053212,
-    "relativePath": "cursor.prefab"
+    "relativePath": "Prefab\\cursor.prefab"
   },
   "b7e265f9-5ebf-47e9-a52b-2094cbf48420": {
     "asset": 1566960053366,
@@ -597,7 +597,7 @@
   "9402057b-4c48-4409-a5ad-09843a3b85fc": {
     "asset": 1566960053403,
     "meta": 1566960053406,
-    "relativePath": "presioneAqui.prefab"
+    "relativePath": "Prefab\\presioneAqui.prefab"
   },
   "69d57422-7ece-4615-9c26-81d720d37297": {
     "asset": 1566960009432,
@@ -607,17 +607,12 @@
   "85682277-a4ba-498d-aa9c-d5c83a4d887f": {
     "asset": 1566960053214,
     "meta": 1566960053337,
-    "relativePath": "DownArrow.prefab"
+    "relativePath": "Prefab\\DownArrow.prefab"
   },
   "3fa0f216-8004-445a-b583-e66589a350c0": {
     "asset": 1566960009438,
     "meta": 1566960053574,
     "relativePath": "Script\\PresioneAqui.js"
-  },
-  "dd482034-ee60-49b4-99cc-1ae71b45ba5c": {
-    "asset": 1566960009438,
-    "meta": 1566938165895,
-    "relativePath": "Script\\Game.js"
   },
   "071905af-1d59-4933-86b5-2cce5094a8ef": {
     "asset": 1566960009440,
@@ -648,5 +643,10 @@
     "asset": 1563317276000,
     "meta": 1566960050207,
     "relativePath": "resources\\materials\\builtin-2d-base.mtl"
+  },
+  "dd482034-ee60-49b4-99cc-1ae71b45ba5c": {
+    "asset": 1566961685934,
+    "meta": 1566961686821,
+    "relativePath": "Script\\Game.js"
   }
 }
