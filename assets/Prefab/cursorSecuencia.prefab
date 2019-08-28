@@ -63,17 +63,17 @@
       "y": 1,
       "z": 1
     },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_is3DNode": false,
-    "groupIndex": 0,
-    "_id": "",
     "_eulerAngles": {
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
       "z": 0
-    }
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "groupIndex": 0,
+    "_id": ""
   },
   {
     "__type__": "cc.Sprite",
@@ -83,7 +83,11 @@
       "__id__": 1
     },
     "_enabled": true,
-    "_materials": [],
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
@@ -126,11 +130,26 @@
       "__id__": 1
     },
     "_enabled": true,
-    "touchSound": {
-      "__uuid__": "307f72ed-0328-41e3-ab4f-88b1e6626d76"
+    "touchNivel1": {
+      "__uuid__": "3f1efd4c-b8a4-4c0d-b522-8215ac55bce3"
     },
     "touchFail": {
       "__uuid__": "b162632d-b5cc-4c3e-b9ac-18fa20c581df"
+    },
+    "touchNivel2": {
+      "__uuid__": "b4e60f54-e238-48df-a347-dccb8ca113ee"
+    },
+    "touchNivel3": {
+      "__uuid__": "e4442745-9a04-48d7-8ce5-ff470a592035"
+    },
+    "touchNivel4": {
+      "__uuid__": "097bda9c-9e1c-4b59-a0fd-bfc496708b46"
+    },
+    "touchNivel5": {
+      "__uuid__": "576fb03f-bb5c-4045-8522-e773a3f64298"
+    },
+    "touchNivel6": {
+      "__uuid__": "307f72ed-0328-41e3-ab4f-88b1e6626d76"
     },
     "spawnSound": {
       "__uuid__": "071905af-1d59-4933-86b5-2cce5094a8ef"

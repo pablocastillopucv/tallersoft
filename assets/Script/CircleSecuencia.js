@@ -3,11 +3,31 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        touchSound:{
+        touchNivel1:{
             default:null,
             type:cc.AudioClip
         },
         touchFail:{
+            default:null,
+            type:cc.AudioClip
+        },
+        touchNivel2:{
+            default:null,
+            type:cc.AudioClip
+        },
+        touchNivel3:{
+            default:null,
+            type:cc.AudioClip
+        },
+        touchNivel4:{
+            default:null,
+            type:cc.AudioClip
+        },
+        touchNivel5:{
+            default:null,
+            type:cc.AudioClip
+        },
+        touchNivel6:{
             default:null,
             type:cc.AudioClip
         },
@@ -31,7 +51,26 @@ cc.Class({
             if (this.game.gainScore(posicion) == true){
                 this.game.destroyFlecha = true;
                 this.game.destroyTexto = true;
-                cc.audioEngine.playEffect(this.touchSound, false);
+                //cc.audioEngine.playEffect(this.touchSound, false);
+                var numerito = Math.floor((Math.random() * this.game.nivel) + 1);
+                if (numerito <= 1){
+                    cc.audioEngine.playEffect(this.touchNivel1,false);
+                }
+                else if(numerito == 2){
+                    cc.audioEngine.playEffect(this.touchNivel2,false);
+                }
+                else if(numerito == 3){
+                    cc.audioEngine.playEffect(this.touchNivel3,false);
+                }
+                else if(numerito == 4){
+                    cc.audioEngine.playEffect(this.touchNivel4,false);
+                }
+                else if(numerito == 5){
+                    cc.audioEngine.playEffect(this.touchNivel5,false);
+                }
+                else{
+                    cc.audioEngine.playEffect(this.touchNivel6,false);
+                }
                 this.timer=0.0;
                 this.node.destroy();
             }
