@@ -700,8 +700,8 @@
     "relativePath": "animationNewSound.anim"
   },
   "b22c3746-99ce-424d-83e9-68c648d9e45d": {
-    "asset": 1567024693587,
-    "meta": 1567025840102,
+    "asset": 1567029323501,
+    "meta": 1567029323514,
     "relativePath": "Prefab\\nuevoSonido.prefab"
   },
   "2f774825-9d83-48f9-ab2c-ca32c6b81a53": {
@@ -744,14 +744,14 @@
     "meta": 1567025840705,
     "relativePath": "Sound\\snare 5.WAV"
   },
-  "dd482034-ee60-49b4-99cc-1ae71b45ba5c": {
-    "asset": 1567026591005,
-    "meta": 1567026591589,
-    "relativePath": "Script\\Game.js"
-  },
   "bd961443-3fc4-42b5-a0c1-b9fef098f79a": {
     "asset": 1567026891174,
     "meta": 1567026891802,
     "relativePath": "Script\\Circle.js"
+  },
+  "dd482034-ee60-49b4-99cc-1ae71b45ba5c": {
+    "asset": 1567029461005,
+    "meta": 1567029465319,
+    "relativePath": "Script\\Game.js"
   }
 }

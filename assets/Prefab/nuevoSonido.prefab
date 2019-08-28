@@ -40,8 +40,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 920.77,
-      "height": 169.5
+      "width": 649.12,
+      "height": 394.5
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -50,8 +50,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 482.684,
-      "y": 288.098,
+      "x": 498.352,
+      "y": 346.201,
       "z": 0
     },
     "_scale": {
@@ -88,8 +88,8 @@
       }
     ],
     "_useOriginalSize": false,
-    "_string": "Felicidades !\nDesbloqueo un nuevo sonido.",
-    "_N$string": "Felicidades !\nDesbloqueo un nuevo sonido.",
+    "_string": "Felicidades !\n\n\nHa desbloqueado un\nnuevo sonido.",
+    "_N$string": "Felicidades !\n\n\nHa desbloqueado un\nnuevo sonido.",
     "_fontSize": 75,
     "_lineHeight": 75,
     "_enableWrapText": true,
