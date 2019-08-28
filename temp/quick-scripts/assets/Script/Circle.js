@@ -24,19 +24,40 @@ cc.Class({
     update: function update(dt) {
 
         this.timer += dt;
-        if (this.game.aux < this.game.cantVeces) {
+        if (this.game.nivel >= 2) {
 
-            if (Math.round(this.timer) == 2.0) {
-                this.game.aux++;
-                this.onPicked();
-                return;
+            if (this.game.aux < 2) {
+
+                if (Math.round(this.timer) == 2.0) {
+                    this.game.aux++;
+                    this.onPicked();
+                    return;
+                }
+            } else {
+                if (Math.round(this.timer) == 2.0) {
+                    console.log("entre aqui");
+
+                    this.node.destroy();
+                    this.game.aux = 0;
+                    this.game.spawnCircles();
+                }
             }
         } else {
-            if (Math.round(this.timer) == 2.0) {
 
-                this.node.destroy();
-                this.game.aux = 0;
-                this.game.spawnCircles();
+            if (this.game.aux < this.game.cantVeces) {
+
+                if (Math.round(this.timer) == 2.0) {
+                    this.game.aux++;
+                    this.onPicked();
+                    return;
+                }
+            } else {
+                if (Math.round(this.timer) == 2.0) {
+
+                    this.node.destroy();
+                    this.game.aux = 0;
+                    this.game.spawnCircles();
+                }
             }
         }
     }

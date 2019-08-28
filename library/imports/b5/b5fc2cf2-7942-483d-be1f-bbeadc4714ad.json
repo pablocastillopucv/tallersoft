@@ -57,18 +57,19 @@
       "y": 100,
       "z": 100
     },
+    "_quat": {
+      "__type__": "cc.Quat",
+      "x": -0.707106828689575,
+      "y": 0,
+      "z": 0,
+      "w": 0.707106709480286
+    },
     "_skewX": 0,
     "_skewY": 0,
     "_zIndex": 0,
     "_is3DNode": true,
     "groupIndex": 0,
-    "_id": "",
-    "_eulerAngles": {
-      "x": -90.00000769819565,
-      "y": 0,
-      "z": 0,
-      "__type__": "cc.Vec3"
-    }
+    "_id": ""
   },
   {
     "__type__": "cc.MeshRenderer",

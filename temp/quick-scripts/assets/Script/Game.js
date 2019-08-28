@@ -72,7 +72,7 @@ cc.Class({
         positionNotification: cc.v2(0, 0),
         positionTouchpoint: cc.v2(0, 0),
         positionPelota: cc.v2(0, 0),
-        cantVeces: 4,
+        cantVeces: 2,
         aux: 0,
         contador: 0,
         horaNotificacion: 0,
@@ -189,26 +189,55 @@ cc.Class({
 
     spawnCircles: function spawnCircles() {
 
-        for (var i = 0; i < this.cantVeces; i++) {
-            // generate a new node in the scene with a preset template
-            var newCircle = cc.instantiate(this.cursorPrefab);
-            // put the newly added node under the Canvas node
-            this.node.addChild(newCircle);
-            // set up a random position for the circle
-            this.positionCircle = this.arregloSecuencia[i];
-            //se llena el arreglo con la secuencia final
-            this.secuenciafinal[i] = this.arregloSecuencia[i];
-            newCircle.setPosition(this.positionCircle);
-            newCircle.getComponent('CircleSecuencia').game = this;
+        //limitar cantidad de pelotas por nivel
+        if (this.nivel >= 2) {
+
+            for (var i = 0; i < 2; i++) {
+                // generate a new node in the scene with a preset template
+                var newCircle = cc.instantiate(this.cursorPrefab);
+                // put the newly added node under the Canvas node
+                this.node.addChild(newCircle);
+                // set up a random position for the circle
+                this.positionCircle = this.arregloSecuencia[i];
+                //se llena el arreglo con la secuencia final
+                this.secuenciafinal[i] = this.arregloSecuencia[i];
+                newCircle.setPosition(this.positionCircle);
+                newCircle.getComponent('CircleSecuencia').game = this;
+            }
+        } else {
+            for (var i = 0; i < this.cantVeces; i++) {
+                // generate a new node in the scene with a preset template
+                var newCircle = cc.instantiate(this.cursorPrefab);
+                // put the newly added node under the Canvas node
+                this.node.addChild(newCircle);
+                // set up a random position for the circle
+                this.positionCircle = this.arregloSecuencia[i];
+                //se llena el arreglo con la secuencia final
+                this.secuenciafinal[i] = this.arregloSecuencia[i];
+                newCircle.setPosition(this.positionCircle);
+                newCircle.getComponent('CircleSecuencia').game = this;
+            }
         }
 
+        //limitar la cantidad de distracciones
         if (this.nivel >= 3) {
-            for (var i = 0; i < this.nivel - 2; i++) {
-                var pelota = cc.instantiate(this.distraccionPrefab);
-                this.node.addChild(pelota);
-                this.positionPelota = this.getNewCirclePosition();
-                pelota.setPosition(this.positionPelota);
-                pelota.getComponent('cursorDistraccion').game = this;
+            if (this.nivel >= 6) {
+                for (var i = 0; i < 4; i++) {
+                    var pelota = cc.instantiate(this.distraccionPrefab);
+                    this.node.addChild(pelota);
+                    this.positionPelota = this.getNewCirclePosition();
+                    pelota.setPosition(this.positionPelota);
+                    pelota.getComponent('cursorDistraccion').game = this;
+                }
+            } else {
+
+                for (var i = 0; i < this.nivel - 2; i++) {
+                    var pelota = cc.instantiate(this.distraccionPrefab);
+                    this.node.addChild(pelota);
+                    this.positionPelota = this.getNewCirclePosition();
+                    pelota.setPosition(this.positionPelota);
+                    pelota.getComponent('cursorDistraccion').game = this;
+                }
             }
         }
 
