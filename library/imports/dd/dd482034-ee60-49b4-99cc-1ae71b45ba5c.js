@@ -189,34 +189,17 @@ cc.Class({
 
     spawnCircles: function spawnCircles() {
 
-        //limitar cantidad de pelotas por nivel
-        if (this.nivel >= 2) {
-
-            for (var i = 0; i < 2; i++) {
-                // generate a new node in the scene with a preset template
-                var newCircle = cc.instantiate(this.cursorPrefab);
-                // put the newly added node under the Canvas node
-                this.node.addChild(newCircle);
-                // set up a random position for the circle
-                this.positionCircle = this.arregloSecuencia[i];
-                //se llena el arreglo con la secuencia final
-                this.secuenciafinal[i] = this.arregloSecuencia[i];
-                newCircle.setPosition(this.positionCircle);
-                newCircle.getComponent('CircleSecuencia').game = this;
-            }
-        } else {
-            for (var i = 0; i < this.cantVeces; i++) {
-                // generate a new node in the scene with a preset template
-                var newCircle = cc.instantiate(this.cursorPrefab);
-                // put the newly added node under the Canvas node
-                this.node.addChild(newCircle);
-                // set up a random position for the circle
-                this.positionCircle = this.arregloSecuencia[i];
-                //se llena el arreglo con la secuencia final
-                this.secuenciafinal[i] = this.arregloSecuencia[i];
-                newCircle.setPosition(this.positionCircle);
-                newCircle.getComponent('CircleSecuencia').game = this;
-            }
+        for (var i = 0; i < this.cantVeces; i++) {
+            // generate a new node in the scene with a preset template
+            var newCircle = cc.instantiate(this.cursorPrefab);
+            // put the newly added node under the Canvas node
+            this.node.addChild(newCircle);
+            // set up a random position for the circle
+            this.positionCircle = this.arregloSecuencia[i];
+            //se llena el arreglo con la secuencia final
+            this.secuenciafinal[i] = this.arregloSecuencia[i];
+            newCircle.setPosition(this.positionCircle);
+            newCircle.getComponent('CircleSecuencia').game = this;
         }
 
         //limitar la cantidad de distracciones
@@ -393,9 +376,12 @@ cc.Class({
         }
 
         //  subir de nivel
-        if (this.score >= this.cantVeces * this.cantVeces * this.cantVeces) {
+        if (this.score >= Math.pow(this.nivel, 3)) {
             this.nivel++;
-            this.cantVeces++;
+            if (this.nivel < 2) {
+
+                this.cantVeces++;
+            }
             this.nivelDisplay.string = 'Nivel: ' + this.nivel;
             this.levelSound.play();
 
