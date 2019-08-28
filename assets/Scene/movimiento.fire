@@ -664,6 +664,9 @@
     "pausaPrefab": {
       "__uuid__": "fa8fbc40-e1ab-4268-a075-06f5412d7fb7"
     },
+    "nuevoSonidoPrefab": {
+      "__uuid__": "b22c3746-99ce-424d-83e9-68c648d9e45d"
+    },
     "positionCircle": {
       "__type__": "cc.Vec2",
       "x": 0,

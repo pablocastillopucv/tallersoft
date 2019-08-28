@@ -469,11 +469,6 @@
     "meta": 1566963494325,
     "relativePath": "Sound\\sectionfail.wav"
   },
-  "4534da69-ca5d-454d-9bc2-4864bffa6ebf": {
-    "asset": 1566963276557,
-    "meta": 1566963494137,
-    "relativePath": "Script\\CircleSecuencia.js"
-  },
   "9836134e-b892-4283-b6b2-78b5acf3ed45": {
     "asset": 1566863379769,
     "meta": 1563317276000,
@@ -495,8 +490,8 @@
     "relativePath": "Prefab\\cursor.prefab"
   },
   "b7e265f9-5ebf-47e9-a52b-2094cbf48420": {
-    "asset": 1566963493946,
-    "meta": 1566963493952,
+    "asset": 1567018155714,
+    "meta": 1567018155723,
     "relativePath": "Prefab\\cursorSecuencia.prefab"
   },
   "4569943b-ab81-46bf-8ff5-d66b8089ef6c": {
@@ -565,8 +560,8 @@
     "relativePath": "Texture\\go.png"
   },
   "3ae8816e-4603-4733-b316-15d6c0d897b9": {
-    "asset": 1566964233390,
-    "meta": 1566964233419,
+    "asset": 1567021162415,
+    "meta": 1567021162430,
     "relativePath": "Scene\\movimiento.fire"
   },
   "00490b3a-c60c-4bc5-ae57-e98762b9637e": {
@@ -649,11 +644,6 @@
     "meta": 1566963493966,
     "relativePath": "Prefab\\Mensaje.prefab"
   },
-  "33787261-3d4a-4a28-b11c-43c9f6a111b9": {
-    "asset": 1566963276579,
-    "meta": 1566963493986,
-    "relativePath": "Prefab\\Mensaje.prefab.meta~HEAD"
-  },
   "9402057b-4c48-4409-a5ad-09843a3b85fc": {
     "asset": 1566963276555,
     "meta": 1566963493991,
@@ -704,9 +694,64 @@
     "meta": 1566963494487,
     "relativePath": "Texture\\UpArrow.png"
   },
+  "41be6753-6922-4a68-a947-e33bdec1abc1": {
+    "asset": 1567018084509,
+    "meta": 1567018084579,
+    "relativePath": "Sound\\snare 5.WAV"
+  },
+  "3f1efd4c-b8a4-4c0d-b522-8215ac55bce3": {
+    "asset": 1567018084509,
+    "meta": 1567018084587,
+    "relativePath": "Sound\\clap.wav"
+  },
+  "097bda9c-9e1c-4b59-a0fd-bfc496708b46": {
+    "asset": 1567018084509,
+    "meta": 1567018084591,
+    "relativePath": "Sound\\kick 1.wav"
+  },
+  "b4e60f54-e238-48df-a347-dccb8ca113ee": {
+    "asset": 1567018084509,
+    "meta": 1567018084612,
+    "relativePath": "Sound\\hihat 10.wav"
+  },
+  "1d8370ec-1133-40bd-a2a4-206fc6126760": {
+    "asset": 1567018084513,
+    "meta": 1567018084616,
+    "relativePath": "Sound\\hitclap.wav"
+  },
+  "2f774825-9d83-48f9-ab2c-ca32c6b81a53": {
+    "asset": 1567018084514,
+    "meta": 1567018084638,
+    "relativePath": "Sound\\bell.wav"
+  },
+  "e4442745-9a04-48d7-8ce5-ff470a592035": {
+    "asset": 1567018084513,
+    "meta": 1567018084639,
+    "relativePath": "Sound\\hitfinish.wav"
+  },
+  "576fb03f-bb5c-4045-8522-e773a3f64298": {
+    "asset": 1567018084537,
+    "meta": 1567018084651,
+    "relativePath": "Sound\\open-hat.wav"
+  },
+  "4534da69-ca5d-454d-9bc2-4864bffa6ebf": {
+    "asset": 1567018420844,
+    "meta": 1567018421447,
+    "relativePath": "Script\\CircleSecuencia.js"
+  },
+  "544641d0-f55e-4f86-aaa8-659646c5de7c": {
+    "asset": 1567020086175,
+    "meta": 1567020086183,
+    "relativePath": "animationNewSound.anim"
+  },
+  "b22c3746-99ce-424d-83e9-68c648d9e45d": {
+    "asset": 1567020849065,
+    "meta": 1567020849084,
+    "relativePath": "Prefab\\nuevoSonido.prefab"
+  },
   "dd482034-ee60-49b4-99cc-1ae71b45ba5c": {
-    "asset": 1566963982277,
-    "meta": 1566963982854,
+    "asset": 1567021098673,
+    "meta": 1567021099481,
     "relativePath": "Script\\Game.js"
   }
 }

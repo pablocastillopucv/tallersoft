@@ -1,0 +1,57 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "animationNewSound",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 0.5,
+  "wrapMode": 22,
+  "curveData": {
+    "props": {
+      "color": [
+        {
+          "frame": 0,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 255,
+            "g": 131,
+            "b": 131,
+            "a": 255
+          }
+        },
+        {
+          "frame": 0.3333333333333333,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 131,
+            "g": 146,
+            "b": 255,
+            "a": 255
+          }
+        },
+        {
+          "frame": 0.6666666666666666,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 131,
+            "g": 255,
+            "b": 171,
+            "a": 255
+          }
+        },
+        {
+          "frame": 1,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 240,
+            "g": 255,
+            "b": 131,
+            "a": 255
+          }
+        }
+      ]
+    }
+  },
+  "events": []
+}

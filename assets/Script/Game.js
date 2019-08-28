@@ -62,6 +62,10 @@ cc.Class({
             type: cc.Prefab,
             default: null
         },
+        nuevoSonidoPrefab:{
+            type: cc.Prefab,
+            default: null
+        },
         positionCircle:cc.v2(0,0),
         positionNotification:cc.v2(0,0),
         positionTouchpoint:cc.v2(0,0),
@@ -399,6 +403,76 @@ cc.Class({
     
     gameOver: function(){
 
+        
+
+        //  subir de nivel
+        if (this.score >= (this.cantVeces*this.cantVeces*this.cantVeces)){
+            this.nivel++;
+            this.cantVeces++;
+            this.nivelDisplay.string = 'Nivel: ' + this.nivel;
+            this.levelSound.play();
+
+            // Mostrar la nueva secuencia
+
+            this.scheduleOnce(function(){
+
+
+                this.spawnNewCircle();  
+
+            },4)
+            this.aux++;
+            if (this.esNotificacionHora){
+
+                this.mostrarNotificacionTiempo;
+
+            } else if (this.esNotificacionComida){
+
+                this.mostrarNotificacionComida;
+
+            }
+
+
+            // animacion subida de nivel
+
+            var subidaDeNivel = cc.instantiate(this.nuevoSonidoPrefab);
+        
+            this.node.addChild(subidaDeNivel);
+            subidaDeNivel.setPosition(999,999,999);
+
+            
+            this.scheduleOnce(function(){
+
+                subidaDeNivel.setPosition(this.positionNotification);
+                this.scheduleOnce(function(){
+
+                    subidaDeNivel.setPosition(999,999,999);
+
+                },2);
+
+            },1.5);
+
+            
+          
+
+            
+
+            //  datos a guardar localmente
+            var datosUsuario = {
+                nivel: this.nivel,
+                score: this.score,
+            };
+            cc.sys.localStorage.setItem('datosUsuario',JSON.stringify(datosUsuario));
+
+            //  leer datos guardados 
+            var datosGuardados = JSON.parse(cc.sys.localStorage.getItem('datosUsuario'));
+            console.log(datosGuardados);
+
+            return;
+            
+        }
+
+        // Mostrar la nueva secuencia
+
         this.scheduleOnce(function(){
 
 
@@ -416,29 +490,7 @@ cc.Class({
 
         }
 
-        //  subir de nivel
-        if (this.score >= (this.cantVeces*this.cantVeces*this.cantVeces)){
-            this.nivel++;
-            this.cantVeces++;
-            this.nivelDisplay.string = 'Nivel: ' + this.nivel;
-            this.levelSound.play();
 
-
-            //  datos a guardar localmente
-            var datosUsuario = {
-                nivel: this.nivel,
-                score: this.score,
-            };
-            cc.sys.localStorage.setItem('datosUsuario',JSON.stringify(datosUsuario));
-
-            //  leer datos guardados 
-            var datosGuardados = JSON.parse(cc.sys.localStorage.getItem('datosUsuario'));
-            console.log(datosGuardados);
-            
-
-            
-
-        }
     },
 
     brindarAyuda: function(){
