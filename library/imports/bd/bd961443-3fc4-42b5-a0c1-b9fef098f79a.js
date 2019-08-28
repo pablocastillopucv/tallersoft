@@ -24,9 +24,9 @@ cc.Class({
     update: function update(dt) {
 
         this.timer += dt;
-        if (this.game.nivel >= 2) {
+        if (this.game.nivel > 2) {
 
-            if (this.game.aux < 2) {
+            if (this.game.aux < 4) {
 
                 if (Math.round(this.timer) == 2.0) {
                     this.game.aux++;

@@ -213,22 +213,23 @@ cc.Class({
 
         
         for(var i = 0; i<this.cantVeces;i++){
-                // generate a new node in the scene with a preset template
-                var newCircle = cc.instantiate(this.cursorPrefab);
-                // put the newly added node under the Canvas node
-                this.node.addChild(newCircle);
-                // set up a random position for the circle
-                this.positionCircle = this.arregloSecuencia[i];
-                //se llena el arreglo con la secuencia final
-                this.secuenciafinal[i]=this.arregloSecuencia[i];
-                newCircle.setPosition(this.positionCircle);
-                newCircle.getComponent('CircleSecuencia').game = this;
+
+            // generate a new node in the scene with a preset template
+            var newCircle = cc.instantiate(this.cursorPrefab);
+            // put the newly added node under the Canvas node
+            this.node.addChild(newCircle);
+            // set up a random position for the circle
+            this.positionCircle = this.arregloSecuencia[i];
+            //se llena el arreglo con la secuencia final
+            this.secuenciafinal[i]=this.arregloSecuencia[i];
+            newCircle.setPosition(this.positionCircle);
+            newCircle.getComponent('CircleSecuencia').game = this;
     
         }
         
        
         //limitar la cantidad de distracciones
-        if (this.nivel>3) {
+        if (this.nivel>=3) {
             if (this.nivel>=4){
                 for (var i=0;i<(3);i++){
                     var pelota = cc.instantiate(this.distraccionPrefab);
@@ -250,7 +251,6 @@ cc.Class({
                 }
             }
            
-            
         }
 
         this.arregloSecuencia=[];
@@ -421,7 +421,7 @@ cc.Class({
     gameOver: function(){
 
         //  subir de nivel
-        if (this.score >= (Math.pow(this.nivel,3))){
+        if (this.score >= (Math.pow((this.nivel+1),3))){
             this.nivel++;
             if(this.nivel<4){
 
@@ -435,11 +435,11 @@ cc.Class({
 
             this.scheduleOnce(function(){
 
-
-                this.spawnNewCircle();  
+                this.spawnNewCircle();
+                this.aux++;  
 
             },4)
-            this.aux++;
+            
             if (this.esNotificacionHora){
 
                 this.mostrarNotificacionTiempo;
@@ -470,9 +470,6 @@ cc.Class({
             },1.5);
 
             
-          
-
-            
 
             //  datos a guardar localmente
             var datosUsuario = {
@@ -487,26 +484,30 @@ cc.Class({
 
             return;
             
+        } else {
+
+            // Mostrar la nueva secuencia
+
+            this.scheduleOnce(function(){
+
+                this.spawnNewCircle();
+                this.aux++;  
+
+            },1)
+            if (this.esNotificacionHora){
+
+                this.mostrarNotificacionTiempo;
+
+            } else if (this.esNotificacionComida){
+
+                this.mostrarNotificacionComida;
+
+            }
+
+
         }
 
-        // Mostrar la nueva secuencia
-
-        this.scheduleOnce(function(){
-
-
-            this.spawnNewCircle();  
-
-        },1)
-        this.aux++;
-        if (this.esNotificacionHora){
-
-            this.mostrarNotificacionTiempo;
-
-        } else if (this.esNotificacionComida){
-
-            this.mostrarNotificacionComida;
-
-        }
+       
 
 
     },

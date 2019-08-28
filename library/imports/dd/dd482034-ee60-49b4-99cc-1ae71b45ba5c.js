@@ -194,6 +194,7 @@ cc.Class({
     spawnCircles: function spawnCircles() {
 
         for (var i = 0; i < this.cantVeces; i++) {
+
             // generate a new node in the scene with a preset template
             var newCircle = cc.instantiate(this.cursorPrefab);
             // put the newly added node under the Canvas node
@@ -207,7 +208,7 @@ cc.Class({
         }
 
         //limitar la cantidad de distracciones
-        if (this.nivel > 3) {
+        if (this.nivel >= 3) {
             if (this.nivel >= 4) {
                 for (var i = 0; i < 3; i++) {
                     var pelota = cc.instantiate(this.distraccionPrefab);
@@ -367,7 +368,7 @@ cc.Class({
     gameOver: function gameOver() {
 
         //  subir de nivel
-        if (this.score >= Math.pow(this.nivel, 3)) {
+        if (this.score >= Math.pow(this.nivel + 1, 3)) {
             this.nivel++;
             if (this.nivel < 4) {
 
@@ -381,12 +382,12 @@ cc.Class({
             this.scheduleOnce(function () {
 
                 this.spawnNewCircle();
+                this.aux++;
             }, 4);
-            this.aux++;
+
             if (this.esNotificacionHora) {
 
                 this.mostrarNotificacionTiempo;
-            } else if (this.esNotificacionComida) {
 
                 this.mostrarNotificacionComida;
             }
@@ -419,21 +420,22 @@ cc.Class({
             console.log(datosGuardados);
 
             return;
-        }
+        } else {
 
-        // Mostrar la nueva secuencia
+            // Mostrar la nueva secuencia
 
-        this.scheduleOnce(function () {
+            this.scheduleOnce(function () {
 
-            this.spawnNewCircle();
-        }, 1);
-        this.aux++;
-        if (this.esNotificacionHora) {
+                this.spawnNewCircle();
+                this.aux++;
+            }, 1);
+            if (this.esNotificacionHora) {
 
-            this.mostrarNotificacionTiempo;
-        } else if (this.esNotificacionComida) {
+                this.mostrarNotificacionTiempo;
+            } else if (this.esNotificacionComida) {
 
-            this.mostrarNotificacionComida;
+                this.mostrarNotificacionComida;
+            }
         }
     },
 
